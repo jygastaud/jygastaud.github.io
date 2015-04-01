@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ .Title }} on {{ .Site.Title }} </title>
+    <link>{{ .Permalink }}</link>
+    <language>{{ .Site.languageCode }}</language>
+    <author>Alexander Ivanov</author>
+    <updated>{{ .Date.Format "02-01-2006" }}</updated>
+    {{ range .Data.Pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "02-01-2006" }}</pubDate>
+      <author>{{ ..Site.Params.AuthorName }}</author>
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ .Content | html }}</description>
+    </item>
+    {{ end }}
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+{{ partial "head.html" . }}
+<body class="no-sidebar">
+
+  {{ partial "header.html" . }}
+
+
+  <!-- Main -->
+    <article id="main">
+
+      <header class="special container">
+        <h2>{{ .Title }}</h2>
+      </header>
+
+      <!-- One -->
+        <section class="wrapper style4 container">
+
+          <!-- Content -->
+            <div class="content">
+              <section>
+                <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+                <span class="post-date">{{ .Date.Format "02-01-2006" }}</span>
+                <header>
+                  <h3>Dolore Amet Consequat</h3>
+                </header>
+                {{ .Content }}
+              </section>
+            </div>
+
+        </section>
+
+    </article>
+    {{ partial "footer.html" .}}
+  </body>
+{{ partial "script.html" .}}
+</html>

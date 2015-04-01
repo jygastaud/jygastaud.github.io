@@ -1,0 +1,42 @@
+baseurl = "http://jygastaud.io/"
+languageCode = "fr-fr"
+canonifyurls = true
+title = "JYG"
+
+[indexes]
+   category = "categories"
+   tag = "tags"
+[Params]
+  subtitle = "My personal blog"
+  AuthorName = "Jean-Yves Gastaud"
+  github = "jygastaud"
+  bitbucket = "jygastaud"
+  twitter = "jygastaud"
+  email = "jygastaud@gmail.com"
+  description = ""
+  linkedin = "jygastaud"
+  cover = "/images/background-cover.jpg"
+  logo = "/img/logo-1.jpg"
+
+
+#[Permalinks]
+#  post = "/:year/:month/:title/"
+
+
+[[menu.main]]
+    name = "Blog - Archives"
+    pre = ""
+    url = "/post"
+    weight = 0
+
+[[menu.main]]
+    name = "Projets"
+    pre = ""
+    url = "/projet"
+    weight = 1
+
+[[menu.main]]
+    name = "RSS"
+    pre = ""
+    url = "/index.xml"
+    weight = 1

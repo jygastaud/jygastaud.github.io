@@ -1,0 +1,17 @@
+<div class="6u 12u(narrower)">
+
+  <section>
+    <header>
+      <h3>
+        <a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a>
+      </h3>
+    </header>
+    <div class="post-meta">{{ .Date.Format "02-01-2006" }}</div>
+    <p class="summary">{{ .Summary }}</p>
+    <footer>
+      <a href='{{ .Permalink }}'><nobr>Lire la suite →</nobr></a>
+    </footer>
+  </section>
+
+</div>
+{{ partial "script.html" .}}

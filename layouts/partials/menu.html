@@ -1,0 +1,11 @@
+<nav id="nav">
+  <ul>
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.main }}
+      <li class="{{if $currentNode.HasMenuCurrent "main" . }} current{{end}}">
+        <a href="{{ .Url }}" title="{{ .Name }}">{{ .Name }}</a>
+      </li>
+    {{end}}
+    <li><a href="#" class="button special">Engagez moi</a></li>
+  </ul>
+</nav>
