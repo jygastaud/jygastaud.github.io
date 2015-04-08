@@ -1,13 +1,13 @@
-baseurl = "http://jygastaud.io/"
+baseurl = "http://jygastaud.github.io"
 languageCode = "fr-fr"
 canonifyurls = true
-title = "JYG"
+title = "JYGastaud"
 
 [indexes]
    category = "categories"
    tag = "tags"
 [Params]
-  subtitle = "My personal blog"
+  subtitle = "Mes notes en vracs"
   AuthorName = "Jean-Yves Gastaud"
   github = "jygastaud"
   bitbucket = "jygastaud"

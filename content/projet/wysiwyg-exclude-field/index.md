@@ -1,6 +1,6 @@
 +++
 Categories = ["Développement", "Projet"]
-Description = ""
+Description = "Le module Wysiwyg Exclude Field vient combler le manque de possibilité du module Wysiwyg de Drupal en proposant de pouvoir définir pour chaque champ de type Textarea s'il doit afficher ou non l'éditeur Wysiwyg et surcharge les paramètres de filtres définis par défaut."
 Tags = ["Développement", "Projet"]
 date = "2013-03-09"
 image = "wysiwyg-exclude-field.png"

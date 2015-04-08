@@ -14,7 +14,8 @@
           <p>{{ .Site.Params.subtitle }}</p>
           <footer>
             <ul class="buttons vertical">
-              <li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
+              <li><a href="#main" class="button scrolly">Les articles</a></li>
+              <li><a href="#main" class="button scrolly">Les projets</a></li>
             </ul>
           </footer>
 
@@ -28,7 +29,7 @@
             <section class="wrapper style3 container special">
 
               <header class="major">
-                <h2>Next look at this <strong>cool stuff</strong></h2>
+                <h2>Mes derniers articles</h2>
               </header>
 
               <div class="row">
@@ -41,11 +42,22 @@
 
               <footer class="major">
                 <ul class="buttons">
-                  <li><a href="#" class="button">Voir les autres articles</a></li>
+                  <li><a href="/article/" class="button">Voir les autres articles</a></li>
                 </ul>
               </footer>
 
             </section>
+
+        <!-- Two -->
+          <section class="wrapper style1 container special">
+            <div class="row">
+              {{ range first 3 .Data.Pages }}
+                  {{ if eq .Type  "projet" }}
+                      {{ .Render "home"}}
+                  {{ end }}
+              {{ end }}
+            </div>
+          </section>
 
         </article>
 

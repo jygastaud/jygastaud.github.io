@@ -2,6 +2,6 @@
 {{ $isHomepage := (eq (add .Site.BaseUrl "/") (add .Permalink "")) }}
 
 <header id="header" class="{{ if and ($isHomepage) }} alt {{ else }} skel-layers-fixed {{ end }}">
-  <h1 id="logo"><a href="{{ .Site.BaseUrl }}">Blog - <span>JYG</span></a></h1>
+  <h1 id="logo"><a href="{{ .Site.BaseUrl }}">Blog - <span>JYGastaud</span></a></h1>
   {{ partial "menu.html" . }}
 </header>
