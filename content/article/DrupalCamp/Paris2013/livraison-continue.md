@@ -1,6 +1,9 @@
 +++
 date = "2013-06-21T15:00:28+01:00"
 title = "DrupalCamp Paris2013 - Livraison continue avec Drupal 7"
+category = ["Développement", "DevOps"]
+tag = ["Drupal", "CI/CD"]
+description = "Prise de notes réalisées lors de la conférence Livraison continue avec Drupal 7 lors du DrupalCamp Paris2013."
 
 +++
 

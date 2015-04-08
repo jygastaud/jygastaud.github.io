@@ -1,6 +1,7 @@
 +++
 title = "Mes notes sur Docker"
 date = "2014-08-04"
+description = "Vous trouverez ici mes notes sur Docker réalisée lors de mes 1ers essais et la réalisation du projet Wintersmith Docker."
 
 +++
 

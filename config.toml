@@ -26,11 +26,11 @@ title = "JYG"
 [[menu.main]]
     name = "Blog - Archives"
     pre = ""
-    url = "/post"
+    url = "/article"
     weight = 0
 
 [[menu.main]]
-    name = "Projets"
+    name = "Projets / Contributions Open-Source"
     pre = ""
     url = "/projet"
     weight = 1

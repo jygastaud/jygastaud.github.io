@@ -1,8 +1,9 @@
 +++
 date = "2013-06-22T15:00:28+01:00"
 title = "DrupalCamp Paris2013 - Behat et Drupal"
-category = ["cat1", "cat2"]
-tag = ["test1", "test2"]
+category = ["Développement"]
+tag = ["Drupal", "Behat"]
+description = "Prise de notes réalisées lors de la conférence Behat et Drupal du DrupalCamp Paris2013."
 
 +++
 

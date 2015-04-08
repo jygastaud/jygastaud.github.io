@@ -1,7 +1,7 @@
 +++
 title = "Configurer Nginx pour gérer automatiquement vos sous-domaines locaux"
 date = "2014-01-07"
-
+description = "Dans cette article j'aborde une idée permettant de demander à Nginx de générer automatiquement des sous-domaines locaux pour simplifier la mise en place et le démarrage de nouveaux développements."
 +++
 
 Lors des développements locaux, nous avons pris l'habitude de toujours définir un nom de domaine local (mon_site.local dans notre exemple) afin de coller au plus proche de la réalité du site final.
