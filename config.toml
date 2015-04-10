@@ -10,11 +10,8 @@ title = "JYGastaud"
   subtitle = "Mes notes en vracs"
   AuthorName = "Jean-Yves Gastaud"
   github = "jygastaud"
-  bitbucket = "jygastaud"
   twitter = "jygastaud"
-  email = "jygastaud@gmail.com"
   description = ""
-  linkedin = "jygastaud"
   cover = "/images/background-cover.jpg"
   logo = "/img/logo-1.jpg"
 
@@ -24,19 +21,25 @@ title = "JYGastaud"
 
 
 [[menu.main]]
-    name = "Blog - Archives"
+    name = "Accueil"
     pre = ""
-    url = "/article"
+    url = "/"
     weight = 0
 
 [[menu.main]]
-    name = "Projets / Contributions Open-Source"
+    name = "Blog"
+    pre = ""
+    url = "/article"
+    weight = 1
+
+[[menu.main]]
+    name = "Projets / Contributions"
     pre = ""
     url = "/projet"
-    weight = 1
+    weight = 2
 
 [[menu.main]]
     name = "RSS"
     pre = ""
     url = "/index.xml"
-    weight = 1
+    weight = 3

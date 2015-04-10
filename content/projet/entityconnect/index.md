@@ -1,10 +1,10 @@
 +++
 Categories = ["Développement", "Projet"]
-Description = ""
-Tags = ["Développement", "Projet"]
+Description = "EntityConnect permet d'ajouter simplement des références à des entités n'existant pas encore ou d'aller éditer le contenu de votre entité déjà sélectionnée via le noeud de sélection."
+Tags = ["Drupal"]
 date = "2012-03-26"
 project_url = "https://www.drupal.org/project/entityconnect"
-title = "entityconnect"
+title = "Drupal - Entityconnect"
 
 +++
 
@@ -16,7 +16,7 @@ Grâce à ce module dédié à Drupal 7, il vous sera possible d'ajouter simplem
 
 Ce module, très simple à installer et à configurer, vient donc compléter les fonctionnalités du module  Entity Reference  , en ajoutant sur chaque champ de type Entityreference, un bouton "Ajouter" et "Editer".
 
-Entityconnect fonctionne actuellement avec la plupart des entités du coeur de Drupal hormi les commentaires. 
+Entityconnect fonctionne actuellement avec la plupart des entités du coeur de Drupal hormi les commentaires.
 
 Les entités suivantes sont supportées actuellement:
 
