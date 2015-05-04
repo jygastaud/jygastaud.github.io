@@ -3,6 +3,10 @@ title = "Docker - Erreurs de débutant"
 date = "2014-08-12"
 image = "http://js.blog.kaliop.com/wp-content/uploads/2014/08/homepage-docker-logo.png"
 description = "Dans l'article précédent, je parlais du projet Wintersmith Docker et mentionnais le fait que j'avais fait des erreurs dans la conception initiale, dûes à un manque de connaissance de Docker. Cet article vient apporter quelques éclairages sur ces erreurs."
+aliases = [
+  "/blog/articles/docker-erreurs-debutant/",
+  "/blog/articles/projet-wintersmith-docker-erreurs-debutant-partie-1/"
+]
 +++
 
 Dans l'article précédent, je parlais du projet [Wintersmith Docker]((https://github.com/jygastaud/wintersmith_docker) et mentionnais le fait que j'avais fait des erreurs dans la conception initiale, dûes à un manque de connaissance de Docker.

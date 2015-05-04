@@ -4,7 +4,9 @@ title = "DrupalCamp Paris2013 - Magnifiez votre backend"
 category = ["Développement"]
 tag = ["Drupal", "Backoffice"]
 description = "Prise de notes réalisées lors de la conférence Magnifiez vos backend lors du DrupalCamp Paris2013."
-
+aliases = [
+  "/blog/articles/DrupalCampParis2013-magnifiez-backend"
+]
 +++
 
 ## Les formulaires peuvent être très long

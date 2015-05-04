@@ -4,7 +4,9 @@ title = "Drupal Export des noeuds en Markdown"
 category = ["Développement"]
 tag = ["Drupal", "Export", "Markdown"]
 description = "Quelques ressources utiles en mode bookmarks pouvant permettre de gérer l'export de noeuds Drupal au format Markdown."
-
+aliases = [
+  "/blog/articles/drupal-export-noeud-markdown"
+]
 +++
 
 Ressources utiles:

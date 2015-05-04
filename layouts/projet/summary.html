@@ -11,11 +11,10 @@
       <p class="summary">{{ .Description }}</p>
     {{else}}
       <p class="summary">{{ .Summary }}</p>
-    {{end}}  
+    {{end}}
     <footer>
       <a href='{{ .Permalink }}'><nobr>Lire la suite →</nobr></a>
     </footer>
   </section>
 
 </div>
-{{ partial "script.html" .}}

@@ -4,7 +4,9 @@ title = "DrupalCamp Paris2013 - Livraison continue avec Drupal 7"
 category = ["Développement", "DevOps"]
 tag = ["Drupal", "CI/CD"]
 description = "Prise de notes réalisées lors de la conférence Livraison continue avec Drupal 7 lors du DrupalCamp Paris2013."
-
+aliases = [
+  "/blog/articles/DrupalCampParis2013-livraison-continue/"
+]
 +++
 
 Prise de note lors de la conférence du DrupalCamp Paris 2013.

@@ -4,7 +4,9 @@ title = "DrupalCamp Paris2013 - Behat et Drupal"
 category = ["Développement"]
 tag = ["Drupal", "Behat"]
 description = "Prise de notes réalisées lors de la conférence Behat et Drupal du DrupalCamp Paris2013."
-
+aliases = [
+  "/blog/articles/DrupalCampParis2013-behat"
+]
 +++
 
 # Behat et Drupal
