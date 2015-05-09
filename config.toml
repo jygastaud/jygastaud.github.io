@@ -1,4 +1,4 @@
-# baseurl = "http://www.gastaud.io"
+baseurl = "http://www.gastaud.io"
 languageCode = "fr-fr"
 canonifyurls = true
 title = "JYGastaud"
@@ -14,11 +14,6 @@ title = "JYGastaud"
   description = ""
   cover = "/images/background-cover.jpg"
   logo = "/img/logo-1.jpg"
-
-
-#[Permalinks]
-#  post = "/:year/:month/:title/"
-
 
 [[menu.main]]
     name = "Accueil"
