@@ -5,6 +5,8 @@ description = "Vous trouverez ici mes notes sur Docker réalisée lors de mes 1e
 aliases = [
 	"/blog/articles/notes-docker/"
 ]
+Categories = ["DevOps"]
+Tags = ["Docker", "Notes"]
 +++
 
 * Le fichier ```Dockerfile``` produit une Image

@@ -1,6 +1,5 @@
 <div class="4u 12u(narrower)">
 	<section>
-		<span class="icon featured fa-check"></span>
 		<header>
 			<h3>
 				<a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a>
@@ -12,7 +11,9 @@
       <p class="summary">{{ .Summary }}</p>
     {{end}}
     <footer>
-        <a href='{{ .Params.project_url }}'><nobr>Voir le projet →</nobr></a>
+			<ul class="buttons">
+				<li><a href="{{ .Permalink }}" class="button small">Voir</a></li>
+			</ul>
   	</footer>
 	</section>
 </div>

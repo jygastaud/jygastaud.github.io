@@ -5,6 +5,8 @@ description = "Dans cette article j'aborde une idée permettant de demander à N
 aliases = [
 	"/blog/articles/nginx-sousdomaines-auto/"
 ]
+Categories = ["DevOps"]
+Tags = ["Nginx", "DNSMasq"]
 +++
 
 Lors des développements locaux, nous avons pris l'habitude de toujours définir un nom de domaine local (mon_site.local dans notre exemple) afin de coller au plus proche de la réalité du site final.

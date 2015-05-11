@@ -6,7 +6,7 @@
   <!-- Main -->
     <article id="main">
 
-      <header class="special container">
+      <header class="center container">
         <h2>{{ .Title }}</h2>
       </header>
 
@@ -23,7 +23,41 @@
               </section>
             </div>
             <span class="post-date created">Ecrit le : {{ .Date.Format "02-01-2006" }}</span>
+            <p class="post-tags">
+              <span>Categories:</span>
+              {{ range .Params.categories }}
+              <a rel="tag" href="/categories/{{ . | urlize }}">{{ . }}</a>
+              {{ end }}
+              <br />
+              <span>Tags:</span>
+              {{ range .Params.tags }}
+              <a rel="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+              {{ end }}
+            </p>
+            <a href="https://github.com/jygastaud/jygastaud.github.io/blob/source/content/{{ .Source.File.Path }}"
+           target="_blank">Une erreur? Une amélioration? Vous pouvez aider via <i class="fa fa-github"> Github</i></a>
 
+        </section>
+
+
+        <!-- Two -->
+        <section class="wrapper style1 container special" id="projets">
+
+          <header class="major">
+            <h2>Sur le même sujet</h2>
+          </header>
+
+          <div class="row">
+            {{ $page_link := .Permalink }}
+            {{ $tags := .Params.tags }}
+            {{ range first 5 .Site.Recent }}
+              {{ $page := . }}
+              {{ $has_common_tags := intersect $tags .Params.tags | len | lt 0 }}
+              {{ if and $has_common_tags (ne $page_link $page.Permalink) }}
+                {{ .Render "more-like-that"}}
+              {{ end }}
+            {{end}}
+          </div>
         </section>
     </article>
     {{ partial "footer.html" .}}

@@ -13,9 +13,9 @@
           </header>
           <p>{{ .Site.Params.subtitle }}</p>
           <footer>
-            <ul class="buttons vertical">
-              <li><a href="#articles" class="button scrolly">Les articles</a></li>
-              <li><a href="#projets" class="button scrolly">Les projets</a></li>
+            <ul class="buttons">
+              <li><a href="#articles" class="button scrolly">Articles</a></li>
+              <li><a href="#projets" class="button scrolly">Projets</a></li>
             </ul>
           </footer>
 
@@ -33,7 +33,7 @@
               </header>
 
               <div class="row">
-                {{ range first 10 (where .Data.Pages "Section" "article") }}
+                {{ range first 5 (where .Data.Pages "Section" "article") }}
                     {{ .Render "summary"}}
                 {{ end }}
               </div>
@@ -48,6 +48,11 @@
 
           <!-- Two -->
           <section class="wrapper style1 container special" id="projets">
+
+            <header class="major">
+              <h2>Mes derniers projets</h2>
+            </header>
+
             <div class="row">
               {{ range first 3 (where .Data.Pages "Section" "projet") }}
                   {{ .Render "block-home"}}

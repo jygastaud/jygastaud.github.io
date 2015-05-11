@@ -7,6 +7,8 @@ aliases = [
   "/blog/articles/docker-erreurs-debutant/",
   "/blog/articles/projet-wintersmith-docker-erreurs-debutant-partie-1/"
 ]
+Categories = ["DevOps"]
+Tags = ["Docker"]
 +++
 
 Dans l'article précédent, je parlais du projet [Wintersmith Docker]((https://github.com/jygastaud/wintersmith_docker) et mentionnais le fait que j'avais fait des erreurs dans la conception initiale, dûes à un manque de connaissance de Docker.

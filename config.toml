@@ -1,19 +1,21 @@
 baseurl = "http://www.gastaud.io"
 languageCode = "fr-fr"
 canonifyurls = true
-title = "JYGastaud"
+title = "Jean-Yves Gastaud"
 
 [indexes]
    category = "categories"
    tag = "tags"
+
 [Params]
-  subtitle = "Mes notes en vracs"
+  subtitle = "Mes notes en vrac"
+  description = "Un peu de dev Drupal, de devops, "
   AuthorName = "Jean-Yves Gastaud"
   github = "jygastaud"
   twitter = "jygastaud"
-  description = ""
   cover = "/images/background-cover.jpg"
   logo = "/img/logo-1.jpg"
+  googleAnalytics = true
 
 [[menu.main]]
     name = "Accueil"
