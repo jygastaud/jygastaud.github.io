@@ -12,7 +12,7 @@ build:
 
 publish:
 	@echo "publish"
-	@cd public
-	@git add --all
+	cd public
+	git add --all
 	git commit -m "publish new version"
 	@echo "success"
