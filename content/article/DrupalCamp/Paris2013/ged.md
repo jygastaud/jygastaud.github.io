@@ -2,7 +2,7 @@
 date = "2013-06-21T15:00:28+01:00"
 title = "DrupalCamp Paris2013 - GED"
 Categories = ["Development"]
-Tags = ["Drupal", "GED", "Notes"]
+Tags = ["Drupal", "GED"]
 description = "Prise de notes réalisées lors de la conférence GED du DrupalCamp Paris2013."
 aliases = [
   "/blog/articles/DrupalCampParis2013-ged"

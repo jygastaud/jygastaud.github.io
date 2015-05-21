@@ -1,7 +1,7 @@
 +++
 date = "2014-08-08"
 title = "Wintersmith Docker - Introduction"
-Description = "Après plusieurs lectures et essais rapides de Docker, j'ai décidé d'y consacrer une peu plus de temps de manière concrête. Etant en pleine réflexions sur l'outil que j'allais utilisé pour la réalisation de ce blog, j'ai donc décidé de lancer le projet Wintersmith Docker afin de pouvoir tester Wintersmith, un générateur de site statique basé sur Nodejs, dans un conteneur Docker."
+Description = "Projet Wintersmith Docker. Génération d'un site statique Wintersmith à l'intérieur d'un conteneur Docker."
 Tags = ["Nodejs", "Docker"]
 Categories = ["Development", "DevOps"]
 aliases = [

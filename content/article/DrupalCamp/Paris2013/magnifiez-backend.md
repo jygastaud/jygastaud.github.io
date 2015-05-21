@@ -2,7 +2,7 @@
 date = "2013-06-21T01:14:28+01:00"
 title = "DrupalCamp Paris2013 - Magnifiez votre backend"
 Categories = ["Development"]
-Tags = ["Drupal", "Backoffice", "Notes"]
+Tags = ["Drupal", "Backoffice"]
 description = "Prise de notes réalisées lors de la conférence Magnifiez vos backend lors du DrupalCamp Paris2013."
 aliases = [
   "/blog/articles/DrupalCampParis2013-magnifiez-backend"

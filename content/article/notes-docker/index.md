@@ -6,7 +6,7 @@ aliases = [
 	"/blog/articles/notes-docker/"
 ]
 Categories = ["DevOps"]
-Tags = ["Docker", "Notes"]
+Tags = ["Docker"]
 +++
 
 * Le fichier ```Dockerfile``` produit une Image

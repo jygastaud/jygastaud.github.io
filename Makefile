@@ -1,18 +1,22 @@
 .PHONY: all build publish
 
-all: build publish
+all: build commit publish
 
 watch:
 	@hugo server -w
 
 build:
-	@echo "coucou"
+	@echo "build start"
 	@rm -fr ./public/* --force --interactive=never
-	hugo
+	@hugo
+	@echo "build succes"
+
+commit:
+	@echo "commit start"
+	cd ./public && git add --all && git commit -m "publish new version"
+	@echo "build success"
 
 publish:
-	@echo "publish"
-	cd public
-	git add --all
-	git commit -m "publish new version"
-	@echo "success"
+	@echo "push start"
+	cd ./public && git push origin master
+	@echo "push success"
