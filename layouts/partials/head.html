@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xml:lang="fr" lang="fr-fr">
+<html xml:lang="fr" lang="fr-fr" class="no-js">
   <head>
     <title>
       {{ if ne .Title .Site.Title }}
@@ -33,6 +33,8 @@
       <link rel="stylesheet" href="/css/style-wide.css" />
       <link rel="stylesheet" href="/css/style-noscript.css" />
     </noscript>
+    <script src="/js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="/css/component.css" />
     {{ "<!--[if lte IE 8]>" | safeHtml }}<link rel="stylesheet" href="/css/ie/v8.css" />{{ "<![endif]-->" | safeHtml}}
     {{ "<!--[if lte IE 9]>" | safeHtml }}<link rel="stylesheet" href="/css/ie/v9.css" />{{ "<![endif]-->" | safeHtml}}
   </head>

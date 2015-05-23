@@ -25,17 +25,17 @@
 
       <!-- Main -->
         <article id="main">
-
             <section class="wrapper style3 container special" id="articles">
-
               <header class="major">
                 <h2>Mes derniers articles</h2>
               </header>
 
-              <div class="row">
-                {{ range first 5 (where .Data.Pages "Section" "article") }}
-                    {{ .Render "summary"}}
-                {{ end }}
+              <div class="main">
+                <ul class="cbp_tmtimeline">
+                  {{ range first 5 (where .Data.Pages "Section" "article") }}
+                      {{ .Render "summary"}}
+                  {{ end }}
+                </ul>
               </div>
 
               <footer class="major">
