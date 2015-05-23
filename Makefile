@@ -3,6 +3,7 @@
 all: build commit publish
 
 watch:
+	@rm -fr ./public/* --force --interactive=never
 	@hugo server -w
 
 build:
