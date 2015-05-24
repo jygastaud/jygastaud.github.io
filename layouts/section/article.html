@@ -13,33 +13,42 @@
           <h2>Tous les articles</strong></h2>
         </header>
 
-        <div class="row">
+        <div class="main">
+          <ul class="cbp_tmtimeline">
 
-          <div class="12u 12u(narrower)">
+          {{ range .Data.Pages }}
 
-          {{ range .Data.Pages.GroupByDate "2006" }}
+            <li>
+              <section>
+                <time class="cbp_tmtime" datetime="{{ .Date.Format "2013-04-18 09:56" }}"><span>{{ .Date.Format "2006" }}</span> <span>{{ .Date.Format "02 Jan" }}</span></time>
+                <div class="cbp_tmicon"></div>
+                <div class="cbp_tmlabel">
+                  <header>
+                    <h2>
+                      <a href="{{ .Permalink }}">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a>
+                    </h2>
+                  </header>
+                  {{ if .Description }}
+                    <p>{{ .Description }}</p>
+                  {{else}}
+                    <p>{{ .Summary }}</p>
+                  {{end}}
+                  <footer>
+                    <ul class="buttons">
+                      <li><a href="{{ .Permalink }}" class="button"><nobr>Lire la suite →</nobr></a></li>
+                    </ul>
+                  </footer>
+                </div>
+              </section>
+            </li>
 
-            <section>
-              <header>
-                <h3>{{ .Key }}</h3>
-              </header>
-
-              <ul id="list">
-                {{range .Pages }}
-                <li>
-                    <a href="{{ .Permalink }}">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a> {{ .Date.Format "02-01" }}
-                </li>
-                {{ end }}
-              </ul>
-
-              </footer>
-            </section>
-
-            {{ end }}
+          {{ end }}
           </div>
         </div>
 
 
+          </ul>
+        </div>
       </section>
 
     </article>
