@@ -16,9 +16,6 @@
           <!-- Content -->
             <div class="content">
               <section>
-                {{ if (isset .Params "image") }}
-                <a href="#" class="image featured"><img src="{{ .Params.image}}" alt="" /></a>
-                {{end}}
                 {{ .Content }}
               </section>
             </div>

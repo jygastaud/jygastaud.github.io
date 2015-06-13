@@ -54,7 +54,7 @@
             </header>
 
             <div class="row">
-              {{ range first 3 (where .Data.Pages "Section" "projet") }}
+              {{ range first 3 (where .Data.Pages.ByWeight "Section" "projet") }}
                   {{ .Render "block-home"}}
               {{ end }}
             </div>

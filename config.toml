@@ -36,7 +36,7 @@ title = "Jean-Yves Gastaud"
     url = "/projet"
     weight = 2
 
-[[menu.main]]
+[[menu.footer]]
     name = "RSS"
     pre = ""
     url = "/index.xml"

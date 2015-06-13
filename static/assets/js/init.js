@@ -9,12 +9,12 @@
 	skel.init({
 		reset: 'full',
 		breakpoints: {
-			global:		{ range: '*', href: '/css/style.css', containers: 1400, grid: { gutters: 50 } },
-			wide:		{ range: '-1680', href: '/css/style-wide.css', containers: 1200, grid: { gutters: 40 } },
-			normal:		{ range: '-1280', href: '/css/style-normal.css', containers: 960, viewport: { scalable: false } },
-			narrow:		{ range: '-980', href: '/css/style-narrow.css', containers: '95%', grid: { gutters: 30 } },
-			narrower:	{ range: '-840', href: '/css/style-narrower.css', containers: '95%!' },
-			mobile:		{ range: '-736', href: '/css/style-mobile.css', containers: '100%!' }
+			global:		{ range: '*', href: '/assets/css/style.css', containers: 1400, grid: { gutters: 50 } },
+			wide:		{ range: '-1680', href: '/assets/css/style-wide.css', containers: 1200, grid: { gutters: 40 } },
+			normal:		{ range: '-1280', href: '/assets/css/style-normal.css', containers: 960, viewport: { scalable: false } },
+			narrow:		{ range: '-980', href: '/assets/css/style-narrow.css', containers: '95%', grid: { gutters: 30 } },
+			narrower:	{ range: '-840', href: '/assets/css/style-narrower.css', containers: '95%!' },
+			mobile:		{ range: '-736', href: '/assets/css/style-mobile.css', containers: '100%!' }
 		},
 		plugins: {
 			layers: {
@@ -127,6 +127,39 @@
 				});
 
 			}
+
+			$('.ui.form')
+				.form({
+					email: {
+						identifier  : 'email',
+						rules: [
+							{
+								type   : 'email',
+								prompt : 'Please enter a valid e-mail'
+							}
+						]
+					},
+					subject: {
+						identifier : 'subject',
+						rules: [
+							{
+								type   : 'empty',
+								prompt : 'Please enter a subject'
+							}
+						]
+					},
+					message: {
+						identifier : 'message',
+						rules: [
+							{
+								type   : 'empty',
+								prompt : 'Please enter a message'
+							}
+						]
+					},
+				})
+			;
+
 
 	});
 

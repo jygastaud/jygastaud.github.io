@@ -10,6 +10,7 @@ build:
 	@echo "build start"
 	@rm -fr ./public/* --force --interactive=never
 	@hugo
+	@rm -fr ./public/sass --force --interactive=never
 	@echo "build succes"
 
 commit:

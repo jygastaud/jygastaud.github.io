@@ -64,7 +64,14 @@
   </ul>
 
   <ul class="copyright">
-    <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>&copy; Jean-Yves Gastaud</li>
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.footer }}
+      <li class="{{if $currentNode.HasMenuCurrent "main" . }} current{{end}}">
+        <a href="{{ .Url }}" title="{{ .Name }}">{{ .Name }}</a>
+      </li>
+    {{end}}
   </ul>
 
 </footer>

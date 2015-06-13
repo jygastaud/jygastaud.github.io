@@ -5,6 +5,8 @@ Tags = ["Drupal"]
 date = "2012-03-26"
 project_url = "https://www.drupal.org/project/entityconnect"
 title = "Drupal - Entityconnect"
+image = "entityconnect.png"
+Weight = 2
 
 +++
 
