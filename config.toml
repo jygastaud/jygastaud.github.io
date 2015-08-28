@@ -1,4 +1,4 @@
-baseurl = "http://www.gastaud.io"
+baseurl = "http://gastaud.io"
 languageCode = "fr-fr"
 canonifyurls = true
 title = "Jean-Yves Gastaud"

@@ -7,6 +7,10 @@ date = "2015-05-04T22:19:34+02:00"
 project_url = "https://github.com/FlorianLB/lumberjack-ansible"
 title = "Lumberjack Ansible"
 Weight = 1
+is_github = 1
+is_drupal = 0
+project_repo_name = "jygastaud/lumberjack-ansible"
+
 +++
 
 Lumberjack propose une UI permettant de générer une box Vagrant provisionnée avec Ansible et permettant de lancer rapidement le développement d'un projet PHP.

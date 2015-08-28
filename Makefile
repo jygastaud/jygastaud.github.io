@@ -1,15 +1,15 @@
-.PHONY: all build publish
+.PHONY: all build publish watch
 
 all: build commit publish
 
 watch:
 	@rm -fr ./public/* --force --interactive=never
-	@hugo server -w
+	@hugo server -w -t v1
 
 build:
 	@echo "build start"
 	@rm -fr ./public/* --force --interactive=never
-	@hugo
+	@hugo -t v1
 	@rm -fr ./public/sass --force --interactive=never
 	@echo "build succes"
 

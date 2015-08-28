@@ -1,12 +1,15 @@
 +++
 Categories = ["Développement", "Projet"]
 Description = "EntityConnect permet d'ajouter simplement des références à des entités n'existant pas encore ou d'aller éditer le contenu de votre entité déjà sélectionnée via le noeud de sélection."
-Tags = ["Drupal"]
+Tags = ["Drupal", "Entity Connect"]
 date = "2012-03-26"
 project_url = "https://www.drupal.org/project/entityconnect"
 title = "Drupal - Entityconnect"
 image = "entityconnect.png"
 Weight = 2
+is_github = 0
+is_drupal = 1
+project_repo_name = "entityconnect"
 
 +++
 
