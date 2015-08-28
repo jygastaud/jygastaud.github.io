@@ -295,7 +295,7 @@ Ainsi nous utiliserons la variable $config pour récupérer la valeur souhaitée
 
 {{</highlight>}}
 
-Et on fini par retourner un appele à la class parent avec les éléments de formulaire ajoutés.
+Et on fini par retourner un appel à la class parent avec les éléments de formulaire ajoutés.
 
 {{< highlight php "linenos=inline, hl_lines=2" >}}
 <?php
