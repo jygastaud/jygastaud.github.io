@@ -182,7 +182,7 @@ Nous allons donc créer notre nouvelle class au sein de l'arborescence suivante 
 
 On défini une namespace à notre class qui sera de la forme `Drupal\nom_du_module\Form\MyForm`  
 
-{{< tips message="Les modules avec un nom composé utilisent le caractère underscore ( _ ) comme séparateur." color="positive">}}
+{{% tips color="positive" %}}Les modules avec un nom composé utilisent le caractère underscore ( _ ) comme séparateur.{{% /tips %}}
 
 
 {{< highlight php "linenos=inline" >}}
@@ -221,8 +221,7 @@ class AdministrationForm extends ConfigFormBase {
 
 {{</highlight>}}
 
-{{< tips message="ConfigFormBase nous permet ne pas avoir à redéfinir l'action de sauvegarde, l'instanciation du thème et du message de confirmation d'enregistrement." color="positive" >}}
-
+{{% tips color="positive" %}}ConfigFormBase nous permet ne pas avoir à redéfinir l'action de sauvegarde, l'instanciation du thème et du message de confirmation d'enregistrement.{{% /tips %}}
 
 Nous commençons par initialiser la fonction getEditableConfigNames() qui va nous permettre de définir un tableau contenant les noms des objets de configuration que notre formulaire va pouvoir éditer.
 
@@ -240,7 +239,7 @@ Nous commençons par initialiser la fonction getEditableConfigNames() qui va nou
 
 La documentation Drupal fait généralement référence à un nom de la forme  `mon_module.settings`. Cependant settings n'est pas un nom obligatoire. Le format attendu étant le suivant `<module_name>.<config_object_name>.<optional_sub_key>.yml`.
 
-{{< tips message="Ce nom sera utilisé à chaque fois qu'il est nécessaire de récupérer ou modifier cet élément de configuration. Il sera également utilisé pour instancier les valeurs par défaut." color="positive" >}}
+{{% tips color="positive" %}}Ce nom sera utilisé à chaque fois qu'il est nécessaire de récupérer ou modifier cet élément de configuration. Il sera également utilisé pour instancier les valeurs par défaut.{{% /tips %}}
 
 
 On donne ensuite un Id à notre formulaire.
@@ -252,9 +251,11 @@ On donne ensuite un Id à notre formulaire.
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'administration_form';
+    return 'entityconnect_administration_form';
   }
-{{</highlight>}}
+{{< /highlight >}}
+
+{{% tips color="positive"%}}Il est recommandé de faire commencer le formId par le nom du module.{{% /tips %}}
 
 Et on construit notre formulaire via la fonction `buildFrom`.  
 Comme nous avons besoin de récupérer des éléments de configuration, nous allons charger la configuration via `$this->config('entityconnect.administration_config')` que l'on stocke dans une variable nommée `$config`.  
@@ -336,22 +337,23 @@ Il n'est donc plus possible (et nécessaire) de redéfinir à chaque appel la va
 Dans Drupal 8, les configurations sont maintenant stockées dans des fichiers.  
 Pour définir une valeur par défaut à nos éléments de configuration, il est donc nécessaire de définir cela à l'installation du module.  
 
-2 voix sont possibles :  
+2 voies sont possibles :  
 
-* soit via le hook_install
-* soit via l'utilisation d'un fichier YAML qui contiendra les configurations par défaut (méthode recommandée).
+* soit via le hook_install, si les valeurs a renseignée sont dynamiques
+{{< highlight php "linenos=inline" >}}
+<?php
+/**
+ * Implements hook_install() in Drupal 8.
+ */
+function modulename_install() {
+  // Set default values for config which require dynamic values.
+  \Drupal::configFactory()->getEditable('modulename.settings')
+    ->set('default_from_address', \Drupal::config('system.site')->get('mail'))
+    ->save();
+}
+{{< /highlight >}}
 
-Le fichier YAML créé doit être placé dans l'arborescence suivante :  
-```
-.
-├── config
-│   └── install
-│       └── entityconnect.administration_config.yml
-```
-
-{{< tips message="Ce fichier doit se nommer avec le même nom que l'objet de configuration que nous appelons dans notre formulaire." color="positive">}}
-
-
+* soit via l'utilisation d'un fichier YAML qui contiendra les configurations par défaut (si les valeurs sont statiques).
 {{< highlight yaml "linenos=inline" >}}
 # Contenu du fichier entityconnect.administration_config.yml
 button_add: 1
@@ -361,8 +363,23 @@ icon_edit: 0
 
 {{< /highlight >}}
 
-{{< tips title="Pour des informations détaillées" message="https://www.drupal.org/node/1667896" color="positive">}}
+{{% tips color="positive" %}}Ce fichier doit se nommer avec le même nom que l'objet de configuration que nous appelons dans notre formulaire.{{% /tips %}}
 
+Le fichier YAML créé doit être placé dans l'arborescence suivante :  
+```
+.
+├── config
+│   └── install
+│       └── entityconnect.administration_config.yml
+```
+
+
+{{% tips title="Pour en savoir plus" color="positive" icon="warning" %}}
+&nbsp;
+
+* [Upgrading Drupal 7 Variables to Drupal 8 Configuration](https://www.drupal.org/node/1667896)
+* [Configuration Storage in Drupal 8](https://www.drupal.org/node/2120571)
+{{% /tips %}}
 
 
 ## Organisation des fichiers (récapitulatif)

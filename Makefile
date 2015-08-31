@@ -4,7 +4,7 @@ all: build commit publish
 
 watch:
 	@rm -fr ./public/* --force --interactive=never
-	@hugo server -w -t v1
+	@hugo server -w -t v1 -D
 
 build:
 	@echo "build start"
