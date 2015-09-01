@@ -6,7 +6,7 @@ title = "Création d'un formulaire d'administration sous Drupal 8"
 Description = "Retour sur le portage de la partie d'administration du module Entity Connect sous Drupal 8."
 +++
 
-Retour sur le portage de la partie d'administration du module Entity Connect sous Drupal 8.
+Retour sur le portage de la partie d'administration du module [Entity Connect](https://drupal.org/project/entityconnect) sous Drupal 8.
 
 ## Conversion du fichier .info
 

@@ -1,13 +1,22 @@
 +++
 Categories = ["Developpement", "Drupal"]
 Tags = ["Developpement", "drupal", "drupal 8", "Entity Connect"]
-date = "2015-08-27T15:47:16+02:00"
+date = "2015-09-01T22:47:16+02:00"
 title = "Gestion des droits d'accès sous Drupal 8"
 Description = "Retour sur le portage des droits d'accès du module Entity Connect sous Drupal 8."
 draft = true
 +++
 
-Retour sur le portage des droits d'accès du module Entity Connect sous Drupal 8.
+Retour sur le portage des droits d'accès du module [Entity Connect](https://drupal.org/project/entityconnect) sous Drupal 8.
+
+{{% tips color="blue" title="Dans la même série"%}}
+&nbsp;
+
+* [Création d'un formulaire d'administration sous Drupal 8]({{< relref "formulaire-administration.md" >}})
+* [Gestion des droits d'accès sous Drupal 8]({{< relref "droits-access.md" >}})
+
+{{% /tips %}}
+
 
 ## Création de permissions
 
