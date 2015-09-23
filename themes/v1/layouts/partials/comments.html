@@ -1,0 +1,29 @@
+{{ if .Site.Params.livefyre }}
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+  var articleId = fyre.conv.load.makeArticleId(null);
+  fyre.conv.load({}, [{
+  el: 'livefyre-comments',
+  network: "livefyre.com",
+  siteId: "{{ .Site.Params.livefyre }}",
+  articleId: articleId,
+  signed: false,
+  collectionMeta: {
+      articleId: articleId,
+      url: fyre.conv.load.makeCollectionUrl(),
+  }
+  }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
+{{ end }}
+
+{{ if .Site.Params.muut }}
+<section class="post-comments">
+<a class="muut" href="https://muut.com/i/{{ .Site.Params.muut }}/comments:{{ .Title }}">Comments</a>
+<script src="//cdn.muut.com/1/moot.min.js"></script>
+</section>
+{{ end }}

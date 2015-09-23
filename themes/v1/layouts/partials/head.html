@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xml:lang="fr" lang="fr-fr" class="no-js">
+  <head>
+    <title>
+      {{ if ne .Title .Site.Title }}
+        {{ .Title }} &middot; {{ .Site.Title }}
+      {{ else }}
+        Blog &middot; {{ .Site.Title }} &middot; {{ .Site.Params.subtitle }}
+      {{ end }}
+    </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta description="
+      {{ if ne .Title .Site.Title }}
+        {{ .Description }}
+      {{ else }}
+        {{ .Site.Params.description }}
+      {{ end }}
+    " />
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <!-- RSS -->
+    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ "<!--[if lte IE 8]>" | safeHTML }}<script src="/assets/css/ie/html5shiv.js"></script>{{ "<![endif]-->" | safeHTML }}
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.dropotron.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/jquery.scrollgress.min.js"></script>
+    <script src="/assets/js/skel.min.js"></script>
+    <script src="/assets/js/skel-layers.min.js"></script>
+    <script src="/assets/js/utils.js"></script>
+    <script src="/assets/js/init.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="/assets/css/skel.css" />
+      <link rel="stylesheet" href="/assets/css/style.css" />
+      <link rel="stylesheet" href="/assets/css/style-wide.css" />
+      <link rel="stylesheet" href="/assets/css/style-noscript.css" />
+    </noscript>
+    <script src="/assets/js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="/assets/css/component.css" />
+    <script src="/assets/js/form.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/form.min.css" />
+    <link rel="stylesheet" href="/assets/css/icon.min.css" />
+    <link rel="stylesheet" href="/assets/css/message.min.css" />
+    {{ "<!--[if lte IE 8]>" | safeHTML }}<link rel="stylesheet" href="/assets/css/ie/v8.css" />{{ "<![endif]-->" | safeHTML}}
+    {{ "<!--[if lte IE 9]>" | safeHTML }}<link rel="stylesheet" href="/assets/css/ie/v9.css" />{{ "<![endif]-->" | safeHTML}}
+  </head>

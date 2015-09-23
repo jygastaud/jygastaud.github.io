@@ -1,0 +1,20 @@
+<section>
+  <header>
+  <h3>Activité du projet</h3>
+  </header>
+    {{ $urlPre := "https://www.drupal.org/api-d7" }}
+    {{ $dpidJ := getJSON $urlPre "/node.json?field_project_machine_name=" $.Params.project_repo_name}}
+
+    {{ $dcJ := getJSON $urlPre "/node.json?type=project_issue&field_project=" $.Params.project_repo_name "&field_issue_status=8" }}
+    {{ range first 5 $dcJ }}
+      <p>
+        {{ dateFormat "02-01-2006" .commit.author.date}}<br>
+        {{ .commit.message }}
+      </p>
+    {{end}}
+  <footer>
+    <ul class="buttons">
+      <li><a href="{{ .Params.project_url }}" class="button small">Voir le projet</a></li>
+    </ul>
+  </footer>
+</section>

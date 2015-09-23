@@ -1,0 +1,23 @@
+<li>
+  <section>
+    <time class="cbp_tmtime" datetime="{{ .Date.Format "2013-04-18 09:56" }}"><span>{{ .Date.Format "2006" }}</span> <span>{{ .Date.Format "02 Jan" }}</span></time>
+    <div class="cbp_tmicon"></div>
+    <div class="cbp_tmlabel">
+      <header>
+        <h2>
+          <a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a>
+        </h2>
+      </header>
+      {{ if .Description }}
+        <p>{{ .Description }}</p>
+      {{else}}
+        <p>{{ .Summary }}</p>
+      {{end}}
+      <footer>
+        <ul class="buttons">
+          <li><a href="{{ .Permalink }}" class="button"><nobr>Lire la suite →</nobr></a></li>
+        </ul>
+      </footer>
+    </div>
+  </section>
+</li>
