@@ -7,7 +7,7 @@ title = "Installer la dernière version de Git sur Ubuntu"
 
 +++
 
-Si vous utilisez régulièrement les systèmes de pacquet fournit avec vos distributions, vous avez surement remarqué que les versions fournies sont généralement anciennes.  
+Si vous utilisez régulièrement les systèmes de paquets fournit avec vos distributions, vous avez surement remarqué que les versions fournies sont généralement anciennes.  
 
 Sur Ubuntu, Git ne déroge pas à la règle.  
 
@@ -21,7 +21,7 @@ $> git --version
 
 ## Pourquoi mettre à jour ?
 
-Dans un 1er temps pour profiter des corrections de bugs et optimisations apportées régulièrement au produit (amélioration des capacités de merge par exemple qui permet d'avoir une meilleure gestion des conflits), sans oublier les évolutions qui sont ajoutées régulièrement.
+Dans un 1er temps pour profiter des corrections et optimisations apportées régulièrement au produit (amélioration des capacités de merge par exemple qui permet d'avoir une meilleure gestion des conflits), sans oublier les évolutions qui sont ajoutées régulièrement.
 
 On peux par exemple noté que la version 2.5 de Git apporte la possibilité d'avoir plusieurs `worktree` - nos espaces de travail - simultanés via la commande [`git worktree`](https://git-scm.com/docs/git-worktree) et depuis le 28 septembre 2015, la version 2.6.0 de Git est sortie.
 
