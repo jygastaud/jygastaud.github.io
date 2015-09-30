@@ -7,7 +7,7 @@ title = "Installer la dernière version de Git sur Ubuntu"
 
 +++
 
-Si vous utilisez régulièrement les systèmes de paquets fournit avec vos distributions, vous avez surement remarqué que les versions fournies sont généralement anciennes.  
+Si vous utilisez régulièrement les systèmes de paquets fournis avec vos distributions, vous avez surement remarqué que les versions fournies sont généralement anciennes.  
 
 Sur Ubuntu, Git ne déroge pas à la règle.  
 
