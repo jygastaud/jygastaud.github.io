@@ -1,6 +1,9 @@
 +++
+date = ""
+title = ""
 Description = ""
-Tags = ["Development", "golang"]
-Categories = ["Development", "GoLang"]
-menu = "main"
+Tags = ["Développement", "Projet"]
+Categories = ["Développement", "Projet"]
+image = ""
+aliases = []
 +++

@@ -127,42 +127,6 @@
 				});
 
 			}
-
-			$('.ui.form')
-				.form({
-					email: {
-						identifier  : 'email',
-						rules: [
-							{
-								type   : 'email',
-								prompt : 'Please enter a valid e-mail'
-							}
-						]
-					},
-					subject: {
-						identifier : 'subject',
-						rules: [
-							{
-								type   : 'empty',
-								prompt : 'Please enter a subject'
-							}
-						]
-					},
-					message: {
-						identifier : 'message',
-						rules: [
-							{
-								type   : 'empty',
-								prompt : 'Please enter a message'
-							}
-						]
-					},
-				})
-			;
-
-		$(document.links).filter(function() {
-		    return this.hostname != window.location.hostname;
-		}).attr('target', '_blank');
 	});
 
 })(jQuery);
