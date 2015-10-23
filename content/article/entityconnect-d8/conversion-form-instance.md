@@ -1,6 +1,6 @@
 +++
-Categories = ["Developpement", "Drupal"]
-Tags = ["Developpement", "drupal", "drupal 8", "Entity Connect"]
+Categories = ["Développement", "Drupal"]
+Tags = ["Développement", "drupal", "drupal 8", "Entity Connect"]
 date = "2015-08-31T23:54:38+02:00"
 title = "Gestion et surcharge d'un field instance sous Drupal 8"
 Description = "Retour sur le portage des options de configuration des instance de champs pour le module Entity Connect sous Drupal 8."

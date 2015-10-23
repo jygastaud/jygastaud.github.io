@@ -3,7 +3,7 @@ date = "2014-08-08"
 title = "Wintersmith Docker - Introduction"
 Description = "Projet Wintersmith Docker. Génération d'un site statique Wintersmith à l'intérieur d'un conteneur Docker."
 Tags = ["Nodejs", "Docker"]
-Categories = ["Development", "DevOps"]
+Categories = ["Développement", "DevOps"]
 aliases = [
   "/blog/articles/projet-wintersmith-docker-introduction",
   "/blog/articles/projet-wintersmith-docker"

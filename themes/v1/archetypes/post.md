@@ -1,9 +1,7 @@
 +++
-date = ""
-title = ""
 Description = ""
-Tags = ["Développement", "Projet"]
-Categories = ["Développement", "Projet"]
+Tags = ["Développement", "Article"]
+Categories = ["Développement", "Article"]
 image = ""
 aliases = []
 +++

@@ -379,6 +379,7 @@ Le fichier YAML créé doit être placé dans l'arborescence suivante :
 
 * [Upgrading Drupal 7 Variables to Drupal 8 Configuration](https://www.drupal.org/node/1667896)
 * [Configuration Storage in Drupal 8](https://www.drupal.org/node/2120571)
+
 {{% /tips %}}
 
 
