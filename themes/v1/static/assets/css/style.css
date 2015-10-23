@@ -1130,3 +1130,5 @@
 .center { text-align: center; }
 
 #latest-commits-header { display: none !important; }
+
+em { font-style: italic; }
