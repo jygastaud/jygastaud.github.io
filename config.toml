@@ -16,7 +16,7 @@ title = "Jean-Yves Gastaud"
   cover = "/images/background-cover.jpg"
   logo = "/img/logo-1.jpg"
   googleAnalytics = true
-  livefyre = 374458
+  disqusShortname = "gastaudio"
 
 [[menu.main]]
     name = "Accueil"
