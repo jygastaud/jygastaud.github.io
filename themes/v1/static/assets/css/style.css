@@ -275,6 +275,7 @@
 			.image.featured img {
 				display: block;
 				width: 100%;
+				max-height: 157px;
 			}
 
 /* Icon */
