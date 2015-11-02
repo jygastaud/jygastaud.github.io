@@ -10,7 +10,7 @@ Weight = 1
 is_github = 1
 is_drupal = 0
 project_repo_name = "jygastaud/lumberjack-ansible"
-image = "image.jpg"
+image = "image-min.jpg"
 
 +++
 

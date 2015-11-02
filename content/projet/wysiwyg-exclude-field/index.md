@@ -5,7 +5,7 @@ Tags = ["Drupal"]
 date = "2013-03-09"
 project_url = "https://www.drupal.org/project/wysiwyg_exclude_field"
 title = "Drupal - Wysiwyg Exclude Field"
-image = "wysiwyg-exclude-field.png"
+image = "wysiwyg-exclude-field-min.png"
 Weight = 3
 
 +++
