@@ -4,12 +4,12 @@ all: build commit publish
 
 watch:
 	@rm -fr ./public/* --force --interactive=never
-	@hugo server -w -t v1 -D
+	@hugo server -w -D
 
 build:
 	@echo "build start"
 	@rm -fr ./public/* --force --interactive=never
-	@hugo -t v1
+	@hugo
 	@rm -fr ./public/sass --force --interactive=never
 	@echo "build succes"
 

@@ -1,6 +1,11 @@
 <nav id="nav">
   <ul>
     {{ $currentNode := . }}
+    {{if not .IsHome}}
+      <li>
+        <a href="/" title="Accueil">Accueil</a>
+      </li>
+    {{end}}
     {{ range .Site.Menus.main }}
       <li class="{{if $currentNode.HasMenuCurrent "main" . }} current{{end}}">
         <a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
