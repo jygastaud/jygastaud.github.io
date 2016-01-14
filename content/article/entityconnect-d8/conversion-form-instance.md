@@ -7,6 +7,8 @@ Description = "Retour sur le portage des options de configuration des instance d
 
 +++
 
+<center>![entity connect](entityconnect.png)</center>
+
 Retour sur le portage des options de configuration de champs pour le module [Entity Connect](https://drupal.org/project/entityconnect) sous Drupal 8.
 
 Entity Connect vient ajouter de nouvelles fonctionnalités aux champs de type Entity Reference. Le module propose de définir, pour chaque instance de champ, si les fonctionnalités proposées doivent être activées ou non.
