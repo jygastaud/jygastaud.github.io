@@ -15,7 +15,7 @@ build:
 
 commit:
 	@echo "commit start"
-	cd ./public && git add --all && git commit -m "publish new version"
+	cd ./public && git reset --hard origin/master && git add --all && git commit -m "publish new version"
 	@echo "build success"
 
 publish:
