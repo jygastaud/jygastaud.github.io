@@ -8,8 +8,9 @@ title = "Jean-Yves Gastaud"
    tag = "tags"
 
 [Params]
+  baseurl_prod = "http://gastaud.io/"
   subtitle = "Mes notes en vrac"
-  description = "Un peu de dev Drupal, de devops, "
+  description = "Un peu de dev Drupal, de DevOps, de tout, de rien"
   AuthorName = "Jean-Yves Gastaud"
   github = "jygastaud"
   twitter = "jygastaud"

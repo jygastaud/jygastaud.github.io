@@ -1,7 +1,6 @@
 +++
 Description = ""
-Tags = ["Développement", "Projet"]
-Categories = ["Développement", "Projet"]
-image = ""
+Tags = ["Développement", ""]
+Categories = ["Développement", ""]
 aliases = []
 +++
