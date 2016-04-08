@@ -1,10 +1,13 @@
 .PHONY: all build publish watch
 
-all: build commit publish
+all: reset build commit publish
 
 watch:
 	@rm -fr ./public/* --force --interactive=never
 	@hugo server -w -D
+
+reset:
+	cd ./public && git reset --hard origin/master
 
 build:
 	@echo "build start"
@@ -15,7 +18,7 @@ build:
 
 commit:
 	@echo "commit start"
-	cd ./public && git reset --hard origin/master && git add --all && git commit -m "publish new version"
+	cd ./public && git add --all && git commit -m "publish new version"
 	@echo "build success"
 
 publish:
