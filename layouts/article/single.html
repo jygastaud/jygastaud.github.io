@@ -12,6 +12,19 @@
 
       <!-- One -->
         <section class="wrapper style4 container">
+          <p>
+            <span>Categories:</span>
+            {{ range .Params.categories }}
+            <a rel="tag" href="/categories/{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+            &nbsp;&nbsp;
+            <span>Tags:</span>
+            {{ range .Params.tags }}
+            <a rel="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+            &nbsp;&nbsp;
+            <span class="post-date created">Ecrit le : {{ .Date.Format "02-01-2006" }}</span>
+          </p>
 
           <!-- Content -->
             <div class="content">
@@ -22,18 +35,6 @@
                 {{ .Content }}
               </section>
             </div>
-            <span class="post-date created">Ecrit le : {{ .Date.Format "02-01-2006" }}</span>
-            <p class="post-tags">
-              <span>Categories:</span>
-              {{ range .Params.categories }}
-              <a rel="tag" href="/categories/{{ . | urlize }}">{{ . }}</a>
-              {{ end }}
-              <br />
-              <span>Tags:</span>
-              {{ range .Params.tags }}
-              <a rel="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
-              {{ end }}
-            </p>
         </section>
 
         <section class="wrapper style1 container special" id="projets">
