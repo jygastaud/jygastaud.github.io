@@ -39,7 +39,7 @@ class ConfigurableEntityconnectItem extends ConfigurableEntityReferenceItem {
 Sur Drupal 7, nous implémentions le `hook_field_instance_settings_form` que nous invoquions ensuite via un `hook_form_alter`.  
 C'est l'utilisation du hook_form_alter qui permettait de passer de nouvelles valeurs de configuration au champ.
 
-{{< highlight php "linenos=inline, hl_lines=20">}}
+{{< highlight php >}}
 <?php
 
 /**
@@ -107,7 +107,7 @@ Sur Drupal 8, la déclaration du formulaire va passer par la fonction `fieldSett
 * La récupération de la configuration va se faire via `$this->getSettings()`. Cette fonction renvoi un tableau.
 * On va charger le formulaire parent (la configuration de notre champ Entity Reference) et ensuite ajouter nos champs. Sans cela, seuls nos nouveaux champs vont apparaitre.
 
-{{< highlight php "linenos=inline, hl_lines=7 9 15">}}
+{{< highlight php >}}
 <?php
 
   /**
@@ -179,7 +179,7 @@ Attention à ne pas oublier l'appel à `+ parent::defaultFieldSettings();` sous 
 
 ### Utiliser les valeurs par défaut disponible dans la configuration
 
-{{< highlight php "linenos=inline, hl_lines=8 9 12">}}
+{{< highlight php >}}
 <?php
 
   /**

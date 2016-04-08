@@ -261,7 +261,7 @@ Et on construit notre formulaire via la fonction `buildFrom`.
 Comme nous avons besoin de récupérer des éléments de configuration, nous allons charger la configuration via `$this->config('entityconnect.administration_config')` que l'on stocke dans une variable nommée `$config`.  
 Ainsi nous utiliserons la variable $config pour récupérer la valeur souhaitée via l'appel `$config->get('ma_variable'),`
 
-{{< highlight php "linenos=inline, hl_lines=7 18" >}}
+{{< highlight php  >}}
 <?php
 
   /**
@@ -298,7 +298,7 @@ Ainsi nous utiliserons la variable $config pour récupérer la valeur souhaitée
 
 Et on fini par retourner un appel à la class parent avec les éléments de formulaire ajoutés.
 
-{{< highlight php "linenos=inline, hl_lines=2" >}}
+{{< highlight php  >}}
 <?php
     return parent::buildForm($form, $form_state);
   }
@@ -307,7 +307,7 @@ Et on fini par retourner un appel à la class parent avec les éléments de form
 Enfin il est nécessaire de pouvoir enregistrer les valeurs après validation du formulaire.
 Nous allons donc encore une fois utiliser l'objet `$this->config('entityconnect.administration_config')` et définir la variable avec la valeur du formulaire.
 
-{{< highlight php "linenos=inline, hl_lines=10 11 12" >}}
+{{< highlight php  >}}
 <?php
 
   /**
