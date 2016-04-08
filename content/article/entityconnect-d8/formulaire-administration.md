@@ -17,7 +17,7 @@ Retour sur le portage de la partie d'administration du module [Entity Connect](h
 
 `.info`
 
-{{< highlight yaml "linenos=inline" >}}
+{{< highlight yaml  >}}
 name = "Entity Connect"
 description = "Allows for referenced entity to be created and edited from the entity reference field"
 core = "7.x"
@@ -29,7 +29,7 @@ configure = admin/config/content/entityconnect
 
 `.info.yml`
 
-{{< highlight yaml "linenos=inline" >}}
+{{< highlight yaml  >}}
 name: Entity Connect
 type: module
 description: Allows for referenced entity to be created and edited from the entity reference field
@@ -54,7 +54,7 @@ dependencies:
 
 la définition d'un nouveau chemin d'accès (route) passait par l'utilisation du hook_menu.
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 /**
  * Implements hook_menu().
@@ -81,7 +81,7 @@ function entityconnect_menu() {
 
 nous définissons maintenant ces éléments dans un fichier en `*.routing.yml`
 
-{{< highlight yaml "linenos=inline" >}}
+{{< highlight yaml  >}}
 entityconnect.administration_form:
   path: '/admin/config/content/entityconnect'
   defaults:
@@ -96,7 +96,7 @@ entityconnect.administration_form:
 
 ### Drupal 7
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 /**
  * Defines the settings form.
@@ -153,7 +153,7 @@ function _entityconnect_admin_form($form, &$form_state) {
 }
 {{< /highlight >}}
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**
@@ -185,7 +185,7 @@ On défini une namespace à notre class qui sera de la forme `Drupal\nom_du_modu
 {{% tips color="positive" %}}Les modules avec un nom composé utilisent le caractère underscore ( _ ) comme séparateur.{{% /tips %}}
 
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**
@@ -199,7 +199,7 @@ namespace Drupal\entityconnect\Form;
 
 On va définir les classes utilisées dans notre Formulaire.
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 use Drupal\Core\Form\ConfigFormBase;
@@ -209,7 +209,7 @@ use Drupal\Core\Form\FormStateInterface;
 
 On instancie notre class qui étend `ConfigFormBase`.  
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**
@@ -225,7 +225,7 @@ class AdministrationForm extends ConfigFormBase {
 
 Nous commençons par initialiser la fonction getEditableConfigNames() qui va nous permettre de définir un tableau contenant les noms des objets de configuration que notre formulaire va pouvoir éditer.
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
   /**
    * {@inheritdoc}
@@ -244,7 +244,7 @@ La documentation Drupal fait généralement référence à un nom de la forme  
 
 On donne ensuite un Id à notre formulaire.
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
   /**
@@ -340,7 +340,7 @@ Pour définir une valeur par défaut à nos éléments de configuration, il est 
 2 voies sont possibles :  
 
 * soit via le hook_install, si les valeurs a renseignée sont dynamiques
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 /**
  * Implements hook_install() in Drupal 8.
@@ -354,7 +354,7 @@ function modulename_install() {
 {{< /highlight >}}
 
 * soit via l'utilisation d'un fichier YAML qui contiendra les configurations par défaut (si les valeurs sont statiques).
-{{< highlight yaml "linenos=inline" >}}
+{{< highlight yaml  >}}
 # Contenu du fichier entityconnect.administration_config.yml
 button_add: 1
 button_edit: 1

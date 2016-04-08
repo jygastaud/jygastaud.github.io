@@ -34,7 +34,7 @@ Ainsi si vous nommez le fichier contenant vos tests *mon_module.test*, il vous f
 
 Dans le cadre de tests fonctionnels, c'est donc la class `DrupalWebTestCase` que l'on veut étendre.
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 class EditorListTests extends DrupalWebTestCase {}
@@ -48,7 +48,7 @@ Elle retourne un tableau contenant un nom, une description et un groupe.
 Le nom doit être unique pour votre class.
 Le groupe peut être commun à plusieurs modules, ce qui est pratique pour pouvoir lancer par exemple l'ensemble des tests de vos modules custom en 1 fois.
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 public static function getInfo() {
@@ -71,7 +71,7 @@ Dans l'exemple ci-dessous, on déclare ainsi que les environnements doivent avoi
 A l'initialisation Drupal se charge de regarder les dépendances des modules à activer et les activer automatiquement.
 Il n'est donc pas nécessaire de tous les déclarer explicitement.
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**
@@ -90,7 +90,7 @@ Ces éléments pourront ainsi être exploiter directement dans vos tests sans av
 
 Un fonction de test doit obligatoirement commencer par le mot clé `test`.
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**

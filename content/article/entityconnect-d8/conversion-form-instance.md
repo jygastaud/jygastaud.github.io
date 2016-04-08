@@ -17,7 +17,7 @@ Entity Connect vient ajouter de nouvelles fonctionnalités aux champs de type En
 
 Dans notre cas, nous avons besoin de surcharger la class `ConfigurableEntityReferenceItem`.
 
-{{< highlight php "linenos=inline">}}
+{{< highlight php >}}
 <?php
 
 namespace Drupal\entityconnect;
@@ -73,7 +73,7 @@ function entityconnect_field_instance_settings_form($field, $instance) {
 
 {{< /highlight >}}
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**
@@ -150,7 +150,7 @@ On se contente de récupérer la valeur configurée.
 
 ### Utiliser des valeurs définies en dures
 
-{{< highlight php "linenos=inline">}}
+{{< highlight php >}}
 <?php
 
   /**

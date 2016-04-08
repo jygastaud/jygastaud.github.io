@@ -1113,7 +1113,8 @@
 
 			.highlight pre {
 					background: inherit;
-					border: none }
+					border: none;
+				 	color: inherit;}
 
 		code {
 			background: #272822;

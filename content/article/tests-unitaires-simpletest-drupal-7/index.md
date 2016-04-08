@@ -23,7 +23,7 @@ Les fonctions testées ne doivent donc pas dépendre de données récupérées e
 
 Comme pour les [tests fonctionnels]({{< relref "article/tests-fonctionnels-simpletest-drupal-7/index.md" >}}) il faut étendre une class de base de Drupal : `DrupalUnitTestCase`
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 class MyModuleUnitTestCase extends DrupalUnitTestCase {}
@@ -32,7 +32,7 @@ class MyModuleUnitTestCase extends DrupalUnitTestCase {}
 
 On va également déclarer la méthode getInfo().
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 public static function getInfo() {
@@ -48,7 +48,7 @@ public static function getInfo() {
 
 Déclaration les modules dont on va charger le code via la méthode `setUp()`
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**
@@ -69,7 +69,7 @@ public function setUp() {
 
 et enfin déclarer nos fonction de test qui doivent commencer par le mot clé `test`.
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**
@@ -87,7 +87,7 @@ public function testMyModuleCheckLoginFunction() {
 
 On souhaite pouvoir tester le retour de la fonction suivante :
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**
@@ -113,7 +113,7 @@ function my_module_check_login($login) {
 
 ce qui pourrait donner un test comme ceci :
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**

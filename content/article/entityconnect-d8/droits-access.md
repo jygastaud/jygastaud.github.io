@@ -25,7 +25,7 @@ Sur Drupal 8, c'est maintenant le fichier `*.permission.yml` qui est responsable
 
 ### Drupal 7
 
-{{< highlight php  "linenos=inline" >}}
+{{< highlight php   >}}
 <?php
 
 /**
@@ -50,7 +50,7 @@ function entityconnect_permission() {
 
 ### Drupal 8
 
-{{< highlight yaml "linenos=inline" >}}
+{{< highlight yaml  >}}
 entityconnect add button:
   title: 'Allows users to see add button'
   description: 'Display the add button for user'
@@ -73,7 +73,7 @@ Comme nous l'avons vu lors de la [création du formulaire d'administration](/art
 
 ### Drupal 7
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**
@@ -116,7 +116,7 @@ function entityconnect_menu() {
 
 ### Drupal 7
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 <?php
 
 /**
@@ -135,7 +135,7 @@ function entityconnect_check_access() {
 
 ### Drupal 8
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 .
 ├── src
 │   ├── Access
@@ -143,7 +143,7 @@ function entityconnect_check_access() {
 
 {{< /highlight >}}
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 .
 ├── src
 │   ├── Controller
@@ -151,16 +151,16 @@ function entityconnect_check_access() {
 
 {{< /highlight >}}
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 {{< /highlight >}}
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 {{< /highlight >}}
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 {{< /highlight >}}
 
-{{< highlight php "linenos=inline" >}}
+{{< highlight php  >}}
 {{< /highlight >}}
 
 
