@@ -13,6 +13,8 @@ Description = "HTTPie remplace élégamment les traditionnels cURL et Wget pour 
 
 Plusieurs modes d'installation sont possibles. En effet HTTPie est disponible via les packages officiels (pas forcement la dernière version) ou via `pip`.
 
+Vous trouverez toutes les informations nécessaires dans le [Readme du projet](https://github.com/jkbrzt/httpie#installation).
+
 ## Formatage et couleur
 
 ### Formatage
