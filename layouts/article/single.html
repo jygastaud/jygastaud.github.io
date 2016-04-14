@@ -33,6 +33,7 @@
                 <a href="#" class="image featured"><img src="{{ .Params.image}}" alt="" /></a>
                 {{end}}
                 {{ .Content }}
+                <p style="float:right">{{ partial "github-edit.html" .}}</p>
               </section>
             </div>
         </section>

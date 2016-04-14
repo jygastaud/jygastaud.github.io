@@ -159,6 +159,10 @@
 		padding-bottom: 0;
 	}
 
+	#main img {
+		width: 100%;
+	}
+
 /* CTA */
 
 	#cta {

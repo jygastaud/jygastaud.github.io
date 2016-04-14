@@ -144,7 +144,7 @@ x-url: /api-d7/user.json?name=jygastaud
 
 Regarder l'image en exemple sur le dépôt github
 
-![curl vs httpie](https://raw.githubusercontent.com/jkbrzt/httpie/master/httpie.png)
+<center>![curl vs httpie](https://raw.githubusercontent.com/jkbrzt/httpie/master/httpie.png)</center>
 
 Comme vous pouvez le voir, HTTPie en plus d'apporter un formatage de la sortie vous apportera aussi une colorisation.
 

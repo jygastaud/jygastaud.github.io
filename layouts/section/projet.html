@@ -16,7 +16,7 @@
         <div class="main">
           <ul class="cbp_tmtimeline">
 
-          {{ range .Data.Pages }}
+          {{ range .Data.Pages.ByDate.ByPublishDate.Reverse }}
 
             <li>
               <section>
