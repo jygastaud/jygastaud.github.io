@@ -70,29 +70,13 @@ func init() {
 				},
 			},
 
-			kargar.Task{
-				Name:  "generate",
-				Usage: "Generate site with hugo",
-				Action: func(ctx context.Context) error {
-					return fs.Src(ctx, "./static/assets/css/*.css").Then(
-						util.Concat(ctx, "app.css"),
-						css.Minify(),
-						fs.Dest("./public/assets/"),
-					)
-				},
-			},
-
 			//When running kar with no args, well, the "default" task is run.
 			kargar.Task{
 				Name:   "default",
 				Usage:  "Start livereload, watch, and gin tasks.",
-				Deps:   []string{"generate", "libs.js", "app.js", "app.css"},
+				Deps:   []string{"libs.js", "app.js", "app.css"},
 				Action: kargar.Noop(),
 			},
 		)
 	})
-}
-
-func Hugo() {
-	exec.Command("hugo", "--watch")
 }
