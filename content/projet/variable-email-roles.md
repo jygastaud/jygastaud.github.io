@@ -8,7 +8,7 @@ is_drupal = 1
 is_github = 0
 project_repo_name = "variable_email_roles"
 project_url = "https://www.drupal.org/project/variable_email_roles"
-title = "variable email roles"
+title = "Drupal - Variable Email Roles"
 Description = "Variable Email Roles permet d'envoyer des mails via Rules à un ensemble d'utilisateur affecté à un rôle"
 Weight = 5
 
