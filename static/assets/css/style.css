@@ -1109,7 +1109,14 @@
 			pre code {
 				padding: 0;
 				background: none;
-				border: none; }
+				border: none;
+				white-space: -moz-pre-wrap !important;
+				white-space: -webkit-pre-wrap;
+				white-space: -pre-wrap;
+				white-space: -o-pre-wrap;
+				white-space: pre-wrap;
+				word-wrap: break-word;
+				word-break: break-all; }
 
 			.highlight pre {
 					background: inherit;
