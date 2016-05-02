@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xml:lang="fr" lang="fr-fr" class="no-js">
+  <head>
+    <title>{{ if ne .Title .Site.Title }}{{ .Title }} &middot; {{ .Site.Title }}{{ else }}Blog &middot; {{ .Site.Title }} &middot; {{ .Site.Params.subtitle }}{{ end }}</title>
+    <link href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDc1IDc1IiBoZWlnaHQ9Ijc1cHgiIGlkPSJDYWxxdWVfMSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNzUgNzUiIHdpZHRoPSI3NXB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48Zz48cGF0aCBkPSJNNDUuNDg5LDQyLjg0NSAgIGMwLDQuNjg4LTMuOCw4LjQ4OS04LjQ4OSw4LjQ4OXMtOC40ODktMy44LTguNDg5LTguNDg5IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDVCQTgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMjguNzM3LDM4LjUyOCAgIEMzMC4wODIsMzMuMjIxLDM3LDIzLjY2NywzNywyMy42NjdzNi44MzEsOS40MzMsOC4yMzcsMTQuNzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwNUJBOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz48L3N2Zz4=" rel="icon" type="image/x-icon">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta description="{{ if ne .Title .Site.Title }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <!-- RSS -->
+    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ "<!--[if lte IE 8]>" | safeHTML }}<script src="/assets/css/ie/html5shiv.js"></script>{{ "<![endif]-->" | safeHTML }}
+
+    {{ if ne .Site.BaseURL .Site.Params.baseurl_prod }}
+      <link rel="stylesheet" href="/assets/css/component.css" />
+      <link rel="stylesheet" href="/assets/css/icon.min.css" />
+      <link rel="stylesheet" href="/assets/css/message.min.css" />
+      <script src="/assets/js/libs/jquery.min.js"></script>
+      <script src="/assets/js/libs/jquery.scrolly.min.js" async></script>
+      <script src="/assets/js/libs/jquery.scrollgress.min.js" async></script>
+      <script src="/assets/js/skel.min.js"></script>
+      <script src="/assets/js/skel-layers.min.js" async></script>
+      <script src="/assets/js/init.js"></script>
+      <script src="/assets/js/utils.js"></script>
+      <script src="/assets/js/form.min.js"></script>
+      <noscript>
+        <link rel="stylesheet" href="/assets/css/skel.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/style-wide.css" />
+        <link rel="stylesheet" href="/assets/css/style-noscript.css" />
+      </noscript>
+      <script src="/assets/js/modernizr.custom.js"></script>
+    {{ else }}
+      <script src="/assets/libs.min.js" async></script>
+      <script src="/assets/app.min.js" async></script>
+      <link rel="stylesheet" href="/assets/app.css" />
+    {{ end }}
+    {{ "<!--[if lte IE 8]>" | safeHTML }}<link rel="stylesheet" href="/assets/css/ie/v8.css" />{{ "<![endif]-->" | safeHTML}}
+    {{ "<!--[if lte IE 9]>" | safeHTML }}<link rel="stylesheet" href="/assets/css/ie/v9.css" />{{ "<![endif]-->" | safeHTML}}
+  </head>

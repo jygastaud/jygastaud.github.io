@@ -31,8 +31,20 @@ title = "Jean-Yves Gastaud"
     url = "/projet/"
     weight = 2
 
+#[[menu.main]]
+#    name = "Contact"
+#    pre = ""
+#    url = "/contact/"
+#    weight = 4
+
 [[menu.footer]]
     name = "RSS"
     pre = ""
     url = "/index.xml"
     weight = 3
+
+#[[menu.footer]]
+#    name = "Contact"
+#    pre = ""
+#    url = "/contact/"
+#    weight = 4
