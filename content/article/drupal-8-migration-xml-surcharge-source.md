@@ -176,3 +176,12 @@ Voir l'article [Drupal 8 - Suppression de configurations à la désinstallation 
 {{% /tips %}}
 
 Une fois les modifications effectuées, il ne vous reste plus qu'à relancer votre migration.
+
+
+{{% tips color="blue" title="A lire aussi"%}}
+&nbsp;
+
+* [Réaliser un import de fichier XML sous Drupal 8]({{< relref "drupal-8-migration-xml.md" >}})
+* [Drupal 8 - Suppression de configurations à la désinstallation du module]({{< relref "drupal-8-suppression-config-desinstallation.md" >}})
+
+{{% /tips %}}
