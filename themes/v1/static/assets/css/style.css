@@ -271,6 +271,7 @@
 		.image.featured {
 			display: block;
 			margin: 0 0 2em 0;
+			height: 157px;
 		}
 
 			.image.featured img {
