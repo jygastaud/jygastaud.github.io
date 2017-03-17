@@ -1,0 +1,46 @@
+backend:
+  name: github
+  repo: jygastaud/jygastaud.github.io # Path to your Github repository
+  branch: source # Branch to update (master by default)
+
+publish_mode: editorial_workflow
+
+media_folder: "static/article" # Folder where user uploaded files should go
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "article" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Article" # Used in the UI, ie.: "New Post"
+    folder: "content/article" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Summary", name: "Description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Tags", name: "Tags", widget: "list"}
+      - label: "Categories"
+        name: "Categories"
+        widget: "list"
+        fields:
+              - {label: "Name", name: "name", widget: "string"}
+      - {label: "Aliases", name: "aliases", widget: "list"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Is draft", name: "draft", widget: "string"}
+  - name: "projet" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Projet" # Used in the UI, ie.: "New Post"
+    folder: "content/projet" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Summary", name: "Description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "Tags", widget: "list"}
+      - {label: "Categories", name: "Categories", widget: "list"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Aliases", name: "aliases", widget: "list"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Is draft", name: "draft", widget: "string"}
+      - {label: "Project URL", name: "draft", widget: "string"}
+      - {label: "Project Repo Name", name: "project_repo_name", widget: "string"}
+      - {label: "Is Github", name: "is_github", widget: "string"}
+      - {label: "Is Drupal", name: "is_drupal", widget: "string"}
