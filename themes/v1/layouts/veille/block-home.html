@@ -1,0 +1,12 @@
+<div class="4u 12u(narrower)">
+	<section>
+		<header>
+			{{ if (isset .Params "image") }}
+			<a href="#" class="image featured"><img src="{{ .Permalink }}{{ .Params.image}}" alt="Accéder à la description du projet {{ .Title }}" /></a>
+			{{end}}
+			<h3>
+				<a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a>
+			</h3>
+		</header>
+	</section>
+</div>
