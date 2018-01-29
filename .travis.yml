@@ -12,8 +12,8 @@ install:
 # Build the website
 script:
   - pygmentize -V
-  - git submodule update --init --recursive
-  - hugo -v
+  - hugo -b http://gastaud.io -t v1
+  - rm -fr ./public/sass --force --interactive=never
 
 # Deploy to GitHub pages
 deploy:
