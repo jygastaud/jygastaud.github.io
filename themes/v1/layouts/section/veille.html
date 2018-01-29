@@ -1,0 +1,52 @@
+{{ partial "head.html" . }}
+<body class="no-sidebar">
+
+    {{ partial "header.html" . }}
+
+    <!-- Main -->
+    <article id="main">
+
+      <!-- Three -->
+      <section class="wrapper style3 container special">
+
+        <header class="major">
+          <h2>Tous les sujets</strong></h2>
+        </header>
+
+        <div class="main">
+          <ul class="cbp_tmtimeline">
+
+          {{ range .Data.Pages.ByDate.ByPublishDate.Reverse }}
+
+            <li>
+              <section>
+                <time class="cbp_tmtime" datetime="{{ .Date.Format "2013-04-18 09:56" }}"><span>{{ .Date.Format "2006" }}</span> <span>{{ .Date.Format "02 Jan" }}</span></time>
+                <div class="cbp_tmicon"></div>
+                <div class="cbp_tmlabel">
+                  <header>
+                    <h2>
+                      <a href="{{ .Params.link }}" target="_blank">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a>
+                    </h2>
+                  </header>
+                  <footer>
+                    <ul class="buttons">
+                      <li><a href="{{ .Params.link }}" target="_blank" class="button"><nobr>Lire l'article →</nobr></a></li>
+                    </ul>
+                  </footer>
+                </div>
+              </section>
+            </li>
+
+          {{ end }}
+          </div>
+        </div>
+
+
+          </ul>
+        </div>
+      </section>
+
+    </article>
+  </body>
+  {{ partial "scripts/script.html" .}}
+</html>
