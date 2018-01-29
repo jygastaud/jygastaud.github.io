@@ -10,5 +10,4 @@ project_repo_name = "jygastaud/ubuntu-installer"
 project_url = "https://github.com/jygastaud/ubuntu-installer"
 title = "Ubuntu Installer"
 Description = "ubuntu-installer vous permet de provisionner simplement vos machines locales avec les outils de base en utilisant Ansible."
-
 +++

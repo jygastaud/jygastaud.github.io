@@ -61,6 +61,25 @@
 
           </section>
 
+          <!-- Three -->
+          <section class="wrapper style1 container special" id="veille">
+
+            <header class="major">
+              <h2>Derniers articles lus</h2>
+            </header>
+
+            <div class="row">
+              {{ range first 8 (where .Data.Pages.ByWeight "Section" "veille") }}
+                  {{ .Render "block-home"}}
+              {{ end }}
+            </div>
+
+            <footer class="major">
+              <ul class="buttons">
+                <li><a href="/veille/" class="button">Voir les autres lectures</a></li>
+              </ul>
+            </footer>
+          </section>
         </article>
 
 

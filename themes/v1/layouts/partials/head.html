@@ -6,19 +6,16 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta description="{{ if ne .Title .Site.Title }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <link rel="canonical" href="{{ .Permalink }}" />
-    <!-- RSS -->
-    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ "<!--[if lte IE 8]>" | safeHTML }}<script src="/assets/css/ie/html5shiv.js"></script>{{ "<![endif]-->" | safeHTML }}
 
-    {{ if ne .Site.BaseURL .Site.Params.baseurl_prod }}
       <link rel="stylesheet" href="/assets/css/component.css" />
       <link rel="stylesheet" href="/assets/css/icon.min.css" />
       <link rel="stylesheet" href="/assets/css/message.min.css" />
       <script src="/assets/js/libs/jquery.min.js"></script>
-      <script src="/assets/js/libs/jquery.scrolly.min.js" async></script>
-      <script src="/assets/js/libs/jquery.scrollgress.min.js" async></script>
+      <script src="/assets/js/libs/jquery.scrolly.min.js"></script>
+      <script src="/assets/js/libs/jquery.scrollgress.min.js"></script>
       <script src="/assets/js/skel.min.js"></script>
-      <script src="/assets/js/skel-layers.min.js" async></script>
+      <script src="/assets/js/skel-layers.min.js"></script>
       <script src="/assets/js/init.js"></script>
       <script src="/assets/js/utils.js"></script>
       <script src="/assets/js/form.min.js"></script>

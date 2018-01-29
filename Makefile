@@ -8,7 +8,7 @@ watch:
 
 watch2:
 	@rm -fr ./public/* --force --interactive=never
-	@hugo server -w -D -t v2
+	@hugo server -w -D -t tacit
 
 reset:
 	cd ./public && git reset --hard origin/master

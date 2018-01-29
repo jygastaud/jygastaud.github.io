@@ -1,7 +1,8 @@
 baseurl = "http://gastaud.io"
 languageCode = "fr-fr"
 canonifyurls = true
-title = "Jean-Yves Gastaud"
+title = "Mes notes en vrac"
+defaultContentLanguage = "fr"
 
 [indexes]
    category = "categories"

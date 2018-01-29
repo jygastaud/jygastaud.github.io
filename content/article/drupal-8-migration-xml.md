@@ -357,7 +357,7 @@ Ce module permet de faire le pont entre drush et migrate, qui rappelons-le est m
 
 Une fois le module installé, on va avoir aux habituelles commandes drush migrate
 
-```
+```shell
 $ drush --filter=migrate_tools
 All commands in migrate_tools: (migrate_tools)
  migrate-fields-sourc  List the fields available for mapping in a source.
