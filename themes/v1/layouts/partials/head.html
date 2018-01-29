@@ -26,11 +26,6 @@
         <link rel="stylesheet" href="/assets/css/style-noscript.css" />
       </noscript>
       <script src="/assets/js/modernizr.custom.js"></script>
-    {{ else }}
-      <script src="/assets/libs.min.js" async></script>
-      <script src="/assets/app.min.js" async></script>
-      <link rel="stylesheet" href="/assets/app.css" />
-    {{ end }}
     {{ "<!--[if lte IE 8]>" | safeHTML }}<link rel="stylesheet" href="/assets/css/ie/v8.css" />{{ "<![endif]-->" | safeHTML}}
     {{ "<!--[if lte IE 9]>" | safeHTML }}<link rel="stylesheet" href="/assets/css/ie/v9.css" />{{ "<![endif]-->" | safeHTML}}
   </head>
