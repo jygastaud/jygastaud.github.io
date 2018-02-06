@@ -1,0 +1,8 @@
++++
+Categories = ["Veille"]
+Tags = ["Veille"]
+date = "2018-02-06 00:40:53"
+title = "AWS Lambda — should you have few monolithic functions or many single-purposed functions?"
+link = "https://hackernoon.com/aws-lambda-should-you-have-few-monolithic-functions-or-many-single-purposed-functions-8c3872d4338f"
++++
+Having been brought up on the SOLID principles, and especially the single responsibility principle (SRP), this was a moment that challenged my belief that following the SRP in the serverless world is a no-brainer.  That prompted this closer examination of the arguments from both sides.
