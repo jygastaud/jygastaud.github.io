@@ -1,20 +1,14 @@
 +++
 Categories = ["Développement", "Article"]
-Description = ""
+Description = "Snippet permettant d'éxécuter des actions à la fin de l'éxécution d'une feature Behat."
 Tags = ["Développement", "Behat", "Drupal"]
 aliases = []
 date = "2016-09-02T17:12:10+02:00"
 image = ""
 title = "Drupal Behat afterFeature"
-draft=true
-
 +++
 
-introduction
-
-# Titre
-
-## Sous-titre
+Snippet permettant d'éxécuter des actions à la fin de l'éxécution d'une feature Behat.
 
 ```
 /**

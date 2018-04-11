@@ -11,7 +11,7 @@ is_github = 0
 is_drupal = 0
 project_repo_name = "jygastaud/lumberjack-ansible"
 image = "image-min.jpg"
-
+deprecated = true
 +++
 
 Lumberjack propose une UI permettant de générer une box Vagrant provisionnée avec Ansible et permettant de lancer rapidement le développement d'un projet PHP.

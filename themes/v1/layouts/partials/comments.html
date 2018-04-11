@@ -1,3 +1,61 @@
+
+  <!-- One -->
+  <section class="wrapper style4 special container 75% post-comments">
+
+    <!-- Content -->
+    <div class="content">
+      <form name="form--comment" id="form--comment" class="ui form error">
+        <div class="error message"></div>
+        <div class="row 50%">
+          <div class="12u field error">
+            <label>Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+          </div>
+        </div>
+        <div class="row 50%">
+          <div class="12u field error">
+            <label>Sujet</label>
+            <input type="text" name="title" id="title" placeholder="Titre" required>
+          </div>
+        </div>
+        <div class="row 50%">
+          <div class="12u field error">
+            <label>Message</label>
+            <textarea name="message" id="message" placeholder="Message" required rows="7"></textarea>
+          </div>
+        </div>
+        <input type="hidden" name="blogpost" value="{{.File.Dir}}">
+        <div class="row">
+          <div class="12u">
+            <ul class="buttons">
+              <li><input type="submit" class="ui submit button special" value="Envoyer le commentaire" /></li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      $('#form--comment').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: 'post',
+            url: 'https://hooks.zapier.com/hooks/catch/281530/n6o26/',
+            data: $('#form--comment').serialize(),
+            success: function(json) {
+              $('.message').text(json)
+            }
+        });
+        return false;
+      });
+    </script>
+  </section>
+
+  <section>
+  </section>
+
+
+
 {{ if .Site.Params.livefyre }}
   <!-- START: Livefyre Embed -->
   <div id="livefyre-comments"></div>

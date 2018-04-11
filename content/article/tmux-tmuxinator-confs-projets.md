@@ -6,7 +6,6 @@ date = "2016-04-27T19:00:00+02:00"
 title = "Utiliser Tmux et Tmuxinator pour gérer vos confs projets"
 +++
 
-
 ## Pré-requis
 
 Avoir installé sur vos machines

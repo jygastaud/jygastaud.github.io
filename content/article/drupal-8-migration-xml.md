@@ -407,9 +407,6 @@ Voilà ! Vos noeuds ont été créés et sont maintenant visibles dans le back-o
 
 
 {{% tips color="blue" title="A lire aussi"%}}
-&nbsp;
-
 * [Import de fichier XML sous Drupal 8 - Traitements spécifiques sur la source]({{< relref "drupal-8-migration-xml-surcharge-source.md" >}})
 * [Drupal 8 - Suppression de configurations à la désinstallation du module]({{< relref "drupal-8-suppression-config-desinstallation.md" >}})
-
 {{% /tips %}}

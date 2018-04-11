@@ -25,9 +25,6 @@ function migrate_communique_uninstall() {
 ```
 
 {{% tips color="blue" title="A lire aussi"%}}
-&nbsp;
-
 * [Réaliser un import de fichier XML sous Drupal 8]({{< relref "drupal-8-migration-xml.md" >}})
 * [Import de fichier XML sous Drupal 8 - Traitements spécifiques sur la source]({{< relref "drupal-8-migration-xml-surcharge-source.md" >}})
-
 {{% /tips %}}
