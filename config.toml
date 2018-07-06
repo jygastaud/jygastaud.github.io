@@ -3,6 +3,7 @@ languageCode = "fr-fr"
 canonifyurls = true
 title = "Mes notes en vrac"
 defaultContentLanguage = "fr"
+theme = "v1"
 
 [indexes]
    category = "categories"
