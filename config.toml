@@ -1,7 +1,7 @@
 #canonifyurls = true
 
 baseURL = "http://gastaud.io"
-title = "Mes notes en vrac"
+title = "Jean-Yves Gastaud"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
@@ -71,7 +71,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Mes notes en vrac"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "JY Gastaud"        # default: the title value    # 默认值: 上面设置的title值
+  subTitle = "Articles, veilles et projets"
   keywords = ["Hugo", "theme","jane"]
   description = "Un peu de dev Drupal, de DevOps, de tout, de rien"
 
@@ -154,7 +155,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 # [outputs]
 #   home = ["html", "jsonfeed"]
 #   page = ["html"]
-# 
+#
 # [outputFormats]
 # [outputFormats.jsonfeed]
 #   mediaType = "application/json"

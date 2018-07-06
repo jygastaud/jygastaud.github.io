@@ -6,6 +6,9 @@
       {{- else -}}
         {{ .Site.Title }}
       {{- end -}}
+      {{- if .Site.Params.subTitle -}}
+        {{ .Site.Params.subTitle }}
+      {{- end -}}
     </a>
   </div>
   <div class="mobile-navbar-icon">

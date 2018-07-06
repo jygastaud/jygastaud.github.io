@@ -5,6 +5,11 @@
     {{- else -}}
       {{ .Site.Title }}
     {{- end -}}
+    {{- if .Site.Params.subTitle -}}
+      &nbsp;<span style="font-size:60%;">{{ .Site.Params.subTitle }}</span>
+    {{- else -}}
+      {{ .Site.Title }}
+    {{- end -}}
   </a>
 </div>
 
