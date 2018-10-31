@@ -1,6 +1,6 @@
 #canonifyurls = true
 
-baseURL = "http://gastaud.io"
+baseURL = "/"
 title = "Jean-Yves Gastaud"
 enableRobotsTXT = true
 enableEmoji = true
