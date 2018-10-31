@@ -7,6 +7,7 @@ Categories = ["Cloud"]
 aliases = []
 head_js = []
 head_css = []
+canonical = "https://blog.clever-age.com/fr/2018/07/10/kubernetes-a-gagne-la-bataille-des-orchestrateurs/"
 +++
 
 L'arrivée il y a quelques années de solutions permettant de simplifier la création et gestion de conteneurs, telles que [Docker](https://www.docker.com/) ou [rkt](https://coreos.com/rkt/), combinées aux approches micro-services et leurs popularités croissantes ont entraîné rapidement le besoin de solutions dites d'`orchestration de conteneurs`.
@@ -54,7 +55,7 @@ Docker a annoncé l'année dernière intégrée directement Kubernetes dans son 
 
 Faut-il donc oublier vraiment toutes les autres solutions et ne faire plus que Kubernetes ?
 
-Pour des problématiques d'orchestration combinant des applications non contenerisées et/ou des conteneurs, alors une solution comme Mesos pourra vous être d'une grande aide.
+Pour des problématiques d'orchestration combinant des applications non conteneurisées et/ou des conteneurs, alors une solution comme Mesos pourra vous être d'une grande aide.
 
 Pour des problématiques d'orchestration dédiés uniquement aux conteneurs, **sur une petite volumétrie de serveurs et conteneurs**, une solution comme Docker Swarm sera certainement un bon tremplin, plus abordable.
 
