@@ -1,4 +1,4 @@
-{{ if or .Params.zoneCopyright (and .Site.Params.zoneCopyright (ne .Params.zoneCopyright false)) }}
+{{ if or .Params.contentCopyright (and .Site.Params.contentCopyright (ne .Params.contentCopyright false)) }}
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">{{ i18n "author" }}</span>
@@ -12,11 +12,10 @@
     {{ with $.OutputFormats.Get "markdown" -}}
     <p class="copyright-item">
       <span class="item-title">{{ i18n "markdown" }}</span>
-      <span class="item-content"><a class="link-to-markdown" href="{{ .Permalink }}" target="_blank">{{ i18n "seeMarkDown" }}</a></span>
+      <span class="item-content"><a class="link-to-markdown" href="{{ .Permalink }}" rel="noopener" target="_blank">{{ i18n "seeMarkDown" }}</a></span>
     </p>
     {{- end }}
   {{- end }}
-  {{- if or .Params.contentCopyright (and .Site.Params.contentCopyright (ne .Params.contentCopyright false)) -}}
   <p class="copyright-item">
     <span class="item-title">{{ i18n "license" }}</span>
     <span class="item-content">
@@ -26,14 +25,6 @@
       {{ .Site.Params.contentCopyright | safeHTML }}
     {{- end -}}
     </span>
-  </p>
-  {{- end -}}
-  <p class="copyright-item">
-      <span class="item-title">{{ i18n "source" }}</span>
-      <span class="item-content">
-        {{ partial "github-edit.html" .}}
-      </span>
-
   </p>
 </div>
 {{- end }}

@@ -2,35 +2,52 @@
   {{- range $name, $path := .Site.Params.social }}
     {{- if $path }}
       {{- $realName := slicestr $name 2 }}
-      <a href="{{ $path | safeURL }}" rel="me" class="iconfont icon-{{ $realName }}" 
-        title="{{ $realName }}" target="_blank" rel="noopener">
+      <a href="{{ $path | safeURL }}" rel="me noopener" class="iconfont icon-{{ $realName }}"
+        title="{{ $realName }}"{{ if not (hasPrefix $path "mailto:") }} target="_blank"{{ end }}>
       </a>
     {{- end }}
   {{- end }}
-  <a href="{{ .Site.RSSLink }}" type="application/rss+xml" class="iconfont icon-rss" 
-    title="rss" target="_blank" rel="noopener">
+  {{ with .Site.GetPage "home" -}}
+  {{- with .OutputFormats.Get "RSS" -}}
+  <a href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}" class="iconfont icon-rss"
+    title="rss" target="_blank">
   </a>
+  {{ end -}}
+  {{- end -}}
 </div>
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
   </span>
   <span class="division">|</span>
   <span class="theme-info">
-    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane" target="_blank" rel="noopener">Jane</a>
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
   </span>
 
   <span class="copyright-year">
     {{- $current := now.Format "2006" }}
-    &copy; 
+    &copy;
     {{ if ne .Site.Params.since $current }}
-      {{ .Site.Params.since }} - 
+      {{ .Site.Params.since }} -
     {{ end }}
     {{- $current }}
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
-    <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
+    {{- if or .Site.Copyright .Site.Author.name -}}
+      <span class="author">
+        {{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}
+        {{ else }}{{ .Site.Author.name | safeHTML }}
+        {{ end }}
+      </span>
+    {{- end -}}
   </span>
+
+  <!-- Counter busuanzi -->
+  {{ if .Site.Params.counter.busuanzi.enable }}
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  {{ end }}
 </div>

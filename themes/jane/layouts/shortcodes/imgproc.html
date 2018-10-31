@@ -1,24 +1,34 @@
 {{ $original := .Page.Resources.GetMatch (printf "*%s*" (.Get 0)) }}
 {{ $command := .Get 1 }}
 {{ $options := .Get 2 }}
+{{ $image := $original }}
 {{ if eq $command "Fit"}}
-{{ .Scratch.Set "image" ($original.Fit $options) }}
+{{ $image = ($original.Fit $options) }}
 {{ else if eq $command "Resize"}}
-{{ .Scratch.Set "image" ($original.Resize $options) }}
+{{ $image = ($original.Resize $options) }}
 {{ else if eq $command "Fill"}}
-{{ .Scratch.Set "image" ($original.Fill $options) }}
+{{ $image = ($original.Fill $options) }}
 {{ else }}
 {{ errorf "Invalid image processing command: Must be one of Fit, Fill or Resize."}}
 {{ end }}
-{{ $image := .Scratch.Get "image" }}
 {{ $link := .Get 3 }}
 
+{{ $test := "welcome" }}
+{{ $test = printf "%v%v" $test "home" }}
+{{ $test }}
+
 {{ if $link }}
+{{ $image }}
   <a href="{{ $link }}">
     <img style="max-width: 100%; height: auto;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
   </a>
+{{ $image = "tata"}}
+{{ $image }}
 {{ else }}
+{{ $image }}
   <img style="max-width: 100%; height: auto;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+{{ $image = "toto"}}
+{{ $image }}
 {{ end }}
 {{ with .Inner }}
 {{ . }}

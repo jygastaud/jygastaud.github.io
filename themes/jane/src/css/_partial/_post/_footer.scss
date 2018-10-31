@@ -3,18 +3,19 @@
 // ==============================
 
 .post-footer {
-  margin-top: $post-footer-margin-top;
-  margin-bottom: 40px;
-  border-top: $post-footer-border-top;
   font-family: $global-serif-font-family;
 
   .post-tags {
-    padding: $post-tags-padding;
+    margin-top: 1em;
 
     a {
-      margin-right: 5px;
       color: $theme-color;
       word-break: break-all;
+      margin-right: 10px;
+
+      &:hover {
+        border-bottom: 1px solid $theme-color;
+      }
 
       &::before {
         content: '#';
@@ -23,7 +24,7 @@
   }
 
   .post-nav {
-    margin: 1em 0;
+    margin-top: 1em;
     @include clearfix;
 
     .prev,
