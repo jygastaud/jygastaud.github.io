@@ -12,14 +12,15 @@ reset:
 build:
 	@echo "build start"
 	@rm -fr ./public/* --force --interactive=never
-	@hugo -b http://gastaud.io -t jane
+	@hugo -t jane
 	@echo "build success"
 
 build-netlify:
 	@echo "build start"
 	@rm -fr ./public/* --force --interactive=never
-	@hugo -b http://gastaud.io -t jane -b "/"
+	@hugo -t jane
 	@echo "build success"
+
 commit:
 	@echo "commit start"
 	cd ./public && git add --all && git commit -m "publish new version"
