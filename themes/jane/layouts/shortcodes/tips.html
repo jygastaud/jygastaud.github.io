@@ -1,0 +1,13 @@
+<div class="ui {{ with .Get "color"}}{{.}}{{end}} message">
+  <div class="content">
+    {{ with .Get "title"}}
+      <div class="header">
+        {{.}}
+      </div>
+    {{ end }}
+    {{ with .Get "message"}}
+      <!--<p>{{.}}</p>-->
+    {{ end }}
+    <p>{{ index .Inner }}</p>
+  </div>
+</div>

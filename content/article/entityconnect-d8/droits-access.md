@@ -10,11 +10,8 @@ draft = true
 Retour sur le portage des droits d'accès du module [Entity Connect](https://drupal.org/project/entityconnect) sous Drupal 8.
 
 {{% tips color="blue" title="Dans la même série"%}}
-&nbsp;
-
 * [Création d'un formulaire d'administration sous Drupal 8]({{< relref "formulaire-administration.md" >}})
 * [Gestion des droits d'accès sous Drupal 8]({{< relref "droits-access.md" >}})
-
 {{% /tips %}}
 
 

@@ -1,13 +1,11 @@
 +++
 Categories = ["Développement", "Projet"]
-Description = ""
+Description = "Fichier de configuration tmux."
 Tags = ["Développement", "Projet"]
 aliases = []
 date = "2016-04-07T13:49:38+02:00"
 image = ""
 title = "Tmux - Exemple de fichier de configuration"
-draft = true
-
 +++
 
 Exemple de fichier .tmux.conf

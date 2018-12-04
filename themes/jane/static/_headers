@@ -1,0 +1,29 @@
+/*
+  Cache-Control: max-age=7200, private
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: "default-src 'none'; script-src 'self' 'unsafe-inline' data: *.cloudfront.net; object-src 'self'; style-src 'self' 'unsafe-inline' data: *.cloudfront.net; img-src 'self' data: *.cloudfront.net; media-src 'self'; frame-src 'self'; font-src 'self' data: *.cloudfront.net cdnjs.cloudflare.com fonts.gstatic.com fonts.googleapis.com; base-uri 'self'; upgrade-insecure-requests; block-all-mixed-content;worker-src 'self';
+  X-Content-Security-Policy: "default-src 'none'; script-src 'self' 'unsafe-inline' data: *.cloudfront.net; object-src 'self'; style-src 'self' 'unsafe-inline' data: *.cloudfront.net; img-src 'self' data: *.cloudfront.net; media-src 'self'; frame-src 'self'; font-src 'self' data: *.cloudfront.net; base-uri 'self'; upgrade-insecure-requests; block-all-mixed-content;worker-src 'self';
+  X-WebKit-CSP: "default-src 'none'; script-src 'self' 'unsafe-inline' data: *.cloudfront.net; object-src 'self'; style-src 'self' 'unsafe-inline' data: *.cloudfront.net'; img-src 'self' data: *.cloudfront.net; media-src 'self'; frame-src 'self'; font-src 'self' data: *.cloudfront.net; base-uri 'self'; upgrade-insecure-requests; block-all-mixed-content; worker-src 'self';
+
+/*.woff2
+  Access-Control-Allow-Origin: "*"
+  Cache-Control: max-age=2592000, private
+/*.css
+  Cache-Control: max-age=2592000, private
+/*.js
+  Cache-Control: max-age=2592000, private
+/*.ico
+  Cache-Control: max-age=2592000, private
+/*.jpg
+  Cache-Control: max-age=2592000, private
+/*.jpeg
+  Cache-Control: max-age=2592000, private
+/*.png
+  Cache-Control: max-age=2592000, private
+/*.gif
+  Cache-Control: max-age=2592000, private
+/*.svg
+  Cache-Control: max-age=2592000, private

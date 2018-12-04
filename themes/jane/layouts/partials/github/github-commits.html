@@ -1,0 +1,18 @@
+<section>
+  <header>
+  <h3>Activité du projet</h3>
+  </header>
+      {{ $urlPre := "https://api.github.com" }}
+      {{ $gcJ := getJSON $urlPre "/repos/" $.Params.project_repo_name "/commits" }}
+      {{ range first 5 $gcJ }}
+        <p>
+          {{ dateFormat "02-01-2006" .commit.author.date}}<br>
+          {{ .commit.message }}
+        </p>
+      {{end}}
+  <footer>
+    <div class="disqus-comment">
+      <div class="disqus-button"><a href="{{ .Params.project_url }}" class="button small">Voir le projet</a></div>
+    </div>
+  </footer>
+</section>

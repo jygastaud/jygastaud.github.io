@@ -4,11 +4,7 @@ all: reset build commit publish
 
 watch:
 	@rm -fr ./public/* --force --interactive=never
-	@hugo server -w -D -t v1
-
-watch2:
-	@rm -fr ./public/* --force --interactive=never
-	@hugo server -w -D -t tacit
+	@hugo server -w -D -t jane --navigateToChanged 
 
 reset:
 	cd ./public && git reset --hard origin/master
@@ -16,16 +12,14 @@ reset:
 build:
 	@echo "build start"
 	@rm -fr ./public/* --force --interactive=never
-	@hugo -b http://gastaud.io -t v1
-	@rm -fr ./public/sass --force --interactive=never
-	@echo "build succes"
+	@hugo -t jane
+	@echo "build success"
 
-build2:
+build-netlify:
 	@echo "build start"
 	@rm -fr ./public/* --force --interactive=never
-	@hugo -b http://gastaud.io -t v2
-	@rm -fr ./public/sass --force --interactive=never
-	@echo "build succes"
+	@hugo -t jane
+	@echo "build success"
 
 commit:
 	@echo "commit start"

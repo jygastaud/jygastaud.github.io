@@ -1,0 +1,105 @@
+# # Content
+# - id: articles
+#   translation: "Articles"
+# - id: yourOpinion
+#   translation: "Votre avis compte"
+# - id: mainNavigation
+#   translation: "Navigation principale"
+# - id: read
+#   translation: "Lire"
+# - id: seeAlso
+#   translation: "Voir aussi"
+- id: archive
+  translation: Archive
+
+- id: tags
+  translation: Tags
+
+- id: tag
+  translation: "Tag: "
+
+- id: categories
+  translation: Catégories
+
+- id: category
+  translation: "Catégorie: "
+
+# posts
+- id: prev
+  translation: Précédent
+
+- id: next
+  translation: Suivant
+
+- id: prev_post
+  translation: Précédent
+
+- id: next_post
+  translation: Suivant
+
+- id: toc
+  translation: Sommaire
+
+- id: readmore
+  translation: Lire plus
+
+- id: reward
+  translation: Reward
+
+- id: rewardAlipay
+  translation: Alipay
+
+- id: rewardWechat
+  translation: Wechat
+
+- id: seeMarkDown
+  translation: The Markdown version »
+
+- id: loadDisqus
+  translation: Voir les commentaires
+
+# posts.header
+- id: wordCount
+  translation: "{{.Count}} mots"
+
+- id: readingTime
+  translation: "Lecture de {{.Count}} mins"
+
+# copyright
+- id: author
+  translation: Autheur
+
+- id: lastMod
+  translation: "Modifié le"
+
+- id: markdown
+  translation: Markdown
+
+- id: license
+  translation: Licence
+
+- id: source
+  translation: Source
+
+# counter
+- id: counter_archives
+  translation: "{{.Count}} posts au Total"
+
+- id: counter_tagcloud
+  translation: "{{.Count}} Tags au Total"
+
+- id: counter_categories
+  translation: "{{.Count}} Categories au Total"
+
+# other
+- id: morePost
+  translation: "Plus de Post >>>"
+
+- id: read_ru
+  translation: Читать на русском
+
+- id: read_es
+  translation: Leer en español
+
+- id: read_zh-cn
+  translation: 中文阅读

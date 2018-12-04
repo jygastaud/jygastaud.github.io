@@ -7,6 +7,7 @@ Categories = ["Cloud"]
 aliases = []
 head_js = []
 head_css = []
+canonical = "https://blog.clever-age.com/fr/2018/07/10/kubernetes-a-gagne-la-bataille-des-orchestrateurs/"
 +++
 
 L'arrivée il y a quelques années de solutions permettant de simplifier la création et gestion de conteneurs, telles que [Docker](https://www.docker.com/) ou [rkt](https://coreos.com/rkt/), combinées aux approches micro-services et leurs popularités croissantes ont entraîné rapidement le besoin de solutions dites d'`orchestration de conteneurs`.
@@ -20,7 +21,7 @@ Pourtant, cela n'empêcha pas Docker inc. de lancer sa propre solution, Docker S
 
 Chacun a sa place, pour son besoin. Pas de vraie compétition entre les 2.
 
-Mesos semblait avoir pris de l'avance sur ces concurrents. En milieu d'année 2017, une bascule a commencé à se produire vers Kubernetes, utilisé chez Google depuis plus de 10 ans.
+Mesos (via Marathon) semblait avoir pris de l'avance sur ces concurrents. En milieu d'année 2017, une bascule a commencé à se produire vers Kubernetes, utilisé chez Google depuis plus de 10 ans.
 
 Alors pourquoi peut-on penser aujourd'hui que Kubernetes a gagné cette bataille et devient, un peu au même titre que Docker pour les conteneurs, le standard de l'industrie ?
 
@@ -29,7 +30,7 @@ Alors pourquoi peut-on penser aujourd'hui que Kubernetes a gagné cette bataille
 
 ### Une croissance très rapide
 
-* Kubernetes est actuellement le plus gros projet (nombre d'étoile et contributeurs) de Github !
+* Kubernetes est actuellement le projet le plus actif sur Github.
 * Les plateformes comme OpenShift ou CoreOS intègrent Kubernetes.
 * Le [CNCF (Cloud Native Computing Foundation)](https://www.cncf.io/) en a fait le 1er projet `Graduated`, son rang le plus haut.
 * L’écosystème autours de Kubernetes s'étoffe très vite pour plus d'intégrations autours des systèmes, du monitoring, la sécurité, le déploiement continue...
@@ -54,6 +55,8 @@ Docker a annoncé l'année dernière intégrée directement Kubernetes dans son 
 
 Faut-il donc oublier vraiment toutes les autres solutions et ne faire plus que Kubernetes ?
 
-Si vous débutez dans les problématiques d'orchestration, une solution comme Docker Swarm sera certainement un bon tremplin, plus abordable, avant de faire le grand saut vers Kubernetes.
+Pour des problématiques d'orchestration combinant des applications non conteneurisées et/ou des conteneurs, alors une solution comme Mesos pourra vous être d'une grande aide.
 
-Si vous avez besoin d'une solution **fiable, robuste et pérenne** alors la balance tend clairement vers Kubernetes.  
+Pour des problématiques d'orchestration dédiés uniquement aux conteneurs, **sur une petite volumétrie de serveurs et conteneurs**, une solution comme Docker Swarm sera certainement un bon tremplin, plus abordable.
+
+Enfin, si vous avez besoin d'une solution **fiable, robuste, scalable et pérenne**, alors la balance tend clairement vers Kubernetes.
