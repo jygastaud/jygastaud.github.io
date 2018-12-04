@@ -12,17 +12,11 @@
 {{ errorf "Invalid image processing command: Must be one of Fit, Fill or Resize."}}
 {{ end }}
 {{ $link := .Get 3 }}
-
-{{ $test := "welcome" }}
-{{ $test = printf "%v%v" $test "home" }}
-{{ $test }}
-
 {{ if $link }}
 {{ $image }}
   <a href="{{ $link }}">
     <img style="max-width: 100%; height: auto;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
   </a>
-{{ $image = "tata"}}
 {{ $image }}
 {{ else }}
 {{ $image }}

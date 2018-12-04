@@ -35,7 +35,7 @@ Alors pourquoi peut-on penser aujourd'hui que Kubernetes a gagné cette bataille
 * Le [CNCF (Cloud Native Computing Foundation)](https://www.cncf.io/) en a fait le 1er projet `Graduated`, son rang le plus haut.
 * L’écosystème autours de Kubernetes s'étoffe très vite pour plus d'intégrations autours des systèmes, du monitoring, la sécurité, le déploiement continue...
 
-{{< imgproc "images/CloudNativeLandscape_latest.png" Fit "1200x1200" "https://raw.githubusercontent.com/cncf/landscape/master/landscape/CloudNativeLandscape_latest.png" />}}
+{{< imgproc "images/landscape.png" Fit "1200x1200" "https://landscape.cncf.io/images/landscape.png" />}}
 
 ### Le Cloud public l'a adopté
 
