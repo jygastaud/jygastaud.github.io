@@ -16,4 +16,4 @@ Weight = 5
 
 Le module *[Variable Email Roles](https://www.drupal.org/project/variable_email_roles)* permet d'envoyer des mails via Rules à un ensemble d'utilisateur affecté à un rôle.
 
-Il vient compléter le module [Variable Email](https://www.drupal.org/project/variable_email) qui ne propose également d'envoyer des emails via Rules mais est limité à une (1) utilisateur.
+Il vient compléter le module [Variable Email](https://www.drupal.org/project/variable_email) qui propose également d'envoyer des emails via Rules mais est limité à un (1) utilisateur.
