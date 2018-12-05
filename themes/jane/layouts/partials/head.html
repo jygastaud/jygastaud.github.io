@@ -14,8 +14,6 @@
   see : https://ziyuan.baidu.com/college/courseinfo?id=156
 */}}
 <meta name="applicable-device" content="pc,mobile">
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 <meta name="theme-color" content="#f8f5ec" />
 <meta name="msapplication-navbutton-color" content="#f8f5ec">
@@ -26,7 +24,11 @@
 
 <!-- author & description & keywords  -->
 {{- if or .Params.author .Site.Author.name -}}
-<meta name="author" content="{{ if .Params.author }}{{ .Params.author | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}" />
+{{- $author_id := .Params.author | default .Site.Author.name -}}
+{{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
+{{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
+{{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
+<meta name="author" content="{{ $author_name | safeHTML }}" />
 {{- end -}}
 
 {{- if .Description -}}
@@ -49,12 +51,11 @@
 {{ with .Site.Params.baidu_verification }}<meta name="baidu-site-verification" content="{{.}}" />{{ end }}
 {{ with .Site.Params.google_verification }}<meta name="google-site-verification" content="{{.}}" />{{ end }}
 
+<!-- Site Generator -->
+<meta name="generator" content="Hugo {{ .Hugo.Version }}" />
+
 <!-- Permalink & RSSlink -->
-{{ if .Params.canonical -}}
-<link rel="canonical" href="{{ .Params.canonical }}" />
-{{- else -}}
-  <link rel="canonical" href="{{ .Permalink }}" />
-{{ end }}
+<link rel="canonical" href="{{ .Permalink }}" />
 {{ if .RSSLink -}}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end -}}
@@ -74,8 +75,10 @@
 <script>eruda.init();</script>
 {{- end }}
 
-<!-- Styles -->
-<link href="{{ "dist/jane.min.css?v=2.7.0" | relURL }}" rel="stylesheet">
+<!-- Jane theme main style -->
+{{ $style := resources.Get "sass/jane.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
+<!-- End -->
 
 <!-- custom css -->
 {{ range .Site.Params.customCSS }}
