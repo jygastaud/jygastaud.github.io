@@ -35,8 +35,7 @@ dependencies[] = variable
 
 Créer un fichier my_module.variable.inc
 
-{{< highlight php >}}
-
+```php
 <?php
 
 /**
@@ -63,7 +62,7 @@ function my_module_variable_info($options) {
 
   return $variable;
 }
-{{< /highlight >}}
+```
 
 ## Permettre la modification et traduction de la variable
 
