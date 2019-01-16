@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://gastaud.io"
 title = "Jean-Yves Gastaud"
 enableRobotsTXT = true
 enableEmoji = true

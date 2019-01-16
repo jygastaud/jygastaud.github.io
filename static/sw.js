@@ -48,9 +48,9 @@ const MAX_TTL = {
 };
 
 const CACHE_BLACKLIST = [
-    //(str) => {
-    //    return !str.startsWith('http://localhost') && !str.startsWith('https://gohugohq.com');
-    //},
+    (str) => {
+       return !str.startsWith('http://localhost') && !str.startsWith('https://gastaud.io');
+    },
 ];
 
 const SUPPORTED_METHODS = [
