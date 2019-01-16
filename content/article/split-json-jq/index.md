@@ -90,7 +90,7 @@ echo $line > $(echo $line | jq -r -c ".id").json;
 ### Options de la commande
 
 * `-c             compact instead of pretty-printed output;` : nous permet d'avoir 1 ligne affiché par résultat
-* `-M             monochrome (don't colorize JSON);` : purement esthétique pour ne pas risquer de poluer l'extraction
+* `-M             monochrome (don't colorize JSON);` : purement esthétique pour ne pas risquer de polluer l'extraction
 * `-r             output raw strings, not JSON texts;` : permet de supprimer le guillemet de sortir de notre ID.
 
 
