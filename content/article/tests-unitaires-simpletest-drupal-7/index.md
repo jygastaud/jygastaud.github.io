@@ -8,7 +8,7 @@ Description = "Introduction aux tests unitaires avec Simpletest."
 +++
 
 {{% tips color="positive" %}}
-Si vous ne l'avez pas encore lu, allez lire l'article [Tester ses modules Drupal 7]({{< relref "article/tester-modules-drupal-7/index.md" >}}).
+Si vous ne l'avez pas encore lu, allez lire l'article [Tester ses modules Drupal 7]({{< ref "/article/tester-modules-drupal-7/index.md" >}}).
 {{% /tips %}}
 
 Les tests fonctionnels via Simpletest sont gérés par la class `DrupalUnitTestCase` qu'il faut ensuite étendre dans son module.
@@ -21,7 +21,7 @@ Les fonctions testées ne doivent donc pas dépendre de données récupérées e
 
 # Mise en place des tests
 
-Comme pour les [tests fonctionnels]({{< relref "article/tests-fonctionnels-simpletest-drupal-7/index.md" >}}) il faut étendre une class de base de Drupal : `DrupalUnitTestCase`
+Comme pour les [tests fonctionnels]({{< ref "/article/tests-fonctionnels-simpletest-drupal-7/index.md" >}}) il faut étendre une class de base de Drupal : `DrupalUnitTestCase`
 
 {{< highlight php  >}}
 <?php
@@ -151,6 +151,6 @@ public function testMyModuleCheckLoginFunction() {
 {{% tips title="Pour en savoir plus" color="positive" icon="warning" %}}
 &nbsp;
 
-* [Tester ses modules Drupal 7]({{< relref "article/tester-modules-drupal-7/index.md" >}})
-* [Tests fonctionnels avec Drupal 7]({{< relref "article/tests-fonctionnels-simpletest-drupal-7/index.md" >}})
+* [Tester ses modules Drupal 7]({{< ref "/article/tester-modules-drupal-7/index.md" >}})
+* [Tests fonctionnels avec Drupal 7]({{< ref "/article/tests-fonctionnels-simpletest-drupal-7/index.md" >}})
 {{% /tips %}}

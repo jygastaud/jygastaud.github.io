@@ -41,7 +41,7 @@ Il est donc possible d'utiliser dans ces tests des fonctions comme node_save(), 
 {{% tips color="blue" title="A lire aussi"%}}
 &nbsp;
 
-* [Tests fonctionnels avec Simpletest sous Drupal 7]({{< relref "article/tests-fonctionnels-simpletest-drupal-7/index.md" >}})
+* [Tests fonctionnels avec Simpletest sous Drupal 7]({{< ref "/article/tests-fonctionnels-simpletest-drupal-7/index.md" >}})
 
 {{% /tips %}}
 
@@ -58,7 +58,7 @@ Les fonctions testées ne doivent donc pas dépendre de données récupérées e
 {{% tips color="blue" title="A lire aussi"%}}
 &nbsp;
 
-* [Tests unitaires dans Drupal 7 avec Simpletest]({{< relref "article/tests-unitaires-simpletest-drupal-7/index.md" >}})
+* [Tests unitaires dans Drupal 7 avec Simpletest]({{< ref "/article/tests-unitaires-simpletest-drupal-7/index.md" >}})
 {{% /tips %}}
 
 ## Commandes de base
@@ -88,7 +88,7 @@ Que ce soit via Drush ou le sh, vous pouvez spécifier l'option --xml=chemin/dos
 {{% tips title="Pour en savoir plus" color="positive" icon="warning" %}}
 &nbsp;
 
-* [Tests fonctionnels avec Drupal 7]({{< relref "article/tests-fonctionnels-simpletest-drupal-7/index.md" >}})
-* [Tests unitaires avec Drupal 7]({{< relref "article/tests-unitaires-simpletest-drupal-7/index.md" >}})
+* [Tests fonctionnels avec Drupal 7]({{< ref "/article/tests-fonctionnels-simpletest-drupal-7/index.md" >}})
+* [Tests unitaires avec Drupal 7]({{< ref "/article/tests-unitaires-simpletest-drupal-7/index.md" >}})
 * [Liste des assertions Simpletest disponibles](https://www.drupal.org/node/265828)
 {{% /tips %}}

@@ -8,7 +8,7 @@ date = "2015-10-22T22:17:56+02:00"
 +++
 
 {{% tips color="positive" %}}
-Si vous ne l'avez pas encore lu, allez lire l'article [Tester ses modules Drupal 7]({{< relref "article/tester-modules-drupal-7/index.md" >}}).
+Si vous ne l'avez pas encore lu, allez lire l'article [Tester ses modules Drupal 7]({{< ref "/article/tester-modules-drupal-7/index.md" >}}).
 {{% /tips %}}
 
 Les tests fonctionnels via Simpletest sont gérés par la class `DrupalWebTestCase` qu'il faut ensuite étendre dans son module.
@@ -110,6 +110,6 @@ L'obligation d'avoir le mot clé *test* au début du nom de votre fonction vous 
 {{% tips title="Pour en savoir plus" color="positive" icon="warning" %}}
 &nbsp;
 
-* [Tester ses modules Drupal 7]({{< relref "article/tester-modules-drupal-7/index.md" >}})
-* [Tests unitaires avec Drupal 7]({{< relref "article/tests-unitaires-simpletest-drupal-7/index.md" >}})
+* [Tester ses modules Drupal 7]({{< ref "/article/tester-modules-drupal-7/index.md" >}})
+* [Tests unitaires avec Drupal 7]({{< ref "/article/tests-unitaires-simpletest-drupal-7/index.md" >}})
 {{% /tips %}}
