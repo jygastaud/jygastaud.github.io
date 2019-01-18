@@ -2,3 +2,7 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
+
+.post .post-content pre code {
+    display: block;
+}
