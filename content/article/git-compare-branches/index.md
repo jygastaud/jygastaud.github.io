@@ -1,8 +1,8 @@
 +++
 title = "Git - Comparer les commits de 2 branches Git"
 Description = "Listing des différentes manières de comparer des branches dans Git"
-Tags = ["Développement", "Git"]
-Categories = ["Développement", "Tips"]
+Tags = ["Développement", "Git", "Tips"]
+Categories = ["Développement", "Shell"]
 image = ""
 aliases = []
 date = 2019-01-18T09:50:14+01:00
@@ -13,7 +13,7 @@ Listing des différentes manières de comparer des branches dans Git.
 
 ## TLDR;
 
-Toute la magique réside dans l'utilisation des plages de révision et la syntaxe `BRANCH_1..BRANCH_2`
+Toute la magie réside dans l'utilisation des plages de révision et la syntaxe `BRANCH_1..BRANCH_2`
 
 ## Connaitre les différences entre 2 branches
 
