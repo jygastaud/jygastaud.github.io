@@ -24,7 +24,7 @@
 .branch-master {stroke: #002b36; fill: #002b36}
 .branch-stage, .branch-stage-reset {stroke: #268bd2; fill: #268bd2}
 .branch-stage-reset .label-tag {
-	fill: #cb4b16;
+	fill: #268bd2;
 }
 .branch-hotfix {stroke: #859900; fill: #859900}
 ]]></style>
@@ -49,8 +49,8 @@
 	<circle class="commit" cx="50" cy="500" r="7.5" />
 	<circle class="commit" cx="50" cy="550" r="7.5" />
 	<g class="label-tag" transform="translate(320,450)">
-		<rect x="0" y="-14" width="160" height="24" rx="3" class="label-rect" />
-		<text x="5" y="2" textLength="150" class="label-text">git reset --hard master</text>
+		<rect x="0" y="-14" width="100" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="90" class="label-text">rebase stage</text>
 	</g>
 	<g class="label-branch" transform="translate(200,550)">
 		<rect x="0" y="-14" width="45" height="24" rx="3" class="label-rect" />
