@@ -45,7 +45,7 @@ Il est possible de merger plusieurs fois une même branche de ticket dans `dev`.
 
 ### stage
 
-Tous les développements / création de nouvelles branches partent de la branche `stage.
+Tous les développements / création de nouvelles branches partent de la branche `stage`.
 
 {{< figure src="images/03.1-stage-branch.svg" width="400px" class="center" title="merge de la branche t2 dans stage" >}}
 
@@ -151,7 +151,7 @@ $ git merge [NUM-TICKET]-[short-description]
 
 Si le ticket n'est pas validé, vous pouvez merger à nouveau la branche de ticket dans `dev`.
 
-Si le ticket est validé (tests automatisés validés, recette OK...), il est donc considérant comme pouvant potentiellement passer en production.
+Si le ticket est validé (tests automatisés validés, recette OK...), il est donc considéré comme pouvant potentiellement passer en production.
 
 Dans le cadre d'un projet Agile avec des sprints ou d'une TMA avec lotissement de correctifs / évolutions, le ticket ne passera potentiellement pas en production.
 
@@ -178,9 +178,9 @@ $ git rebase origin/stage
 
 Et nous recommençons ensuite l'étape précédente.
 
-Le code de `stage` peut ainsi être déployer en préproduction pour validation finale et globale.
+Le code de `stage` peut ainsi être déployé en préproduction pour validation finale et globale.
 
-Une fois le sprint fini ou la release complété, nous allons finalement merger l'ensemble de la branche `stage` sur `master`.
+Une fois le sprint fini ou la release complétée, nous allons finalement merger l'ensemble de la branche `stage` sur `master`.
 
 ```bash
 $ git checkout master
@@ -189,7 +189,7 @@ $ git merge origin/stage
 * git push origin master
 ```
 
-> Ici nous ne mergons pas la branche stage en `fast-forward` afin d'avoir une lecture simplifiée / rapide, grâce au commit de merge, de la dernière livraison.  
+> Ici, nous ne mergons pas la branche stage en `fast-forward` afin d'avoir une lecture simplifiée / rapide, grâce au commit de merge, de la dernière livraison.  
 Je vous laisse choisir si vous préférez cela ou non.
 
 Enfin il est possible de tagger la branche `master` et publier notre release.
@@ -209,13 +209,13 @@ Quelques questions / objections récurrentes reviennent régulièrement quand je
 C'est certainement le point qui fait le plus débat.
 
 Il serait possible de se passer de la branche `stage` et merger directement nos tickets dans `master`.  
-`master` serait ainsi toujours la branche par défaut, le point d'origine de tous les nouveaux dévelppements.
+`master` serait ainsi toujours la branche par défaut, le point d'origine de tous les nouveaux développements.
 
 J'apprécie d'avoir une branche `stage` pour les raisons suivantes : 
 
 1. **En cas de bug sur ma branche `stage`** : parceque 2 développements ne sont finalement pas totalement compatibles entre eux ou qu'ils entrainent une régression, il est possible simplement d'ajouter un `hotfix` sur `stage` en s'assurant qu'il ira en prod,
  
-1. **En cas de non validation d'un ticket au sein d'une release** :  il est autorisé de ré-écrire l'historique de `stage` (même si cela doit être exceptionnelle) sans grosses contraintes de communication avec l'ensembe de l'équipe.  
+1. **En cas de non validation d'un ticket au sein d'une release** :  il est autorisé de ré-écrire l'historique de `stage` (même si cela doit être exceptionnel) sans grosses contraintes de communication avec l'ensembe de l'équipe.  
 Alors que la ré-écriture de l'historique de `master` n'est pas autorisée.
 
 Avoir une branche `stage` offre donc une plus grande souplesse dans le workflow.
@@ -230,7 +230,7 @@ Il est donc nécessaire que l'équipe applique un minimum de rigeur sur la gesti
 1. Rebase régulier des branches de travail depuis `stage` : les principaux conflits sont ainsi résolus directement par le développeur. Il peut s'assurer que son travail n'a pas été impacté.
 
 2. Les branches de travail doivent avoir une durée de vie courte, quelques heures ou jours maximum.  
-Au plus les process de tests, non régressions sont automatisés, au plus vous serez en mesure de réduire ce délai.
+Au plus les process de tests / non régressions sont automatisés, au plus vous serez en mesure de réduire ce délai.
 
 ### Comment faire si une branche de travail dépend d'un autre développement en cours et non disponible sur `stage` ?
 
