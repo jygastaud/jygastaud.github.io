@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 402 670">
+<style type="text/css"><![CDATA[
+.branch {
+	fill: none;
+	stroke-width: 10;
+	stroke-linecap: round;
+}
+.commit {
+	fill: #fff;
+	stroke-width: 5;
+}
+.label-tag {
+	fill: #333;
+}
+.label-rect {
+	stroke: none;
+}
+.label-text {
+	font-family: Inconsolata, Consolas, monospace;
+	font-size: 14px;
+	fill: #fff;
+	stroke: none;
+}
+.branch-master {stroke: #002b36; fill: #002b36}
+.branch-stage {stroke: #268bd2; fill: #268bd2}
+.branch-dev {stroke: #859900; fill: #859900}
+.branch-ticket-1 {stroke: #cb4b16; fill: #cb4b16}
+.branch-ticket-2 {stroke: #2aa198; fill: #2aa198}
+]]></style>
+<g class="merge">
+	<g class="branch-ticket-2">
+		<path class="branch" d="M50,100 C200,100 200,100 200,300" />
+		<path class="branch" d="M100,400 C200,400 200,400 200,350" />
+		<path class="branch" d="M50,450 C200,450 200,450 200,350" />
+	</g>
+	<g class="branch-ticket-1">
+		<path class="branch" d="M50,100 C150,100 150,100 150,150" />
+		<path class="branch" d="M100,250 C150,250 150,250 150,200" />
+		<path class="branch" d="M100,550 C150,550 150,550 150,500" />
+		<path class="branch" d="M50,600 C150,600 150,600 150,500" />
+	</g>
+	<g class="branch-dev">
+		<path class="branch" d="M50,100 C100,100 100,100 100,250" />
+	</g>
+	<g class="branch-stage">
+		<path class="branch" d="M0,50 C50,50 50,50 50,100" />
+		<path class="branch" d="M0,650 C50,650 50,650 50,600" />
+	</g>
+	<g class="branch-master">
+		<path class="branch" d="M0,0 C0,0 0,0 0,50" />
+	</g>
+</g>
+<g class="branch-ticket-2">
+	<path class="branch" d="M200,300 L200,350" />
+	<circle class="commit" cx="200" cy="300" r="7.5" />
+	<circle class="commit" cx="200" cy="350" r="7.5" />
+	<g class="label-branch" transform="translate(250,350)">
+		<rect x="0" y="-14" width="66" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="56" class="label-text">ticket-2</text>
+	</g>
+</g>
+<g class="branch-ticket-1">
+	<path class="branch" d="M150,150 L150,500" />
+	<circle class="commit" cx="150" cy="150" r="7.5" />
+	<circle class="commit" cx="150" cy="200" r="7.5" />
+	<circle class="commit" cx="150" cy="500" r="7.5" />
+	<g class="label-branch" transform="translate(250,500)">
+		<rect x="0" y="-14" width="66" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="56" class="label-text">ticket-1</text>
+	</g>
+</g>
+<g class="branch-dev">
+	<path class="branch" d="M100,250 L100,550" />
+	<circle class="commit" cx="100" cy="250" r="7.5" />
+	<circle class="commit" cx="100" cy="400" r="7.5" />
+	<circle class="commit" cx="100" cy="550" r="7.5" />
+	<g class="label-branch" transform="translate(250,550)">
+		<rect x="0" y="-14" width="31" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="21" class="label-text">dev</text>
+	</g>
+</g>
+<g class="branch-stage">
+	<path class="branch" d="M50,100 L50,600" />
+	<circle class="commit" cx="50" cy="100" r="7.5" />
+	<circle class="commit" cx="50" cy="450" r="7.5" />
+	<circle class="commit" cx="50" cy="600" r="7.5" />
+	<g class="label-tag" transform="translate(250,450)">
+		<rect x="0" y="-14" width="87" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="77" class="label-text">v.1.0.0-rc1</text>
+	</g>
+	<g class="label-tag" transform="translate(250,600)">
+		<rect x="0" y="-14" width="87" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="77" class="label-text">v.1.0.0-rc2</text>
+	</g>
+	<g class="label-branch" transform="translate(347,600)">
+		<rect x="0" y="-14" width="45" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="35" class="label-text">stage</text>
+	</g>
+</g>
+<g class="branch-master">
+	<path class="branch" d="M0,50 L0,650" />
+	<circle class="commit" cx="0" cy="50" r="7.5" />
+	<circle class="commit" cx="0" cy="650" r="7.5" />
+	<g class="label-tag" transform="translate(250,650)">
+		<rect x="0" y="-14" width="59" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="49" class="label-text">v.1.0.0</text>
+	</g>
+	<g class="label-branch" transform="translate(319,650)">
+		<rect x="0" y="-14" width="52" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="42" class="label-text">master</text>
+	</g>
+</g>
+</svg>

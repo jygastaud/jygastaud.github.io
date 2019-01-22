@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 347 720">
+<style type="text/css"><![CDATA[
+.branch {
+	fill: none;
+	stroke-width: 10;
+	stroke-linecap: round;
+}
+.commit {
+	fill: #fff;
+	stroke-width: 5;
+}
+.label-tag {
+	fill: #333;
+}
+.label-rect {
+	stroke: none;
+}
+.label-text {
+	font-family: Inconsolata, Consolas, monospace;
+	font-size: 14px;
+	fill: #fff;
+	stroke: none;
+}
+.branch-master {stroke: #002b36; fill: #002b36}
+.branch-stage {stroke: #268bd2; fill: #268bd2}
+.branch-dev {stroke: #859900; fill: #859900}
+.branch-t1-new-feat {stroke: #cb4b16; fill: #cb4b16}
+.branch-t2-new-feat {stroke: #2aa198; fill: #2aa198}
+]]></style>
+<g class="merge">
+	<g class="branch-t2-new-feat">
+		<path class="branch" d="M50,150 C200,150 200,150 200,400" />
+		<path class="branch" d="M100,450 C200,450 200,450 200,400" />
+	</g>
+	<g class="branch-t1-new-feat">
+		<path class="branch" d="M50,150 C150,150 150,150 150,200" />
+		<path class="branch" d="M100,350 C150,350 150,350 150,300" />
+		<path class="branch" d="M100,550 C150,550 150,550 150,500" />
+		<path class="branch" d="M100,700 C150,700 150,700 150,650" />
+	</g>
+	<g class="branch-dev">
+		<path class="branch" d="M50,150 C100,150 100,150 100,350" />
+	</g>
+	<g class="branch-stage">
+		<path class="branch" d="M0,50 C50,50 50,50 50,100" />
+	</g>
+	<g class="branch-master">
+		<path class="branch" d="M0,0 C0,0 0,0 0,50" />
+	</g>
+</g>
+<g class="branch-t2-new-feat">
+	<path class="branch" d="M200,400 L200,400" />
+	<circle class="commit" cx="200" cy="400" r="7.5" />
+	<g class="label-branch" transform="translate(250,400)">
+		<rect x="0" y="-14" width="87" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="77" class="label-text">t2-new-feat</text>
+	</g>
+</g>
+<g class="branch-t1-new-feat">
+	<path class="branch" d="M150,200 L150,650" />
+	<circle class="commit" cx="150" cy="200" r="7.5" />
+	<circle class="commit" cx="150" cy="250" r="7.5" />
+	<circle class="commit" cx="150" cy="300" r="7.5" />
+	<circle class="commit" cx="150" cy="500" r="7.5" />
+	<circle class="commit" cx="150" cy="600" r="7.5" />
+	<circle class="commit" cx="150" cy="650" r="7.5" />
+	<g class="label-branch" transform="translate(250,650)">
+		<rect x="0" y="-14" width="87" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="77" class="label-text">t1-new-feat</text>
+	</g>
+</g>
+<g class="branch-dev">
+	<path class="branch" d="M100,350 L100,700" />
+	<circle class="commit" cx="100" cy="350" r="7.5" />
+	<circle class="commit" cx="100" cy="450" r="7.5" />
+	<circle class="commit" cx="100" cy="550" r="7.5" />
+	<circle class="commit" cx="100" cy="700" r="7.5" />
+	<g class="label-branch" transform="translate(250,700)">
+		<rect x="0" y="-14" width="31" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="21" class="label-text">dev</text>
+	</g>
+</g>
+<g class="branch-stage">
+	<path class="branch" d="M50,100 L50,150" />
+	<circle class="commit" cx="50" cy="100" r="7.5" />
+	<circle class="commit" cx="50" cy="150" r="7.5" />
+	<g class="label-branch" transform="translate(250,150)">
+		<rect x="0" y="-14" width="45" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="35" class="label-text">stage</text>
+	</g>
+</g>
+<g class="branch-master">
+	<path class="branch" d="M0,50 L0,50" />
+	<circle class="commit" cx="0" cy="50" r="7.5" />
+	<g class="label-branch" transform="translate(250,50)">
+		<rect x="0" y="-14" width="52" height="24" rx="3" class="label-rect" />
+		<text x="5" y="2" textLength="42" class="label-text">master</text>
+	</g>
+</g>
+</svg>
