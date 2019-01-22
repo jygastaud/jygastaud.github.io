@@ -45,9 +45,9 @@ Il est possible de merger plusieurs fois une même branche de ticket dans `dev`.
 
 ### stage
 
-Tous les développements / création de nouvelles branches partent de la branche `stage`.
+Tous les développements ou les créations de nouvelles branches partent de la branche `stage`.
 
-{{< figure src="images/03.1-stage-branch.svg" width="400px" class="center" title="merge de la branche t2 dans stage" >}}
+{{< figure src="images/03.1-stage-branch.svg" width="500px" class="center" title="merge de la branche t2 dans stage" >}}
 
 
 Les merges sur `stage` doivent être **obligatoirement** fait en `fast-forward`.
@@ -71,7 +71,7 @@ On ne merge sur `master` que dans 2 cas :
 
 {{< figure src="images/04-master-branch.svg" width="400px" class="center" title="merge de stage dans master" >}}
 
-Cette branche ne doit **jamais être rebase ou "push forcée"**.
+La branche `master` ne doit **jamais être rebase ou "push forcée"**.
 
 > Idéalement la branche `master` est protégée pour éviter les erreurs.
 
