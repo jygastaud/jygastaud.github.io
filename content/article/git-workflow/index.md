@@ -5,8 +5,8 @@ Tags = ["Développement", "git", "workflow"]
 Categories = ["Développement", "Git"]
 image = ""
 aliases = []
-date = 2019-01-16T17:51:19+01:00
-lastmod = 2019-01-16T17:51:19+01:00
+date = 2019-01-22T17:51:19+01:00
+lastmod = 2019-01-22T17:51:19+01:00
 +++
 
 Résumé du workflow Git, en ligne de commande, que j'applique de façon quasi-systématique à mes projets.
