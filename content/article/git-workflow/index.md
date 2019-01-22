@@ -7,7 +7,6 @@ image = ""
 aliases = []
 date = 2019-01-16T17:51:19+01:00
 lastmod = 2019-01-16T17:51:19+01:00
-draft = true
 +++
 
 Résumé du workflow Git, en ligne de commande, que j'applique de façon quasi-systématique à mes projets.
