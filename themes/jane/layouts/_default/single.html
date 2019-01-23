@@ -4,11 +4,13 @@
   <header class="post-header">
     <h1 class="post-title">{{ .Title }}</h1>
     {{ partial "post/i18nlist.html" . }}
+    {{ if lt (sub (now.Unix) (.Date.Unix)) 1209600 }}
     <div class="post-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-time">
         {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
       </time>
     </div>
+    {{ end }}
   </header>
 
   <!-- TOC -->

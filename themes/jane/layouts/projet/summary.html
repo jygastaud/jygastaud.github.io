@@ -3,7 +3,9 @@
     <h1 class="post-title"><a class="post-link" href="{{ .URL }}">{{ .Title }}{{ if .GetParam "draft"}} DRAFT{{end}}</a></h1>
     {{ partial "post/i18nlist.html" . }}
     <div class="post-meta">
+      {{ if lt (sub (now.Unix) (.Date.Unix)) 1209600 }}
       <span class="post-time"> {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} </span>
+      {{ end }}
       {{ with .Params.categories -}}
         <div class="post-category">
           {{ range . }}
