@@ -17,6 +17,8 @@ googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 # uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
 
+keywords = []
+
 [author]                  # essential                     # 必需
   name = "Jean-Yves Gastaud"
 

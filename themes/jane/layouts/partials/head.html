@@ -45,6 +45,9 @@
 {{ else if .Site.Params.keywords }}
   {{ $length := len .Site.Params.keywords | add -1 -}}
   <meta name="keywords" content="{{ range $index, $element := .Site.Params.keywords }}{{ $element | safeHTML }}{{if ne $index $length }}, {{ end }}{{ end }}" />
+{{ else if .Params.tags }}
+  {{ $length := len .Params.tags | add -1 -}}
+  <meta name="keywords" content="{{ range $index, $element := .Params.tags }}{{ $element | safeHTML }}{{if ne $index $length }}, {{ end }}{{ end }}" />
 {{- end }}
 
 <!-- baidu & google verification  -->
