@@ -2,7 +2,7 @@
 title = "Contactez moi"
 +++
 
-<form name="contact" method="POST" data-netlify="true">
+<form name="contact" action="/contact/success" method="POST" data-netlify="true">
   <p>
     <label>Votre nom: <input type="text" name="name" /></label>   
   </p>
