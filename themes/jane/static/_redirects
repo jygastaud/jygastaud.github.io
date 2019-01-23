@@ -1,3 +1,4 @@
-http://gastaud.io/* https://gastaud.io/:splat 301!
-https://www.gastaud.io/* https://gastaud.io/:splat 301!
-#https://treasurer-rabbit-55773.netlify.com/* https://gastaud.io/:splat 301
+http://gastaud.netlify.com/* https://gastaud.io/:splat 301!
+#http://gastaud.io/* https://gastaud.io/:splat 301!
+#http://www.gastaud.io/* https://gastaud.io/:splat 301!
+#https://www.gastaud.io/* https://gastaud.io/:splat 301!
