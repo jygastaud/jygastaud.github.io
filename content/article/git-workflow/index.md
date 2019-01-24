@@ -1,7 +1,7 @@
 +++
 title = "Mon workflow Git"
 Description = "Résumé du workflow Git qui me semble fonctionner le mieux"
-Tags = ["Développement", "git", "workflow"]
+Tags = ["Développement", "Git", "Workflow"]
 Categories = ["Développement", "Git"]
 image = ""
 aliases = []
