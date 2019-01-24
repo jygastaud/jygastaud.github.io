@@ -99,7 +99,7 @@ Avec le fait d'accepter n'importe quel merge sur `dev`, cette branche peut deven
 
 La branche `dev` sera donc régulièrement réinitialisée à partir de la branche `stage`, qui rappelons-le contient la dernière version des tickets validés et prêts à passer en production.
 
-> Concrètement, nous allons donc faire un `git reset --hard origin/master`
+> Concrètement, nous allons donc faire un `git reset --hard origin/stage`
 
 Une fois la réinitialisation faite, il conviendra, si cela est nécessaire, de :
 
