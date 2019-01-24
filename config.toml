@@ -57,11 +57,11 @@ keywords = []
 #   weight = 50
 #   identifier = "categories"
 #   url = "/categories/"
-#[[menu.main]]
-#    name = "Contact"
-#    pre = ""
-#    url = "/contact/"
-#    weight = 60
+[[menu.main]]
+   name = "Contact"
+   pre = ""
+   url = "/contact/"
+   weight = 60
 
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
