@@ -246,6 +246,6 @@ Notre nouvelle branche pourra donc, selon un choix à discuter avec les équipes
   * soit partir de la branche du ticket dont je dépend et être rebase régulièrement avec les nouveaux développements de cette branche,
   * soit travailler directement sur la même branche.
 
-**Alors qu'en pensez-vous ? A vous maintenant de réagir et partager vos propres workflows**.
+**Alors qu'en pensez-vous ? A vous maintenant de réagir et partager vos propres workflows**[^1].
 
 [^1]: graph git généré grace à [Grawkit](https://github.com/deuill/grawkit)
