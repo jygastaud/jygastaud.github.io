@@ -247,3 +247,5 @@ Notre nouvelle branche pourra donc, selon un choix à discuter avec les équipes
   * soit travailler directement sur la même branche.
 
 **Alors qu'en pensez-vous ? A vous maintenant de réagir et partager vos propres workflows**.
+
+[^1]: graph git généré grace à [Grawkit](https://github.com/deuill/grawkit)
