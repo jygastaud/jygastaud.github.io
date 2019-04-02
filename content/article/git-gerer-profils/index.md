@@ -63,7 +63,7 @@ Dans le fichier `~/.gitconfig-work`, nous n'avons donc plus qu'à ajouter ou sur
 Exemple :
 
 ```
-user]
+[user]
         email = my.work@mail.com
 
 [core]
