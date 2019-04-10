@@ -212,12 +212,12 @@ Exemple pour Drush depuis la racine de l'application : `./vendor/bin/drush MA_CO
 
 
 
-## Gitlab / Gitlab-CI
+## Gitlab / Gitlab CI
 
 Afin de simplifier la gestion et le déploiement de l'application, les actions suivantes ont été menées sur l'Intégration Continue (via Gitlab-ci).
 
-* Activation d'un runner Gitlab-ci sur l'instance de QA Clever Age
-* Activation de Gitlab-ci dans le projet Drupal
+* Activation d'un runner Gitlab CI sur l'instance de QA
+* Activation de Gitlab CI dans le projet Drupal
 * Création d'une tâche de déploiement pour la PREPROD
     * cette tâche se déclenche automatiquement que si des changements se produisent sur la branche `release`
     * On force la mise à jour du code dans le dépôt Git de Clever Cloud à chaque déploiement.
