@@ -64,6 +64,17 @@
         {{- end }}
       </nav>
     </footer>
-    {{ partial "comments.html" . }}
+
+
+    <!-- Author Info -->
+    {{ if and (.Params.author | default .Site.Author.name) (.Params.showAuthorInfo | default .Site.Params.showAuthorInfo) }}
+    {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Author.name) "context" $) }}
+    {{ end }}
+    
+    {{ partial "github-edit.html" . }}
+
+    <p>{{ partial "comments.html" . }}</p>
+
+
   </article>
 {{- end }}
