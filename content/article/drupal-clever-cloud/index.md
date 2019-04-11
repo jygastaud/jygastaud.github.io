@@ -1,5 +1,5 @@
 +++
-title = "Drupal, Gitlab CI et Clever Cloud sont dans un bâteau"
+title = "Drupal, Gitlab CI et Clever Cloud sont dans un bateau"
 Description = "Déployer un site Drupal 8 sur Clever Cloud avec Gitlab CI"
 Tags = ["Développement", "Drupal", "Cloud", "PaaS", "Clever Cloud", "Gitlab", "Gitlab CI"]
 Categories = ["Développement", "Drupal", "Cloud"]
