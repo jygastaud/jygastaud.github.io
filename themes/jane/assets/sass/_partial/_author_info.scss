@@ -80,6 +80,11 @@
   .author-info {
     margin: 0 2em 2em 2em;
   }
+
+  .author-info_homepage {
+    margin: 0 2em 2em 2em;
+    padding: 1em;
+  }
 }
 
 @media screen and (min-width: 504px) and (max-width: 899px) {
@@ -87,6 +92,13 @@
     margin: 0 1em 2em 1em;
     padding-left: 1em;
     padding-right: 1em;
+  }
+
+  .author-info_homepage {
+    margin: 0 1em 2em 1em;
+    background-color: white;
+    padding: 1em;
+    text-align: center;
   }
 }
 
@@ -103,6 +115,17 @@
         padding-left: 0;
         text-align: center;
       }
+    }
+  }
+
+  .author-info_homepage {
+    margin: 0 0 2em;
+    background-color: white;
+    padding: 1em;
+    text-align: center;
+  
+    .iconfont {
+      margin: 0.5em;
     }
   }
 }
