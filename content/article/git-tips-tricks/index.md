@@ -562,6 +562,27 @@ Avec ce hash, il vous ai possible de revenir revert simplement une action si né
 
 ### git worktree
 
+`git worktree` permet de gérer plusieurs espaces de travail pour un même dépôt.
+
+Un cas typique d'utilisation : 
+
+* Je travaille sur une nouvelle fonctionnalité et j'ai des modifications en cours
+* Un ticket URGENT arrive et j'ai besoin de changer de branche pour faire une correction
+* Je commite mon travail en cours (au risque d'ajouter des choses non voulues) et je change de branche
+
+STOP ! Utilisez maintenant `worktree` !
+
+```
+git worktree add <path> [<branch>]
+```
+
+avec cette commande, je vais créer un nouvel espace de travail dans un dossier différent et travailler dessus comme sur ma branche courante.
+
+Une fois fini, le travail commité et poussé, il ne nous reste plus qu'à supprimer l'espace de travail :
+
+```
+git worktree prune
+```
 
 ## Configurer votre profil
 
