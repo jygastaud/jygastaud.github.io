@@ -186,7 +186,7 @@ Exemple :
 
 
 
-Il est ainsi possible de demander à Git de rebase l'historique dans le bonne ordre automatiquement
+Il est ainsi possible de demander à Git de rebase l'historique dans le bon ordre automatiquement
 
 ```
 git rebase -i --autosquash <hash>
@@ -510,7 +510,7 @@ puis `git config --local include.path ../gitconfig/.gitconfig`
 
 ## Debuger
 
-### git blame
+
 
 ### git grep
 
@@ -590,8 +590,6 @@ git worktree prune
 Voir article [Git - Gérer des profils distincts dans Git]({{< relref "git-gerer-profils/index.md" >}})
 
 
-### pourquoi et comment signer ces commits avec GPG ?
-
 
 
 ## Partager un repository
@@ -637,49 +635,3 @@ git pull --rebase ../testconf/gitconf.bundle master
 Si des modifications ont été faites sur le dépôt d'origine et qu'elles doivent être repartagée au développeur, il suffira de générer un diff avec le bundle précédent. Le développeur n'aura plus qu'à remplacer son fichier initial et faire un pull dessus.
 
 
-<!-- 
-
-Plan : 
-
-- Rappel des notions de base 
-
-  - clone, add, commit, checkout et push
-
-- Visualiser et rechercher dans son historique
-
-- Vérifier / modifier ce que l'on commit
-
-  - add -p
-  - amend / fixup
-  - rebase -i
-
-- Gérer ses repositories distants
-
-  - fetch + rebase VS pull (--rebase)
-  - gérer plusieurs remotes
-
-- Les hooks
-
-  - Gérer ces hooks simplements
-  - partager ces hooks Git
-
-- Debuger
-
-  - git blame
-  - git grep
-  - savoir ce qui est déjà commité / pushé sur une autre branche
-  - git bisect
-  - git reflog
-  - git worktree
-
-- Configurer votre profil
-
-  - gérer plusieurs profils
-  - pourquoi et comment signer ces commits avec GPG ?
-
-- Partager un repository
-
-  - git bundle
-
-  
- -->
