@@ -28,7 +28,9 @@
 
     <!-- Content -->
     <div class="post-content">
+      <h2>{{ i18n "summary" }}</h2>
       {{ .Content }}
+      <a class="post-link" href="{{ .Params.link }}">{{ i18n "readFull" }}</a>
     </div>
 
     <!-- Copyright -->
@@ -64,6 +66,5 @@
         {{- end }}
       </nav>
     </footer>
-    {{ partial "comments.html" . }}
   </article>
 {{- end }}
