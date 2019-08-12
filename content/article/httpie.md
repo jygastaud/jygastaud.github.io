@@ -1,5 +1,5 @@
 +++
-Categories = ["Développement", "Shell"]
+Categories = ["DevOps"]
 Tags = ["Développement", "Shell"]
 date = "2016-04-14T11:49:35+02:00"
 title = "Oubliez cURL et Wget grâce à HTTPie"

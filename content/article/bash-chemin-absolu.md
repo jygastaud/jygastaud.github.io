@@ -1,7 +1,7 @@
 +++
-Categories = ["Développement"]
+Categories = ["DevOps"]
 Description = "Récupérer le chemin absolu d'exécution de son script en bash."
-Tags = ["Développement", "Bash"]
+Tags = ["Développement", "Bash", "Shell"]
 date = "2015-12-10T13:50:52+02:00"
 title = "Bash - Récupérer le chemin absolu d'exécution du script"
 

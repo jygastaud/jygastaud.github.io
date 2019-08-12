@@ -2,7 +2,7 @@
 title = "Mon workflow Git"
 Description = "Résumé du workflow Git qui me semble fonctionner le mieux"
 Tags = ["Développement", "Git", "Workflow"]
-Categories = ["Développement", "Git"]
+Categories = ["DevOps"]
 image = ""
 aliases = []
 date = 2019-01-22T08:51:19+01:00

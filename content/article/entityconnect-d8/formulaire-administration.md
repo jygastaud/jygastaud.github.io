@@ -1,5 +1,5 @@
 +++
-Categories = ["Developpement", "Drupal"]
+Categories = ["Drupal"]
 Tags = ["Developpement", "drupal", "drupal 8", "Entity Connect"]
 date = "2015-08-27T15:47:06+02:00"
 title = "Création d'un formulaire d'administration sous Drupal 8"

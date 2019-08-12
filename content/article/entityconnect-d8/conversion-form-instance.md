@@ -1,5 +1,5 @@
 +++
-Categories = ["Développement", "Drupal"]
+Categories = ["Drupal"]
 Tags = ["Développement", "drupal", "drupal 8", "Entity Connect"]
 date = "2015-08-31T23:54:38+02:00"
 title = "Gestion et surcharge d'un field instance sous Drupal 8"

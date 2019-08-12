@@ -2,7 +2,7 @@
 title = "Git - Comparer les commits de 2 branches Git"
 Description = "Listing des différentes manières de comparer des branches dans Git"
 Tags = ["Développement", "Git", "Tips"]
-Categories = ["Développement", "Shell"]
+Categories = ["DevOps"]
 image = ""
 aliases = []
 date = 2019-01-18T09:50:14+01:00

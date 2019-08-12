@@ -1,5 +1,5 @@
 +++
-Categories = ["Développement", "Article", "Drupal", "Tuto"]
+Categories = ["Drupal"]
 Tags = ["Développement", "Drupal", "Drupal 8"]
 date = "2016-05-02T10:13:54+02:00"
 title = "Import de fichier XML sous Drupal 8 - Traitements spécifiques sur la source"

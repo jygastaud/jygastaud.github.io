@@ -1,7 +1,7 @@
 +++
 date = "2014-01-01"
 title = "Drupal Export des noeuds en Markdown"
-Categories = ["Development"]
+Categories = ["Drupal"]
 Tags = ["Drupal", "Export", "Markdown"]
 description = "Quelques ressources utiles en mode bookmarks pouvant permettre de gérer l'export de noeuds Drupal au format Markdown."
 aliases = [

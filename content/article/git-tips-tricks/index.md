@@ -1,8 +1,8 @@
 +++
 title = "Git - Tips & Tricks"
 Description = ""
-Tags = ["Développement", "Git"]
-Categories = ["Git", "Tips"]
+Tags = ["Développement", "Git", "Tips"]
+Categories = ["DevOps"]
 image = ""
 aliases = []
 date = 2019-04-23T14:44:54+02:00

@@ -1,7 +1,7 @@
 +++
-Categories = ["Développement", "Shell", "Tuto"]
+Categories = ["DevOps"]
 Description = "Exemple de fichier de configuration Tmuxinator pour vos projets Drupal"
-Tags = ["Développement", "Tmux", "Tmuxinator", "Shell"]
+Tags = ["Développement", "Tmux", "Tmuxinator", "Shell", "Tuto"]
 date = "2016-04-27T19:00:00+02:00"
 title = "Utiliser Tmux et Tmuxinator pour gérer vos confs projets"
 +++

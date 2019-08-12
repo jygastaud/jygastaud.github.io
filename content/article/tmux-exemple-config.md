@@ -1,5 +1,5 @@
 +++
-Categories = ["Développement", "Projet"]
+Categories = ["DevOps"]
 Description = "Fichier de configuration tmux."
 Tags = ["Développement", "Projet"]
 aliases = []

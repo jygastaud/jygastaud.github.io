@@ -1,5 +1,5 @@
 +++
-Categories = ["Développement"]
+Categories = ["DevOps"]
 Description = "Supprimer toutes les branches mergées sur votre dépot distant en 1 ligne de commande."
 Tags = ["Développement", "Git"]
 date = "2015-12-03T13:51:38+02:00"

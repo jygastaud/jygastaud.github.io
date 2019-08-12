@@ -1,7 +1,7 @@
 +++
-Categories = ["Système"]
 Description = "Vous souhaitez avoir accès à la dernière version de Git sur votre Ubuntu. Découvrez comment le faire en 3 commandes."
 Tags = ["Système", "Git"]
+Categories = ["DevOps"]
 date = "2015-09-30T10:44:14+02:00"
 title = "Installer la dernière version de Git sur Ubuntu"
 

@@ -1,7 +1,7 @@
 +++
 date = "2013-06-22T15:00:28+01:00"
 title = "DrupalCamp Paris2013 - Behat et Drupal"
-Categories = ["Développement"]
+Categories = ["Drupal"]
 Tags = ["Drupal", "Behat"]
 description = "Prise de notes réalisées lors de la conférence Behat et Drupal du DrupalCamp Paris2013."
 aliases = [

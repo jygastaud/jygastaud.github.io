@@ -2,7 +2,7 @@
 title = "Gérer des profils distincts dans Git"
 Description = "Comment simplifier la gestion des identités associés à nos commits Git et éviter les erreurs de configuration ? "
 Tags = ["Développement", "Git", "Tips", "Profil", "Configuration", "IncludeIf", "Includes Conditionnels"]
-Categories = ["Développement", "Git"]
+Categories = ["DevOps"]
 image = ""
 aliases = []
 date = 2019-01-24T00:02:55+01:00

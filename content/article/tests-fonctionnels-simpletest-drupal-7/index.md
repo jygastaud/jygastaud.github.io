@@ -1,7 +1,7 @@
 +++
 title = "Tests fonctionnels avec Simpletest dans Drupal 7"
 Description = "Introduction aux tests fonctionnels avec Simpletest."
-Categories = ["Développement", "Drupal"]
+Categories = ["Drupal"]
 Tags = ["Développement", "drupal", "drupal 7", "Tests", "Simpletest"]
 date = "2015-10-22T22:17:56+02:00"
 

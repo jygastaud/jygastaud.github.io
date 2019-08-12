@@ -1,5 +1,5 @@
 +++
-Categories = ["Développement", "Drupal"]
+Categories = ["Drupal"]
 Tags = ["Développement", "drupal", "drupal 7", "Tests", "Simpletest"]
 date = "2015-10-22T22:18:35+02:00"
 title = "Tests unitaires avec Simpletest dans Drupal 7"

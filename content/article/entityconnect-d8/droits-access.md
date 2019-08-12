@@ -1,5 +1,5 @@
 +++
-Categories = ["Developpement", "Drupal"]
+Categories = ["Drupal"]
 Tags = ["Developpement", "drupal", "drupal 8", "Entity Connect"]
 date = "2015-09-01T22:47:16+02:00"
 title = "Gestion des droits d'accès sous Drupal 8"

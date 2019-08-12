@@ -101,6 +101,10 @@
   .task-list {
     list-style: none;
     padding-left: 1.5rem;
+
+    .task-list-item {
+      width: initial;
+    }
   }
 
   .MJXc-display {

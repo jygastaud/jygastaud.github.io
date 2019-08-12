@@ -1,8 +1,8 @@
 +++
 title = "Split JSON avec jq"
 Description = "Comment découper un JSON en plusieurs fichiers"
-Tags = ["Développement", "Tips"]
-Categories = ["Développement", "Shell"]
+Tags = ["Développement", "Tips", "Shell"]
+Categories = ["DevOps"]
 image = ""
 aliases = []
 date = 2019-01-16T16:36:46+01:00

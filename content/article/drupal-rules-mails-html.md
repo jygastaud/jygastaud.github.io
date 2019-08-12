@@ -1,5 +1,5 @@
 +++
-Categories = ["Développement", "Drupal"]
+Categories = ["Drupal"]
 Description = "Créer, gérer et envoyer des mails en HTML avec Rules dans Drupal."
 Tags = ["Développement", "Drupal", "Drupal 7", "email", "html", "rules"]
 date = "2015-11-03T13:54:56+02:00"

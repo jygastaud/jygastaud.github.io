@@ -1,5 +1,5 @@
 +++
-Categories = ["Développement", "Article", "Drupal", "Tuto"]
+Categories = ["Drupal"]
 Tags = ["Développement", "Drupal", "Drupal 8"]
 date = "2016-05-02T15:21:25+02:00"
 title = "Drupal 8 - Suppression de configurations à la désinstallation du module"

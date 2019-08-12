@@ -1,5 +1,5 @@
 +++
-Categories = ["Développement", "Article"]
+Categories = ["Drupal"]
 Description = "Snippet permettant d'éxécuter des actions à la fin de l'éxécution d'une feature Behat."
 Tags = ["Développement", "Behat", "Drupal"]
 aliases = []

@@ -2,7 +2,7 @@
 title = "Drupal, Gitlab CI et Clever Cloud sont dans un bateau"
 Description = "Déployer un site Drupal 8 sur Clever Cloud avec Gitlab CI"
 Tags = ["Développement", "Drupal", "Cloud", "PaaS", "Clever Cloud", "Gitlab", "Gitlab CI"]
-Categories = ["Développement", "Drupal", "Cloud"]
+Categories = ["Drupal", "Cloud"]
 image = ""
 aliases = []
 date = 2019-04-10T15:15:36+02:00

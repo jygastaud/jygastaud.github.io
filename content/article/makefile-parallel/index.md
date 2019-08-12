@@ -1,8 +1,8 @@
 +++
 title = "Makefile et parallélisation des jobs"
 Description = "Tests sur l'utilisation des jobs parallèles via Make"
-Tags = ["Développement", "Tips"]
-Categories = ["Développement", "Shell"]
+Tags = ["Développement", "Tips", "Shell"]
+Categories = ["DevOps"]
 image = ""
 aliases = []
 date = 2019-01-16T15:18:58+01:00
