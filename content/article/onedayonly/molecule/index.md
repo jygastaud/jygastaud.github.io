@@ -208,7 +208,7 @@ Les objectifs atteints :
 
 
 Molecule permet de tester simplement dans divers contextes ses rôles Ansible.
-Sans garantir à 100% l'intégrité du résultat lors de l'application sur un autre environnement, il permet d'avoir un niveau de confiance bien plus élevés et de simplifier les tests de non régressions.
+Sans garantir à 100% l'intégrité du résultat lors de l'application sur un autre environnement, il permet d'avoir un niveau de confiance bien plus élevé et de simplifier les tests de non régressions.
 
 
 
