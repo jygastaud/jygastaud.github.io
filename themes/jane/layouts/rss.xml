@@ -22,7 +22,11 @@
       {{ if .Site.Params.rssFullContent }}
         <description>{{ .Content | html }}</description>
       {{ else }}
+        {{ if .Description }}
+        <description>{{ .Description | html }}</description>
+        {{else}}
         <description>{{ .Summary | html }}</description>
+        {{end}}
       {{ end }}
     </item>
     {{ end }}
