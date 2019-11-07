@@ -24,9 +24,9 @@
       {{ else }}
         {{ if .Description }}
         <description>{{ .Description | html }}</description>
-        {{else}}
+        {{ else }}
         <description>{{ .Summary | html }}</description>
-        {{end}}
+        {{ end }}
       {{ end }}
     </item>
     {{ end }}
