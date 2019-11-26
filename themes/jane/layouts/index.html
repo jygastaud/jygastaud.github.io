@@ -19,7 +19,7 @@
   </section>
   <section id="posts" class="posts">
     {{/* (index .Site.Paginate) */}}
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "article") }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "article") }}
     {{ range $paginator.Pages }}
       {{ .Render "summary" }}
     {{ end }}
