@@ -8,6 +8,8 @@ theme = "jane"
 defaultContentLanguage = "fr"           # Default language to use
 [languages.fr]
   languageCode = "fr-fr"
+[languages.en]
+  languageCode = "en-en"
 
 #pygmentsCodeFences = true
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
@@ -164,7 +166,7 @@ keywords = []
 #   isPlainText = true
 
 # multilingual support example
-# [langusges]
+# [languages]
 # [languages.en]
 #   title = "Jane - A simple theme for Hugo"
 #   weight = 1
