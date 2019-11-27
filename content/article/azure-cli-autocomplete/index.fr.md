@@ -10,7 +10,7 @@ lastmod = 2019-11-26T23:35:18+01:00
 +++
 
 
-Azure-cli n'a pas d'auto-complétion activée en Zsh et le framework Oh-My-Zsh n'a pas de plugin disponible en natif.
+Azure-cli n'a pas d'auto-complétion activée sur Zsh et le framework Oh-My-Zsh n'a pas de plugin disponible en natif.
 
 Cependant, Azure-cli est installé avec un script d'auto-complétion pour bash qui devrait se trouver dans le répertoire `bash_completion.d`.
 
