@@ -173,3 +173,9 @@ keywords = []
 # [languages.zh-cn]
 #   title = "Jane —— 一个简洁的 Hugo 主题"
 #   weight = 2
+
+[module]
+
+  [[module.imports]]
+      path="github.com/jygastaud/hugo-microtypo/microtypo"
+      disable=false

@@ -72,9 +72,9 @@ retourne
    1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
-Admettons maintenant que `branch_1` est été rebase par rapport à `master` mais pas la `branch_2`, est-ce que mon delta de commit sera toujours cohérent&nbsp;?
+Admettons maintenant que `branch_1` est été rebase par rapport à `master` mais pas la `branch_2`, est-ce que mon delta de commit sera toujours cohérent ?
 
-Prenons l'exemple suivant&nbsp;:
+Prenons l'exemple suivant :
 
 `master` contient
 
