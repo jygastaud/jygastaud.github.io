@@ -28,9 +28,9 @@
     {{ else }}
     <div class="post-summary">
       {{ if .Description }}
-        {{ .Description }}
+        {{ partial "content.html" .Description }}
       {{else}}
-        {{ .Summary }}
+        {{ partial "content.html" .Summary }}
       {{end}}
     </div>
     <div class="read-more">
