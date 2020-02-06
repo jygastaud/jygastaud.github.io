@@ -1,6 +1,6 @@
 +++
 title = "Git - Comparer les commits de 2 branches Git"
-Description = "Listing des différentes manières de comparer des branches dans Git"
+Description = "Listing des différentes manières de comparer des branches dans Git :"
 Tags = ["Développement", "Git", "Tips"]
 Categories = ["DevOps"]
 image = ""
