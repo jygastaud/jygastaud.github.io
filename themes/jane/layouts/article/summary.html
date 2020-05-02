@@ -28,7 +28,8 @@
     {{ else }}
     <div class="post-summary">
       {{ if .Description }}
-        {{ partial "content.html" .Description }}
+        {{ $description := .Description | markdownify }}
+        {{ partial "content.html" $description }}
       {{else}}
         {{ partial "content.html" .Summary }}
       {{end}}

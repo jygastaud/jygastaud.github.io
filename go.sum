@@ -3,3 +3,4 @@ github.com/jygastaud/hugo-microtypo v0.0.0-20191210231205-ad96c6eb4194 h1:+GN2tF
 github.com/jygastaud/hugo-microtypo v0.0.0-20191210234357-5759d034d986 h1:b++t3QRBwObKTdSzZfWMBUOZF4HRk92mt3lS84XNFu4=
 github.com/jygastaud/hugo-microtypo/microtypo v0.0.0-20191210231205-ad96c6eb4194 h1:DcI/rQ9WCnzEXrGs4nclyB8SOIgemJN2ThOEx9TZewU=
 github.com/jygastaud/hugo-microtypo/microtypo v0.0.0-20191210231205-ad96c6eb4194/go.mod h1:ne94VGyu35qW72mRXM/jV5RDZ0HScRBljlPULvDgqUY=
+github.com/jygastaud/hugo-microtypo/microtypo v0.0.0-20191211154642-06fe4924e9e4/go.mod h1:ne94VGyu35qW72mRXM/jV5RDZ0HScRBljlPULvDgqUY=
