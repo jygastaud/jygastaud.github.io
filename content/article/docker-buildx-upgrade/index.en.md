@@ -1,6 +1,14 @@
 +++
 title = "Upgrade Buildx in Docker CLI"
-Description = "How to get the last version of buildx in Docker"
+Description = """
+How to update Buildx in Docker.
+
+Docker CLI includes the buildx plugin to extend the build functions of Docker.
+
+Problem, the available and pre-packaged version is not up to date with the latest developments.
+
+If you want to take advantage of the latest developments, you will need to update.
+"""
 Categories = ["DevOps", "Docker"]
 Tags = ["Docker", "Buildx", "Tips", "ubuntu"]
 image = "docker-logo.png"
