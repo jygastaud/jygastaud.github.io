@@ -1,5 +1,5 @@
 +++
-title = "Mettre à jour de Buildx dans Docker CLI"
+title = "Mettre à jour Buildx dans Docker CLI"
 Description = """
 Procédure de mise à jour de Buildx dans Docker.
 
