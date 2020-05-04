@@ -3,7 +3,7 @@ title = "Mettre à jour Buildx dans Docker CLI"
 Description = """
 Procédure de mise à jour de Buildx dans Docker.
 
-Docker CLI inclue le plugin buildx permettant d'étendre les fonctions de build de Docker.
+Docker CLI inclut le plugin buildx permettant d'étendre les fonctions de build de Docker.
 
 Problème, la version disponible et pré-paquagée n'est pas à jour des dernières évolutions.
 
@@ -17,7 +17,7 @@ date = 2020-05-02T14:29:42+02:00
 lastmod = 2020-05-02T14:29:42+02:00
 +++
 
-Docker CLI, depuis la version 19.03 inclue le plugin [buildx](https://github.com/docker/buildx) permettant d'étendre les fonctions de build de Docker en s'appuyant sur [Buildkit](https://github.com/moby/buildkit).
+Docker CLI, depuis la version 19.03 inclut le plugin [buildx](https://github.com/docker/buildx) permettant d'étendre les fonctions de build de Docker en s'appuyant sur [Buildkit](https://github.com/moby/buildkit).
 
 Parmis les principaux points qu'apportent Buildkit on notera les suivants :
 
@@ -26,7 +26,7 @@ Parmis les principaux points qu'apportent Buildkit on notera les suivants :
 * possibité de distribuer les charges de travail
 * exécution sans droits root
 
-Et donc, comme indiqué plus haut, buildkit est maintenant inclue dans docker CLI.
+Et donc, comme indiqué plus haut, buildkit est maintenant inclut dans docker CLI.
 Problème, la version disponible et pré-paquagée n'est pas à jour des dernières évolutions.
 
 Si vous souhaitez profiter des toutes dernières évolutions,
