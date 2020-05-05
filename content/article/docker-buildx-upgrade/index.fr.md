@@ -40,7 +40,7 @@ Pensez à vérifier le numéro de la dernière version avant de copier/coller le
 ## Les étapes
 
 Vérifier l'existance du dossier `~/.docker/cli-plugins`.
-S'il n'existe pas, créé le
+S'il n'existe pas, créez le
 
 ```bash
 mkdir ~/.docker/cli-plugins
