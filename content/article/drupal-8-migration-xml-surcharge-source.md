@@ -81,7 +81,7 @@ process:
 Si vous lancez un `drush migrate-fields-source` vous devriez voir le nouveau champ apparaitre
 
 ```
-$ drush mfs communique
+$drush mfs communique
 ID              id_communique  
 Titre           titre          
 Corps           corps          

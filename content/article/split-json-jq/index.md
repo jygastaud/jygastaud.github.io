@@ -20,7 +20,7 @@ Je vous encourage d'ailleurs à regarder cet outil très puissant sur la manipul
 ## TL;DR
 
 ```
-$ jq -c -M '.[]' myfile.json | \
+jq -c -M '.[]' myfile.json | \
 while read line; do echo $line > $(echo $line | jq -r -c ".id").json; done
 ```
 
@@ -31,7 +31,7 @@ Cela fonctionne également en récupérant directement la sortie d'un service / 
 ### Exemple
 
 ```
-$ echo '[{ "id": "16", "name": "produit 1" }, { "id": "17", "name": "produit 2" }, { "id": "18", "name": "produit 3" }, { "id": "19", "name": "produit 4" }]' | \
+echo '[{ "id": "16", "name": "produit 1" }, { "id": "17", "name": "produit 2" }, { "id": "18", "name": "produit 3" }, { "id": "19", "name": "produit 4" }]' | \
 jq -c -M '.[]' | \
 while read line; do \
 echo $line > $(echo $line | jq -r -c ".id").json; \

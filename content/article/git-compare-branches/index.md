@@ -18,7 +18,7 @@ Toute la magie réside dans l'utilisation des plages de révision et la syntaxe 
 ## Connaitre les différences entre 2 branches
 
 ```
-$ git diff [BRANCH_1]..[BRANCH_2]
+git diff [BRANCH_1]..[BRANCH_2]
 ```
 
 retourne les différences de code entre 2 branches.
@@ -43,7 +43,7 @@ Avec l'utilisation de `diff`, nous n'avons cependant pas la vision sur les commi
 Pour ce type de comparaison, il est possible d'utiliser `git log`.
 
 ```
-$ git log [BRANCH_1]..[BRANCH_2]
+git log [BRANCH_1]..[BRANCH_2]
 ```
 
 retourne uniquement les commits de `branch_2` non présents dans `branch_1`

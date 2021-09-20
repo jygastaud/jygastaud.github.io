@@ -22,7 +22,7 @@ Vous trouverez toutes les informations nécessaires dans le [Readme du projet](h
 Si vous avez déjà lancé des requêtes à une API via cURL, vous avez déjà du voir des résultats comme ci-dessous.
 
 ```
-$ curl "https://www.drupal.org/api-d7/user.json?name=jygastaud"
+curl "https://www.drupal.org/api-d7/user.json?name=jygastaud"
 
 {"self":"https:\/\/www.drupal.org\/api-d7\/user?name=jygastaud","first":"https:\/\/www.drupal.org\/api-d7\/user?name=jygastaud\u0026page=0","last":"https:\/\/www.drupal.org\/api-d7\/user?name=jygastaud\u0026page=0","list":[{"field_industries_worked_in":[],"field_organizations":[{"uri":"https:\/\/www.drupal.org\/api-d7\/field_collection_item\/468341","id":"468341","resource":"field_collection_item"},{"uri":"https:\/\/www.drupal.org\/api-d7\/field_collection_item\/724935","id":"724935","resource":"field_collection_item"}],"field_bio":[],"field_irc_nick":"jygastaud","field_websites":[{"url":"http:\/\/www.clever-age.com","attributes":[]}],"field_country":"France","field_gender":"male","field_languages":["English","French"],"field_terms_of_service":true,"field_areas_of_expertise":[],"field_contributed":["patches","modules","issues","applications","forums","services","irc","mentor"],"field_events_attended":[],"field_mentors":[],"field_drupal_contributions":[],"field_first_name":null,"field_last_name":null,"og_user_node":[],"og_membership":[],"og_membership__1":[],"og_membership__2":[],"og_membership__3":[],"og_user_node__og_membership":[],"og_user_node__og_membership__1":[],"og_user_node__og_membership__2":[],"og_user_node__og_membership__3":[],"uid":"660334","name":"jygastaud","url":"https:\/\/www.drupal.org\/u\/jygastaud","edit_url":"https:\/\/www.drupal.org\/user\/660334\/edit","created":"1259343731","language":"en","flag_sid":0,"flag_drupalorg_user_spam_user":[]}]}
 
@@ -33,7 +33,7 @@ Pas très lisible, vous en conviendrez ?
 Avec HTTPie, fini les requêtes CURL à une API qui renvoi un gros bloc illisible. Vous pouvez maintenant avoir un retour lisible dans votre terminal.
 
 ```
-$ http "https://www.drupal.org/api-d7/user.json?name=jygastaud"
+http "https://www.drupal.org/api-d7/user.json?name=jygastaud"
 
 HTTP/1.1 200 OK
 Accept-Ranges: bytes
@@ -157,13 +157,13 @@ Grâce à HTTPie, vous pouvez maintenant ne retenir qu'une seule syntaxe !
 Ainsi
 
 ```
-$ wget https://ftp.drupal.org/files/projects/devel-8.x-1.x-dev.tar.gz
+wget https://ftp.drupal.org/files/projects/devel-8.x-1.x-dev.tar.gz
 ```
 
 devient
 
 ```
-$ http --download https://ftp.drupal.org/files/projects/devel-8.x-1.x-dev.tar.gz
+http --download https://ftp.drupal.org/files/projects/devel-8.x-1.x-dev.tar.gz
 ```
 
 Le fait d'être capable d'utiliser une même commande pour les requêtes et pour le téléchargement va vite vous simplifier la vie. Une seule syntaxe à retenir.
@@ -175,18 +175,18 @@ Par exemple, nous avons une API que l'on doit requêter et une route de récupé
 On passera donc des commandes suivantes
 
 ```
-$ curl -i -v --key ./certs/mon-certicat.key --cert ./certs/mon-certicat.pem "https://mon-api.com/infos"
+curl -i -v --key ./certs/mon-certicat.key --cert ./certs/mon-certicat.pem "https://mon-api.com/infos"
 
-$ wget --private-key="./certs/mon-certicat.key" --certificate="./certs/mon-certicat.pem" "https://mon-api.com/infos/images.zip"
+wget --private-key="./certs/mon-certicat.key" --certificate="./certs/mon-certicat.pem" "https://mon-api.com/infos/images.zip"
 
 ```
 
 à
 
 ```
-$ http --cert=./certs/mon-certicat.pem --cert-key=./certs/mon-certicat.key https://mon-api.com/infos
+http --cert=./certs/mon-certicat.pem --cert-key=./certs/mon-certicat.key https://mon-api.com/infos
 
-$ http --download --cert=./certs/mon-certicat.pem --cert-key=./certs/mon-certicat.key https://mon-api.com/infos/images.zip
+http --download --cert=./certs/mon-certicat.pem --cert-key=./certs/mon-certicat.key https://mon-api.com/infos/images.zip
 ```
 
 C'est quand même plus simple à retenir quand on a qu'une seule syntaxe non ?

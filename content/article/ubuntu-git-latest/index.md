@@ -32,9 +32,9 @@ Alors comment mettre à jour simplement notre machine pour avoir accès aux dern
 La solution en 3 commandes (à lancer dans votre terminal)
 
 ```
-$> sudo add-apt-repository ppa:git-core/ppa
-$> sudo apt-get update
-$> sudo apt-get install git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
 ```
 
 Et voilà ! Vous devriez maintenant avoir accès à la dernière version de Git.
@@ -42,7 +42,7 @@ Et voilà ! Vous devriez maintenant avoir accès à la dernière version de Git.
 Pour vérifier lancer à nouveau, dans votre terminal :
 
 ```
-$> git --version
+git --version
 ```
 
 Si la commande vous renvoie `git version 2.6.0` (ou un nombre supérieure), c'est que tout c'est bien déroulé.

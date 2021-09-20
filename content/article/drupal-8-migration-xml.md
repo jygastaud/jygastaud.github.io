@@ -14,14 +14,14 @@ Dans cette article nous allons voir comment réaliser un import de contenu XML d
 * `migrate_plus` est un module contribué qui permet notamment d'obtenir la possibilité de migrer des contenus à partir d'une URL.
 
 ```
-$ drush dl migrate_plus --dev
+drush dl migrate_plus --dev
 ```
 
 * `migrate_source_xml` permet d'avoir une class de migration gérant des fichiers XML.
 
 ```
 # depuis le dossier ./modules/[contrib]
-$ git clone --branch refactor https://git.drupal.org/project/migrate_source_xml.git
+git clone --branch refactor https://git.drupal.org/project/migrate_source_xml.git
 ```
 
 ## Contexte
@@ -358,7 +358,7 @@ Ce module permet de faire le pont entre drush et migrate, qui rappelons-le est m
 Une fois le module installé, on va avoir aux habituelles commandes drush migrate
 
 ```shell
-$ drush --filter=migrate_tools
+drush --filter=migrate_tools
 All commands in migrate_tools: (migrate_tools)
  migrate-fields-sourc  List the fields available for mapping in a source.
  e (mfs)                                                                  
@@ -376,7 +376,7 @@ All commands in migrate_tools: (migrate_tools)
 ### Vérification du mapping des champs
 
 ```
-$ drush mfs communique
+drush mfs communique
 ID              id_communique  
 Titre           titre          
 Corps           corps          
@@ -388,7 +388,7 @@ On retrouve bien ici les champs mappés dans la partie `source`.
 ### Status des imports
 
 ```
-$ drush ms communique
+drush ms communique
  Group: Communique  Status  Total  Imported  Unprocessed  Last imported       
  communique         Idle    2      0         0            
 ```
@@ -396,10 +396,10 @@ $ drush ms communique
 ### Lancer la migration
 
 ```
-$ drush mi communique --update
+drush mi communique --update
 Processed 2 items (2 created, 0 updated, 0 failed, 0 ignored) - done with 'communique'          
 
-$ drush mi communique --update
+drush mi communique --update
 Processed 2 items (0 created, 2 updated, 0 failed, 0 ignored) - done with 'communique'          
 ```
 
@@ -410,3 +410,4 @@ Voilà ! Vos noeuds ont été créés et sont maintenant visibles dans le back-o
 * [Import de fichier XML sous Drupal 8 - Traitements spécifiques sur la source]({{< relref "drupal-8-migration-xml-surcharge-source.md" >}})
 * [Drupal 8 - Suppression de configurations à la désinstallation du module]({{< relref "drupal-8-suppression-config-desinstallation.md" >}})
 {{% /tips %}}
+

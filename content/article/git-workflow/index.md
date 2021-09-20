@@ -120,9 +120,9 @@ Une fois la réinitialisation faite, il conviendra, si cela est nécessaire, de 
 Pour traiter un nouveau ticket, nous commençons d'abord par se mettre sur la branche `stage` et s'assurer qu'elle soit à jour de notre `remote`.
 
 ```bash  
-$ git checkout stage
-$ git fetch
-$ git reset --hard origin/stage
+git checkout stage
+git fetch
+git reset --hard origin/stage
 ```
 
 Nous avons ainsi une branche locale `stage` à jour de notre `remote`.
@@ -134,8 +134,8 @@ Créons maintenant notre branche de ticket/story.
 Pour cela, nous partons **toujours** de la branche `stage`.
 
 ```bash
-$ git checkout -b [NUM-TICKET]-[short-description]
-``` 
+git checkout -b [NUM-TICKET]-[short-description]
+```
 
 > Si vous utilisez Gitlab pour vos tickets, il existe une fonction permettant de générer directement des branches à partir d'un ticket et ainsi d'avoir un nommage de vos branches cohérent.  
 Gitlab se base sur le titre du ticket pour nommer la branche.  
@@ -145,8 +145,8 @@ Il conviendra d'avoir définie la branche `stage` comme branche par défaut dans
 Une fois le ticket terminé, ou dans un état suffisamment stable pour être testé, nous pouvons merger la branche dans `dev`.
 
 ```bash
-$ git checkout dev
-$ git merge [NUM-TICKET]-[short-description]
+git checkout dev
+git merge [NUM-TICKET]-[short-description]
 ```
 
 Si le ticket n'est pas validé, vous pouvez merger à nouveau la branche de ticket dans `dev`.
@@ -160,10 +160,10 @@ Notre branche de ticket va donc être mergé dans la branche `stage` (notre pré
 Avant le merge, assurons nous de nouveau que `stage` est (toujours) à jour localement.
 
 ```bash
-$ git checkout stage
+git checkout stage
 # Mise à jour de stage si nécessaire; Voir plus haut
-$ git merge --ff-only [NUM-TICKET]-[short-description]
-$ git push origin stage
+git merge --ff-only [NUM-TICKET]-[short-description]
+git push origin stage
 ```
 
 > Si vous avez un message d'erreur, c'est probablement que la branche de ticket n'est pas à jour de `stage`.  
@@ -172,8 +172,8 @@ Pensez à la `rebase`.
 Si une autre branche de ticket (également validée) doit être mergée sur `stage`, nous devons donc rebase cette branche avant de pouvoir la merger.
 
 ```bash
-$ git checkout [NUM-TICKET]-[short-description]
-$ git rebase origin/stage
+git checkout [NUM-TICKET]-[short-description]
+git rebase origin/stage
 ```
 
 Et nous recommençons ensuite l'étape précédente.
@@ -183,9 +183,9 @@ Le code de `stage` peut ainsi être déployé en préproduction pour validation 
 Une fois le sprint fini ou la release complétée, nous allons finalement merger l'ensemble de la branche `stage` sur `master`.
 
 ```bash
-$ git checkout master
+git checkout master
 # Mise à jour de la branche master locale si nécessaire
-$ git merge origin/stage
+git merge origin/stage
 * git push origin master
 ```
 
@@ -197,7 +197,7 @@ Enfin il est possible de tagger la branche `master` et publier notre release.
 Une fois notre branche `stage` mergée dans `master`, nous pouvons réinitialiser nos branches `stage` et `dev`.
 
 ```bash
-$ git checkout stage && git reset --hard origin/master
+git checkout stage && git reset --hard origin/master
 ```
 
 ## FAQ
@@ -214,7 +214,7 @@ Il serait possible de se passer de la branche `stage` et merger directement nos 
 J'apprécie d'avoir une branche `stage` pour les raisons suivantes : 
 
 1. **En cas de bug sur ma branche `stage`** : parceque 2 développements ne sont finalement pas totalement compatibles entre eux ou qu'ils entrainent une régression, il est possible simplement d'ajouter un `hotfix` sur `stage` en s'assurant qu'il ira en prod,
- 
+
 1. **En cas de non validation d'un ticket au sein d'une release** :  il est autorisé de ré-écrire l'historique de `stage` (même si cela doit être exceptionnel) sans grosses contraintes de communication avec l'ensembe de l'équipe.  
 Alors que la ré-écriture de l'historique de `master` n'est pas autorisée.
 
@@ -249,3 +249,4 @@ Notre nouvelle branche pourra donc, selon un choix à discuter avec les équipes
 **Alors qu'en pensez-vous ? A vous maintenant de réagir et partager vos propres workflows**[^1].
 
 [^1]: graph git généré grace à [Grawkit](https://github.com/deuill/grawkit)
+

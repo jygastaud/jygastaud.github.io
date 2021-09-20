@@ -102,7 +102,7 @@ Lorsque vous avez des fichiers non trackés et que vous voulez les ajouter au re
 Exemple : 
 
 ```
-$ git status
+git status
 Sur la branche preview
 Modifications qui seront validées :
 Fichiers non suivis:
@@ -340,7 +340,7 @@ L'option `-k` permet de garder sujet/message du commit intact et ne pas avoir la
 Exemple : `wk-patch` n'a pas l'option `-k`
 
 ```
-$ diff wk-patch.patch nok-patch.patch                
+diff wk-patch.patch nok-patch.patch                
 4c4
 < Subject: fixup! new commit
 ---
@@ -441,7 +441,7 @@ git config branch.master.description
 
 
 ```
-$ git request-pull v1.0 origin master:v1.x -p
+git request-pull v1.0 origin master:v1.x -p
 The following changes since commit 61739a74f55f6f08bfebbccfc00e5e2cbb9bda52:
 
   fixup! new commit (2019-04-25 17:51:22 +0200)
@@ -496,7 +496,7 @@ index 504bc75..3a59441 100644
 ### Gérer et partager ses hooks simplement
 
 ```
-$ tree gitconfig 
+tree gitconfig 
 gitconfig
 |-- .gitconfig
 |-- hooks
@@ -633,5 +633,4 @@ git pull --rebase ../testconf/gitconf.bundle master
 ```
 
 Si des modifications ont été faites sur le dépôt d'origine et qu'elles doivent être repartagée au développeur, il suffira de générer un diff avec le bundle précédent. Le développeur n'aura plus qu'à remplacer son fichier initial et faire un pull dessus.
-
 
