@@ -6,7 +6,7 @@ Categories = ["DevOps"]
 image = ""
 aliases = []
 date = 2019-04-23T14:44:54+02:00
-lastmod = 2019-04-23T14:44:54+02:00
+lastmod = 2021-09-20T23:10:00+02:00
 
 +++
 
@@ -634,3 +634,16 @@ git pull --rebase ../testconf/gitconf.bundle master
 
 Si des modifications ont été faites sur le dépôt d'origine et qu'elles doivent être repartagée au développeur, il suffira de générer un diff avec le bundle précédent. Le développeur n'aura plus qu'à remplacer son fichier initial et faire un pull dessus.
 
+
+
+## Tags
+
+### Tri des tags et Semantic Versioning
+
+```bash
+git tag --sort=version:refname
+```
+
+
+
+Pour plus de détails, voir l'article [Git - Trier les tags d'un repo utilisant du semantic versioning]({{< relref "git-sort-tags-semantic-version/index.fr.md" >}})
