@@ -13,6 +13,6 @@ title = "Contactez moi"
     <label>Message: <textarea name="message"></textarea></label>
   </p>
   <p class="post-reward">
-    <button type="submit" class="reward-button">Send</button>
+    <button type="submit" class="reward-button">Envoyer</button>
   </p>
 </form>
