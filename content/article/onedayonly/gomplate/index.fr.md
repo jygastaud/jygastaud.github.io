@@ -250,7 +250,7 @@ include:
 
 On peut maintenant lancer la commande `GITBRANCH=test gomplate` et vérifiier les résultats.
 
-* [x] le dossier `out` contient bien la même arborescence de fichiers
+*  :white_check_mark: le dossier `out` contient bien la même arborescence de fichiers ;
 
 ```
 tree -a -L 4
@@ -272,10 +272,9 @@ tree -a -L 4
     └── home.md
 ```
 
+* :white_check_mark: la variable `{{ env.Getenv "GITBRANCH" }}`est bien remplacée par la valeur attendue ;
 
-
-* [x] la variable `{{ env.Getenv "GITBRANCH" }}`
-  * [x] il est possible de définir une valeur par défaut `{{ env.Getenv "GITBRANCH" "defaultbranch" }}`
+* :white_check_mark: il est possible de définir une valeur par défaut `{{ env.Getenv "GITBRANCH" "defaultbranch" }}`
 
 
 
@@ -308,7 +307,6 @@ Le fait que Gomplate soit disponible comme un simple binaire facilite son instal
 
 ## Prochaines étapes
 
-* Creuser les fonctionnalités/fonctions natives de Gomplate
-* Voir l'utilisation de Gomplate en remplacement de `envsubst` 
-
+* Creuser les fonctionnalités/fonctions natives de Gomplate, notamment l'utilisation des datasources ;
+* Voir l'utilisation de Gomplate en remplacement de `envsubst` ;
 
