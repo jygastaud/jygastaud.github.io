@@ -99,7 +99,7 @@ Nous allons créer 2 fichiers pour ce test
 
 `test.tpl` qui va simplement reprendre l'exemple de base de gomplate
 
-```go
+```
 Hello {{ .Env.USER }}
 ```
 
@@ -174,7 +174,7 @@ Il faut donc définir la valeur `outputDir` pour un mapping 1:1 ou `outputMap` s
 
 Exemple d'utilisation d'`outputMap` pour modifier l'extension du fichier de `tpl` à `md` (markdown).
 
-```yaml
+```
 inputDir: in/
 outputMap: |
     out/{{ .in | strings.ReplaceAll ".tpl" ".md" }}
@@ -227,7 +227,7 @@ outputDir: out/
 
 * dans le fichier `docker-compose.md` on va définir la récupération d'une variable d'environnement représentant la branche Git.
 
-````markdown
+````
 # Docker-compose
 
 ## Docker-compose helper
@@ -278,7 +278,7 @@ tree -a -L 4
 
 
 
-````markdown
+````
 # Docker-compose
 
 ## Docker-compose helper
