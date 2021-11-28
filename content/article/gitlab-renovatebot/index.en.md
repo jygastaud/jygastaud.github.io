@@ -100,7 +100,7 @@ and create a new variable named `GITHUB_COM_TOKEN` with the value of the recover
 
 
 
-```yaml
+```
 image: renovate/renovate:29	
 
 variables:
@@ -142,7 +142,7 @@ It defines the Git platform to use, the [configuration options](https://docs.ren
 
 
 
-```javascript
+```
 module.exports = {
         endpoint: 'https://[url of gitlab]/api/v4/',
         platform: 'gitlab',
@@ -175,7 +175,7 @@ In the `renovate-config` project we will create a simple `renovate.json` file wh
 
 Here are the choices I made: 
 
-```json
+```
  {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [

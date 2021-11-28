@@ -100,7 +100,7 @@ et créer une nouvelle variable nommée `GITHUB_COM_TOKEN` avec la valeur du tok
 
 
 
-```yaml
+```
 image: renovate/renovate:29	
 
 variables:
@@ -142,7 +142,7 @@ Renovate s'appuie donc sur un fichier de configuration `config.js`
 
 On y défini notamment la plateforme Git à utiliser, [les options du configurations propres](https://docs.renovatebot.com/self-hosted-configuration/) au runner et les [profils de configurations (Config Presets)](https://docs.renovatebot.com/config-presets/) qui seront appliqués pour tous les projets `onboardingConfig`.
 
-```javascript
+```
 module.exports = {
         endpoint: 'https://[url du gitlab]/api/v4/',
         platform: 'gitlab',
@@ -175,7 +175,7 @@ Dans le projet `renovate-config` nous allons créer un simple fichier `renovate.
 
 Voici les choix que j'ai fait : 
 
-```json
+```
  {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [

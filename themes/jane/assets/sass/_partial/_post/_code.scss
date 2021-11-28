@@ -9,7 +9,7 @@ code {
   border-radius: 4px;
   color: $code-color;
 
-  &.language-bash:before {
+  &.language-bash:before, &.language-shell:before {
     content: "$ ";
   }
 }

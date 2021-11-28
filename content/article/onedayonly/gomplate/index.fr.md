@@ -46,7 +46,7 @@ La procédure n'étant pas détaillée dans la documentation officielle Gomplate
 
 * Ajout du plugin
 
-``` bash
+``` shell
 asdf plugin add gomplate
 ```
 
