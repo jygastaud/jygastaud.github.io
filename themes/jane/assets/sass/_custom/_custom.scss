@@ -6,6 +6,7 @@
 .post .post-content pre code {
     display: block;
     overflow: auto;
+    background: #222 !important;
 }
 
 /* ///// inputs /////*/
@@ -117,3 +118,8 @@ input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
 }
+
+.post .post-content a {
+  word-break: break-word;
+}
+
