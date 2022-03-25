@@ -191,7 +191,7 @@ Here are the choices I made:
     ":dependencyDashboard",
     ":rebaseStalePrs",
     ":enableVulnerabilityAlertsWithLabel('security')",
-    ":group:recommended"
+    "group:recommended"
   ]
 }
 ```
