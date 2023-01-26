@@ -43,7 +43,7 @@ In order to follow the initialization process you must be able to:
 
 
 
-### Gitab user
+### Gitlab user
 
 As the name of the project indicates (Renovate**Bot**) we will have to create a user account representing our Bot.
 
