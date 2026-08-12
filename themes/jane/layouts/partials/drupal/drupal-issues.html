@@ -3,14 +3,22 @@
   <h3>Dernières issues remontées</h3>
   </header>
       {{ $urlPre := "https://www.drupal.org/api-d7" }}
-      {{ $dpidJ := getJSON $urlPre "/node.json?field_project_machine_name=" $.Params.project_repo_name}}
+      {{ $dpidUrl := printf "%s/node.json?field_project_machine_name=%s" $urlPre $.Params.project_repo_name }}
+      {{ $dpidRes := resources.GetRemote $dpidUrl }}
+      {{ if $dpidRes }}
+      {{ $dpidJ := $dpidRes.Content | transform.Unmarshal }}
       {{ range first 1 $dpidJ.list }}
         {{ $nid := .nid }}
-        {{ $gcJ := getJSON $urlPre "/node.json?type=project_issue&field_project=" $nid "&field_issue_status=1" }}
+        {{ $gcUrl := printf "%s/node.json?type=project_issue&field_project=%s&field_issue_status=1" $urlPre $nid }}
+        {{ $gcRes := resources.GetRemote $gcUrl }}
+        {{ if $gcRes }}
+        {{ $gcJ := $gcRes.Content | transform.Unmarshal }}
         {{ range first 3 $gcJ.list }}
             <a href="{{ .url }}">{{ .title }}</a>
             <p>{{ substr .body.value 3 203 | safeHTML }}...</p>
         {{end}}
+        {{ end }}
+      {{ end }}
       {{ end }}
   <footer>
     <ul class="buttons">

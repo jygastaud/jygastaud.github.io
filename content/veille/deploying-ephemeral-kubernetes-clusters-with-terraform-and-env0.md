@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1595967551"
+date = 2020-07-28T20:19:11Z
 title = "Deploying ephemeral Kubernetes clusters with Terraform and env0"
 link = "Deploying ephemeral Kubernetes clusters with Terraform and env0"
 +++

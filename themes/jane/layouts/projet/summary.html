@@ -1,6 +1,6 @@
 <article class="post bg-white">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="{{ .URL }}">{{ .Title }}{{ if .GetParam "draft"}} DRAFT{{end}}</a></h1>
+    <h1 class="post-title"><a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}{{ if .Param "draft"}} DRAFT{{end}}</a></h1>
     {{ partial "post/i18nlist.html" . }}
     <div class="post-meta">
       {{ if lt (sub (now.Unix) (.Date.Unix)) 1209600 }}
@@ -30,7 +30,7 @@
       {{ .Summary }}
     </div>
     <div class="read-more">
-      <a href="{{ .URL }}" class="read-more-link">{{ i18n "readmore" }}</a>
+      <a href="{{ .RelPermalink }}" class="read-more-link">{{ i18n "readmore" }}</a>
     </div>
     {{ end }}
   </div>

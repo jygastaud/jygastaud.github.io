@@ -1,5 +1,5 @@
 {{ range .Translations }}
-<link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink  }}" />
+<link rel="alternate" hreflang="{{ .Site.Language.Locale }}" href="{{ .Permalink  }}" />
 {{ end }}
 
 <meta name="renderer" content="webkit" />
@@ -23,9 +23,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <!-- author & description & keywords  -->
-{{- if or .Params.author .Site.Author.name -}}
-{{- $author_id := .Params.author | default .Site.Author.name -}}
-{{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
+{{- if or .Params.author .Site.Params.author.name -}}
+{{- $author_id := .Params.author | default .Site.Params.author.name -}}
+{{- $author := (index (hugo.Data.authors | default dict) $author_id) -}}
 {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
 {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
 <meta name="author" content="{{ $author_name | safeHTML }}" />
@@ -55,7 +55,7 @@
 {{ with .Site.Params.google_verification }}<meta name="google-site-verification" content="{{.}}" />{{ end }}
 
 <!-- Site Generator -->
-<meta name="generator" content="Hugo {{ .Hugo.Version }}" />
+<meta name="generator" content="Hugo {{ hugo.Version }}" />
 
 <!-- Permalink & RSSlink -->
 {{ if .Params.canonical -}}
@@ -63,8 +63,8 @@
 {{- else -}}
   <link rel="canonical" href="{{ .Permalink }}" />
 {{ end }}
-{{ if .RSSLink -}}
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ with .OutputFormats.Get "rss" -}}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
 {{ end -}}
 
 {{ if .OutputFormats.Get "jsonfeed" }}
@@ -94,7 +94,6 @@
 
 {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
 {{- template "_internal/opengraph.html" . -}}
-{{- template "_internal/google_news.html" . -}}
 {{- template "_internal/schema.html" . -}}
 {{- template "_internal/twitter_cards.html" . -}}
 
@@ -109,8 +108,8 @@
 <![endif]-->` | safeHTML }}
 
 <!-- Analytics -->
-{{- if and (not .Site.IsServer) .Site.GoogleAnalytics -}}
-  {{ template "_internal/google_analytics_async.html" . }}
+{{- if and (not hugo.IsServer) .Site.Config.Services.GoogleAnalytics.ID -}}
+  {{ template "_internal/google_analytics.html" . }}
 {{- end -}}
 
 <!-- Custom head -->

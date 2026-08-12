@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1598648275"
+date = 2020-08-28T20:57:55Z
 title = "Multi-Master Replication Solutions for PostgreSQL"
 link = "Multi-Master Replication Solutions for PostgreSQL - Percona Database Perfor"
 +++

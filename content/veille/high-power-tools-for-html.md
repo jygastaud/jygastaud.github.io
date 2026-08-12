@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1592942064"
+date = 2020-06-23T19:54:24Z
 title = "high power tools for HTML"
 link = " htmx - high power tools for html"
 +++

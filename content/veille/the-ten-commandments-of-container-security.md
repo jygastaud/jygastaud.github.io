@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1599552546"
+date = 2020-09-08T08:09:06Z
 title = "The Ten Commandments of Container Security"
 link = "The Ten Commandments of Container Security - InfraCloud Technologies"
 +++

@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1608708289"
+date = 2020-12-23T07:24:49Z
 title = "A Custom Kubernetes Scheduler to Orchestrate Highly Available Applications"
 link = "A Custom Kubernetes Scheduler to Orchestrate Highly Available Applications "
 +++

@@ -3,13 +3,17 @@
   <h3>Activité du projet</h3>
   </header>
       {{ $urlPre := "https://api.github.com" }}
-      {{ $gcJ := getJSON $urlPre "/repos/" $.Params.project_repo_name "/commits" }}
+      {{ $gcUrl := printf "%s/repos/%s/commits" $urlPre $.Params.project_repo_name }}
+      {{ $gcRes := resources.GetRemote $gcUrl }}
+      {{ if $gcRes }}
+      {{ $gcJ := $gcRes.Content | transform.Unmarshal }}
       {{ range first 5 $gcJ }}
         <p>
           {{ dateFormat "02-01-2006" .commit.author.date}}<br>
           {{ .commit.message }}
         </p>
       {{end}}
+      {{ end }}
   <footer>
     <div class="disqus-comment">
       <div class="disqus-button"><a href="{{ .Params.project_url }}" class="button small">Voir le projet</a></div>

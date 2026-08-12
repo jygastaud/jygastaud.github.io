@@ -3,7 +3,7 @@
   <article class="post bg-white">
     <!-- post-header -->
     <header class="post-header">
-      <h1 class="post-title">{{ .Title }}{{ if .GetParam "draft"}} DRAFT{{end}}</h1>
+      <h1 class="post-title">{{ .Title }}{{ if .Param "draft"}} DRAFT{{end}}</h1>
       {{ partial "post/i18nlist.html" . }}
       <div class="post-meta">
         {{ if lt (sub (now.Unix) (.Date.Unix)) 1209600 }}
@@ -49,14 +49,14 @@
       <!-- Post Pagination -->
       <nav class="post-nav">
         {{ with .NextInSection }}
-          <a class="prev" href="{{ .URL }}">
+          <a class="prev" href="{{ .RelPermalink }}">
             <i class="iconfont icon-left"></i>
             <span class="prev-text nav-default">{{ .Title }}</span>
             <span class="prev-text nav-mobile">{{ i18n "prev_post" }}</span>
           </a>
         {{- end }}
         {{ with .PrevInSection }}
-          <a class="next" href="{{ .URL }}">
+          <a class="next" href="{{ .RelPermalink }}">
             <span class="next-text nav-default">{{ .Title }}</span>
             <span class="prev-text nav-mobile">{{ i18n "next_post" }}</span>
             <i class="iconfont icon-right"></i>
@@ -67,8 +67,8 @@
 
 
     <!-- Author Info -->
-    {{ if and (.Params.author | default .Site.Author.name) (.Params.showAuthorInfo | default .Site.Params.showAuthorInfo) }}
-    {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Author.name) "context" $) }}
+    {{ if and (.Params.author | default .Site.Params.author.name) (.Params.showAuthorInfo | default .Site.Params.showAuthorInfo) }}
+    {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Params.author.name) "context" $) }}
     {{ end }}
     
     {{ partial "github-edit.html" . }}

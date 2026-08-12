@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1596482553"
+date = 2020-08-03T19:22:33Z
 title = "🇬🇧 Every GitLab Page deserves a real CI/CD | 2020-07-23 | GitLab CI"
 link = "?? Every GitLab Page deserves a real CI/CD | K33G's website"
 +++

@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1591383347"
+date = 2020-06-05T18:55:47Z
 title = "A Serverless Content Management System for Websites built with AWS"
 link = "Spontaign/serverless-cms: A Serverless Content Management System for websit"
 +++

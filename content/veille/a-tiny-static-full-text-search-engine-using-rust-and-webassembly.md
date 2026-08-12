@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1591899992"
+date = 2020-06-11T18:26:32Z
 title = "A Tiny, Static, Full-Text Search Engine using Rust and WebAssembly"
 link = "A Tiny, Static, Full-Text Search Engine using Rust and WebAssembly | Matthi"
 +++

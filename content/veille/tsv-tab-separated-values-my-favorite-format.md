@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1594563123"
+date = 2020-07-12T14:12:03Z
 title = "TSV - Tab Separated Values: My Favorite Format"
 link = "https://srcco.de/posts/tsv-tab-separated-values.html"
 +++

@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1600455196"
+date = 2020-09-18T18:53:16Z
 title = "Getting Started with RediSearch 2.0"
 link = "Getting Started with RediSearch 2.0 - Redis"
 +++

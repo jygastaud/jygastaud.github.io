@@ -51,14 +51,14 @@
       <!-- Post Pagination -->
       <nav class="post-nav">
         {{ with .NextInSection }}
-          <a class="prev" href="{{ .URL }}">
+          <a class="prev" href="{{ .RelPermalink }}">
             <i class="iconfont icon-left"></i>
             <span class="prev-text nav-default">{{ .Title }}</span>
             <span class="prev-text nav-mobile">{{ i18n "prev_post" }}</span>
           </a>
         {{- end }}
         {{ with .PrevInSection }}
-          <a class="next" href="{{ .URL }}">
+          <a class="next" href="{{ .RelPermalink }}">
             <span class="next-text nav-default">{{ .Title }}</span>
             <span class="prev-text nav-mobile">{{ i18n "next_post" }}</span>
             <i class="iconfont icon-right"></i>

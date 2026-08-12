@@ -1,2 +1,2 @@
 <!-- Simple shortcode to access variables in frontmatter -->
-{{ echoParam $.Page.Params (.Get 0) }}
+{{ index $.Page.Params (lower (.Get 0)) }}

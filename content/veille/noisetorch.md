@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1608708633"
+date = 2020-12-23T07:30:33Z
 title = "NoiseTorch"
 link = "lawl/NoiseTorch: Real-time microphone noise suppression on Linux."
 +++

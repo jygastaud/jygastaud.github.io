@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1591122988"
+date = 2020-06-02T18:36:28Z
 title = "gitlabci-local"
 link = "gitlabci-local · PyPI"
 +++

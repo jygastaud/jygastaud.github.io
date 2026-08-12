@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1595927856"
+date = 2020-07-28T09:17:36Z
 title = "Cheat sheet Ansible"
 link = "Cheat sheet Ansible | www.sysadminascode.com"
 +++

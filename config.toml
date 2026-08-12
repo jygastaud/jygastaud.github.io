@@ -7,23 +7,29 @@ theme = "jane"
 # language support # en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "fr"           # Default language to use
 [languages.fr]
-  languageCode = "fr-fr"
+  locale = "fr-fr"
 [languages.en]
-  languageCode = "en-en"
+  locale = "en-en"
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 #pygmentsCodeFences = true
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 10                                              # 首页每页显示的文章数
 rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
-disqusShortname = "gastaudio"      # disqus_shortname
-googleAnalytics = "UA-53683271-1"      # UA-XXXXXXXX-X
-copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 # uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
 
 keywords = []
 
-[author]                  # essential                     # 必需
+[params.author]           # essential                     # 必需
   name = "Jean-Yves Gastaud"
+
+[services.googleAnalytics]
+  ID = "G-3KHBWPDP4F"
+
+[services.disqus]
+  shortname = "gastaudio"      # disqus_shortname
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -67,6 +73,7 @@ keywords = []
    weight = 60
 
 [params]
+  copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
   # uglyURLs = true          # You must set true after use uglyURLs in site (above). because $.Site.UglyURLs can not import.
   since = "2013"            # Site creation time          # 站点建立时间

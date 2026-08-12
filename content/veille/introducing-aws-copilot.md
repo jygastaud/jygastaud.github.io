@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1594334155"
+date = 2020-07-09T22:35:55Z
 title = "Introducing AWS Copilot"
 link = "Introducing AWS Copilot | Containers"
 +++

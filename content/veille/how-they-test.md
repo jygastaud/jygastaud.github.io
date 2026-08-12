@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1599161240"
+date = 2020-09-03T19:27:20Z
 title = "How They Test"
 link = "abhivaikar/howtheytest: A collection of public resources about how software"
 +++

@@ -1,7 +1,7 @@
 +++
 Categories = ["Veille"]
 Tags = ["Veille"]
-date = "1607665082"
+date = 2020-12-11T05:38:02Z
 title = "AWS Lambda now supports container images as a packaging format"
 link = "AWS Lambda now supports container images as a packaging format"
 +++

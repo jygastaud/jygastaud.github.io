@@ -24,10 +24,10 @@
         {{ partial "svg/heart.svg" }}
       </i>
     </span>
-    {{- if or .Site.Copyright .Site.Author.name -}}
+    {{- if or .Site.Params.copyright .Site.Params.author.name -}}
       <span class="author">
-        {{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}
-        {{ else }}{{ .Site.Author.name | safeHTML }}
+        {{if .Site.Params.copyright }}{{ .Site.Params.copyright | safeHTML }}
+        {{ else }}{{ .Site.Params.author.name | safeHTML }}
         {{ end }}
       </span>
     {{- end -}}

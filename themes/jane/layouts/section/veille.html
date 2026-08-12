@@ -27,7 +27,7 @@
       </span>
       <span class="archive-post-title">
         <a href="{{ $element.Params.link }}" class="archive-post-link">
-          {{ .Title }}{{ if .GetParam "draft"}} DRAFT{{end}}
+          {{ .Title }}{{ if .Param "draft"}} DRAFT{{end}}
         </a>
         {{ if .Description }}
           <p>{{ .Description }}</p>
