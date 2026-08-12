@@ -13,7 +13,7 @@ Categories = ["DevOps"]
 image = ""
 aliases = []
 date = 2026-08-11T10:00:00+02:00
-lastmod = 2026-08-12T18:00:00+02:00
+lastmod = 2026-08-12T14:50:00+02:00
 
 +++
 
@@ -64,6 +64,7 @@ container/  Alpine + agent Kaniko (exécute le script du job,
 * **Support de `services:`, `cache:` et `artifacts:`** : détaillé juste en dessous.
 * **Tests et CI** : 41 tests unitaires Go côté `executor/`, tests unitaires Vitest côté `worker/`, et un test E2E qui exécute un vrai build Kaniko via un `wrangler dev` local. Le tout est automatisé dans `.gitlab-ci.yml` (tests sur chaque changement pertinent, déploiement manuel sur `main`).
 * **Documentation** : 5 ADR qui tracent les décisions d'architecture (plateforme d'exécution, support multi-architecture, compatibilité fleeting/`docker_autoscaler`, images de job dynamiques, services/cache/artifacts), 2 spikes qui documentent les validations techniques, et des README par composant.
+* **Control plane authentifié** : l'API HTTP du Worker était jusqu'ici ouverte à quiconque connaissait son URL `*.workers.dev` — un jeton partagé en `Authorization: Bearer` est désormais requis sur chaque route, voir plus bas.
 
 ## `services:`, `cache:`, `artifacts:` : comment ça marche concrètement
 
@@ -152,6 +153,26 @@ FATAL: flag provided but not defined: -alternate-file
 Silencieusement, en plus : GitLab Runner traite les échecs de cache comme non bloquants et affiche quand même le job en succès. Un job vert peut donc cacher un cache qui ne s'est jamais réellement créé — c'est en lisant le log de l'étape `archive_cache`, pas le statut global du job, que le problème est apparu.
 
 Ces trois points illustrent bien la limite du `wrangler dev` local évoquée plus bas : il ressemble à Cloudflare, mais ce n'en est pas un.
+
+## Sécuriser l'API du control plane
+
+Le Worker était déployé sur le sous-domaine public `*.workers.dev`, sans route ni domaine personnalisé — et son API HTTP (`/jobs/:jobId/{prepare,run,cleanup}`) n'avait strictement aucune authentification. N'importe qui tombant sur l'URL pouvait provisionner et piloter des containers.
+
+Deux options pour corriger ça : les service tokens de Cloudflare Access (Zero Trust), plus « natifs » côté Cloudflare, ou un simple jeton partagé en `Authorization: Bearer`. Access aurait demandé un domaine personnalisé et une zone — que ce Worker n'a pas — plus une application Access à configurer hors de `wrangler.toml`. Le jeton partagé, lui, ne demande aucune infrastructure Cloudflare supplémentaire : juste du code.
+
+```ts
+// worker/src/handlers.ts
+export function isAuthorized(request: Request, sharedSecret: string | undefined): boolean {
+  if (!sharedSecret) return false; // fail closed si le secret n'est pas configuré
+  const header = request.headers.get("Authorization") ?? "";
+  if (!header.startsWith("Bearer ")) return false;
+  return timingSafeEqual(header.slice(7), sharedSecret);
+}
+```
+
+Vérifié *avant même* de parser la route, pour qu'un appelant non authentifié ne puisse pas distinguer une route existante d'une 404. La comparaison en temps constant est écrite à la main plutôt qu'avec `crypto.subtle.timingSafeEqual` — cette méthode est une extension Cloudflare du Web Crypto API, absente du `SubtleCrypto` de Node, alors que ce fichier reste volontairement testable en `vitest` classique (pas `@cloudflare/vitest-pool-workers`).
+
+Côté `executor/`, `GITLAB_CF_EXECUTOR_WORKER_TOKEN` (même valeur que le `SHARED_SECRET` posé côté Worker via `wrangler secret put`, jamais commité) est envoyé sur chaque requête. Et comme pour les trois bugs de la section précédente, la vraie validation est venue du déploiement réel : le premier job de démo rejoué après la mise en place a échoué avec un `401 unauthorized` — pas un faux négatif, mais la preuve que le binaire `gitlab-cf-executor` déjà en place sur le runner datait d'avant ce correctif et n'envoyait donc aucun jeton du tout. Une fois rebuild, le job est repassé au vert.
 
 ## Limites actuelles / reste à faire
 
